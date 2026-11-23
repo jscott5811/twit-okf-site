@@ -5,8 +5,11 @@ description: "This Week in Google (TWIG) transcript archive covering 194 officia
 tags: [twit, show, twig, android-and-mobile, tech-policy-and-media, apple-ecosystem]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/this-week-in-google"
+    title: "Official TWiT.tv show page for This Week in Google"
   - id: "twig-md"
     resource: "local archive data/TWIG_Transcripts_*.md"
     title: "This Week in Google processed Markdown transcript chunks (28 files)"
@@ -18,17 +21,21 @@ sources:
     title: "TWiT Transcript Archiver SHOW_MAP configuration"
 ---
 
-This Week in Google is TWiT's long-running roundtable covering Google, cloud computing, artificial intelligence, digital media, journalism, and internet policy, running through episode 804 before evolving into Intelligent Machines at episode 805. Tracked in `fetch_transcripts.py` under file prefix `TWIG`,[^show-map] **This Week in Google** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **194** official HTML transcripts spanning episodes **232–804 (plus 1 unnumbered file)** across **2014–2025**.[^twig-html]
+This Week in Google was TWiT's long-running roundtable covering Google, cloud computing, artificial intelligence, digital media, journalism, and internet policy, running through episode 804 before evolving into Intelligent Machines at episode 805. Launching **2009** with its official show page at `https://twit.tv/shows/this-week-in-google`,[^twit-show-page] **This Week in Google** is tracked in `fetch_transcripts.py` under file prefix `TWIG`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **194** official HTML transcripts spanning episodes **232–804 (plus 1 unnumbered file)** across **2014–2025**.[^twig-html]
 
-Those official transcripts are compiled into **28** NotebookLM-ready Markdown chunks totaling **5,672,785 words** (averaging **29,241 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^twig-md] The show's complete official episode-level index is available across [This Week in Google Episodes](../episodes/twig.md).[^twig-md]
+Those official transcripts are compiled into **28** NotebookLM-ready Markdown chunks totaling **5,672,785 words** (averaging **29,241 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^twig-md] **Publication status:** Rebranded to Intelligent Machines after episode #804 (continued as IM #805 on February 5, 2025).[^twit-show-page]
+
+Complete official episode-level index: [This Week in Google Episodes](../episodes/twig.md).[^twig-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | This Week in Google |
+| Official Page | https://twit.tv/shows/this-week-in-google |
 | File Prefix | `TWIG` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | 2009 |
+| Publication Status | Rebranded to Intelligent Machines after episode #804 (continued as IM #805 on February 5, 2025) |
 | Official HTML Transcripts | 194 |
 | Processed Markdown Chunks | 28 |
 | Total Official Words | 5,672,785 (avg 29,241 / ep) |
@@ -39,7 +46,7 @@ Those official transcripts are compiled into **28** NotebookLM-ready Markdown ch
 
 ## History & Archive Evolution
 
-Within the local archive, This Week in Google spans **2014–2025** (7 dated calendar years), peaking in **2023** with **51** archived episodes (**1,806,903** words). The modern 2025–2026 era contributes **4** episodes (**122,565** words), reflecting TWiT's continuous publication of AI-assisted transcripts on `twit.tv`. After Episode 804, the program rebranded and continued its numbering directly as [Intelligent Machines](im.md) starting at Episode 805.[^twig-md]
+Within the local archive, This Week in Google spans **2014–2025** (7 dated calendar years), peaking in **2023** with **51** archived episodes (**1,806,903** words). The modern 2025–2026 era contributes **4** episodes (**122,565** words), reflecting TWiT's continuous publication of AI-assisted transcripts on `twit.tv`. After Episode 804, the program officially rebranded and continued its numbering directly as [Intelligent Machines](im.md) starting at Episode 805 on February 5, 2025.[^twig-md]
 
 ### Year-by-Year Breakdown
 
@@ -53,11 +60,11 @@ Within the local archive, This Week in Google spans **2014–2025** (7 dated cal
 | 2024 | 36 | 1,080,457 | 749–800 |
 | 2025 | 4 | 122,565 | 801–804 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/TWIG_Transcripts_*.md`.[^twig-md]
+Year-by-year counts derived from `data/TWIG_Transcripts_*.md` episode `**Date:**` headers.[^twig-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `TWIG_Transcripts_*.md` shows **Leo Laporte** as the most frequent attributed voice (**144** episodes, **37,148** turns, active **2014–2025**), followed by **Jeff Jarvis** (**140** episodes, **19,162** turns, **2014–2025**). Other recurring voices in the archive include Ant Pruitt, Leo, Jeff, Stacey Higginbotham. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^twig-md]
+Transcript speaker-turn analysis across `TWIG_Transcripts_*.md` shows **Leo Laporte** as the most frequent attributed voice (**144** episodes, **37,148** turns, active **2014–2025**), followed by **Jeff Jarvis** (**140** episodes, **19,162** turns, **2014–2025**). Other recurring voices in the archive include Ant Pruitt, Leo, Jeff, Stacey Higginbotham. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^twig-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -130,6 +137,7 @@ Across the exhausted 241-page `twit.tv` transcript index, This Week in Google ha
 - [OpenAI](../entities/openai.md) - Entity profile and mention trends across the TWiT archive.
 - [Meta & Social Platforms](../entities/meta-and-social-platforms.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/this-week-in-google` and TWiT program archive.
 [^twig-md]: Processed Markdown chunks matching `data/TWIG_Transcripts_*.md` (28 files, 5,672,785 words).
 [^twig-html]: Raw HTML transcript files matching `data/TWIG_*.html` (194 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"this week in google"` to `TWIG`.

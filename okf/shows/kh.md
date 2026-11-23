@@ -5,8 +5,11 @@ description: "Know How (KH) transcript archive covering 64 official episodes (76
 tags: [twit, show, kh, android-and-mobile, windows-and-microsoft, linux-and-open-source]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/know-how"
+    title: "Official TWiT.tv show page for Know How"
   - id: "kh-md"
     resource: "local archive data/KH_Transcripts_*.md"
     title: "Know How processed Markdown transcript chunks (3 files)"
@@ -18,17 +21,21 @@ sources:
     title: "TWiT Transcript Archiver SHOW_MAP configuration"
 ---
 
-Know How is a hands-on DIY technology, networking, and electronics project show walking viewers through builds, hardware experiments, and practical engineering fundamentals. Tracked in `fetch_transcripts.py` under file prefix `KH`,[^show-map] **Know How** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **64** official HTML transcripts spanning episodes **76–146** across **2014–2015**.[^kh-html]
+Know How is a hands-on DIY technology, networking, and electronics project show walking viewers through builds, hardware experiments, and practical engineering fundamentals. Launching **2012** with its official show page at `https://twit.tv/shows/know-how`,[^twit-show-page] **Know How** is tracked in `fetch_transcripts.py` under file prefix `KH`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **64** official HTML transcripts spanning episodes **76–146** across **2014–2015**.[^kh-html]
 
-Those official transcripts are compiled into **3** NotebookLM-ready Markdown chunks totaling **594,703 words** (averaging **9,292 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^kh-md] The show's complete official episode-level index is available across [Know How Episodes](../episodes/kh.md).[^kh-md]
+Those official transcripts are compiled into **3** NotebookLM-ready Markdown chunks totaling **594,703 words** (averaging **9,292 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^kh-md] **Publication status:** Retired on TWiT (final episode #413 aired December 20, 2018).[^twit-show-page]
+
+Complete official episode-level index: [Know How Episodes](../episodes/kh.md).[^kh-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | Know How |
+| Official Page | https://twit.tv/shows/know-how |
 | File Prefix | `KH` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | 2012 |
+| Publication Status | Retired on TWiT (final episode #413 aired December 20, 2018) |
 | Official HTML Transcripts | 64 |
 | Processed Markdown Chunks | 3 |
 | Total Official Words | 594,703 (avg 9,292 / ep) |
@@ -48,11 +55,11 @@ Within the local archive, Know How spans **2014–2015** (2 dated calendar years
 | 2014 | 42 | 363,771 | 76–121 |
 | 2015 | 22 | 230,932 | 122–146 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/KH_Transcripts_*.md`.[^kh-md]
+Year-by-year counts derived from `data/KH_Transcripts_*.md` episode `**Date:**` headers.[^kh-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `KH_Transcripts_*.md` shows **Bryan** as the most frequent attributed voice (**53** episodes, **4,099** turns, active **2014–2015**), followed by **Robert** (**50** episodes, **3,676** turns, **2014–2015**). Other recurring voices in the archive include Robert Ballecer, Burnett, Alex, Fr. Robert. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^kh-md]
+Transcript speaker-turn analysis across `KH_Transcripts_*.md` shows **Bryan** as the most frequent attributed voice (**53** episodes, **4,099** turns, active **2014–2015**), followed by **Robert** (**50** episodes, **3,676** turns, **2014–2015**). Other recurring voices in the archive include Robert Ballecer, Burnett, Alex, Fr. Robert. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^kh-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -123,6 +130,7 @@ Across the exhausted 241-page `twit.tv` transcript index, Know How has **75** pr
 - [Linux & Open Source Viewpoints](../viewpoints/linux-and-open-source.md) - Cross-host viewpoint synthesis on this show's core domain.
 - [Linux & FOSS Ecosystem](../entities/linux-and-foss.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/know-how` and TWiT program archive.
 [^kh-md]: Processed Markdown chunks matching `data/KH_Transcripts_*.md` (3 files, 594,703 words).
 [^kh-html]: Raw HTML transcript files matching `data/KH_*.html` (64 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"know how"` to `KH`.

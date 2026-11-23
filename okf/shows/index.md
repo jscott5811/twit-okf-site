@@ -1,8 +1,8 @@
 # TWiT Shows
 
-Encyclopedic show-level articles for all 18 TWiT network programs configured in `SHOW_MAP`, covering history and archive evolution, host rosters, recurring themes, notable episodes with verbatim excerpts, coverage gaps, and YouTube backfill status.
+Encyclopedic show-level articles for all 18 TWiT network programs configured in `SHOW_MAP`, with verified official `twit.tv` URLs, launch/conclusion dates, complete dated year-by-year breakdowns, host rosters, notable episodes with verbatim excerpts, and backfill status.
 
-## Archived Shows — Ongoing / Historical in SHOW_MAP (15)
+## Archived Shows — Active / Historical in SHOW_MAP (15)
 
 * [All About Android](aaa.md) - All About Android (AAA) transcript archive covering 51 official episodes (262–635, 2021–2023) across 7 NotebookLM-ready Markdown chunks (1,039,274 words).
 * [Before You Buy](byb.md) - Before You Buy (BYB) transcript archive covering 62 official episodes (105–178, 2014–2015) across 3 NotebookLM-ready Markdown chunks (501,469 words).
@@ -27,7 +27,7 @@ Encyclopedic show-level articles for all 18 TWiT network programs configured in 
 
 ## Configured Without Archived Transcripts (1)
 
-* [Ham Nation](ham.md) - Ham Nation (HAM) is configured in SHOW_MAP with 0 official transcripts across all 241 crawled TWiT.tv pages, though 384 numbered episodes were discovered on YouTube.
+* [Ham Nation](ham.md) - Ham Nation (HAM) concluded its TWiT run on December 23, 2020 with 0 official transcripts across 241 crawled TWiT.tv pages, though 384 numbered episodes were discovered on YouTube.
 
 ## Out-of-Scope Concluded Shows
 

@@ -3,7 +3,7 @@ type: person
 title: "Andy Ihnatko"
 description: "Technology Columnist & Macbreak Weekly Panelist; appears as a speaker in 240 official episodes across 3 shows (2009–2026)."
 tags: [person, panelist, apple, columnist]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: twit-network
+    resource: https://twit.tv/
+    title: "TWiT.tv official network site"
 ---
 
 Andy Ihnatko is a longtime technology columnist, commentator, and core panelist on [Macbreak Weekly](../shows/mbw.md). In the TWiT archive, Ihnatko is one of the most durable voices on Apple consumer hardware, computing culture, and the intersection of technology with creative work.[^archive-data][^dataset-doc]
 
 His contributions combine wide historical perspective—frequently contextualizing modern platform shifts against decades of personal computing history—with accessible consumer-first critiques.[^archive-data]
+
+Formerly a longtime technology columnist for the *Chicago Sun-Times*, Ihnatko has been a fixture on *MacBreak Weekly* alongside Leo Laporte for well over a decade.[^twit-network]
 
 # Quick Facts
 
@@ -117,3 +122,4 @@ On **Space Exploration and Commercial Space**, Andy Ihnatko's attributed on-air 
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^twit-network]: TWiT.tv official network site

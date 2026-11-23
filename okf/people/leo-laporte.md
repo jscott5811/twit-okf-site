@@ -3,7 +3,7 @@ type: person
 title: "Leo Laporte"
 description: "TWiT Network Founder & Host; appears as a speaker in 2,370 official episodes across 17 shows (2005–2026)."
 tags: [person, host, twit, founder]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: twit-network
+    resource: https://twit.tv/
+    title: "TWiT.tv official network site"
 ---
 
 Leo Laporte is the founder and central anchor of the TWiT.tv podcast network, serving as the primary moderator and connective voice across the network's flagship weekly roundtables. Within the 3,350-episode official archive, Laporte appears across virtually every major program—from [This Week in Tech](../shows/twit.md) and [Security Now](../shows/sn.md) to [Macbreak Weekly](../shows/mbw.md), [Windows Weekly](../shows/ww.md), [This Week in Google](../shows/twig.md), and [Intelligent Machines](../shows/im.md)—making him the single most prolific speaker in the corpus.[^archive-data][^dataset-doc]
 
 Rather than specializing in one vendor ecosystem, Laporte functions as an enthusiastic generalist, hands-on experimenter, and interviewer who bridges deeply technical specialists (such as [Steve Gibson](steve-gibson.md) and [Paul Thurrott](paul-thurrott.md)) with broader consumer and cultural perspectives. His on-air trajectory mirrors two decades of technology shifts, from early podcasting and desktop operating systems to 2025–2026 experiments with agentic coding, open-weight LLMs, and desktop Linux.[^archive-data]
+
+Laporte founded the TWiT network in April 2005 with *This Week in Tech* and continues to anchor *TWiT*, *Security Now*, *MacBreak Weekly*, *Windows Weekly*, and *Intelligent Machines*.[^twit-network]
 
 # Quick Facts
 
@@ -30,7 +35,7 @@ Rather than specializing in one vendor ecosystem, Laporte functions as an enthus
 
 # Presence & Trajectory Across the TWiT Archive
 
-Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), Leo Laporte logs **2,370 speaker episodes** across 17 shows (453,697 attributed turns totaling 14,527,257 spoken words) and **1,997 spoken body mentions** across 16 shows.[^archive-data] Activity spans **2005–2026**, with 847 speaker episodes in 2005–2020, 570 in 2021–2024, and 433 in 2025–2026 (plus 520 in undated legacy transcripts). Note that unattributed YouTube caption backfills in `data_youtube/` are deliberately excluded from speaker-attributed counts.[^archive-data]
+Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), Leo Laporte logs **2,370 speaker episodes** across 17 shows (453,697 attributed turns totaling 14,527,257 spoken words) and **1,997 spoken body mentions** across 16 shows.[^archive-data] Activity spans **2005–2026**, with 847 speaker episodes in 2005–2020, 570 in 2021–2024, and 433 in 2025–2026 (all legacy Security Now episodes have been assigned verified GRC.com air dates). Note that unattributed YouTube caption backfills in `data_youtube/` are deliberately excluded from speaker-attributed counts.[^archive-data]
 
 ## Breakdown by Show
 
@@ -65,7 +70,6 @@ Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](.
 | 2024 | 184 |
 | 2025 | 313 |
 | 2026 | 120 |
-| Undated (year 0) | 520 |
 
 # Editorial Perspective & Signature Themes
 
@@ -132,3 +136,4 @@ On **Tech Policy and Social Media**, Leo Laporte's attributed on-air remarks ref
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^twit-network]: TWiT.tv official network site

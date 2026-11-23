@@ -5,8 +5,11 @@ description: "MacBreak Weekly (MBW) transcript archive covering 259 official epi
 tags: [twit, show, mbw, apple-ecosystem, android-and-mobile, tech-policy-and-media]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/macbreak-weekly"
+    title: "Official TWiT.tv show page for MacBreak Weekly"
   - id: "mbw-md"
     resource: "local archive data/MBW_Transcripts_*.md"
     title: "MacBreak Weekly processed Markdown transcript chunks (37 files)"
@@ -21,17 +24,21 @@ sources:
     title: "Discovered TWiT YouTube channel video catalog"
 ---
 
-MacBreak Weekly is TWiT's flagship weekly Apple roundtable examining iPhone, Mac, iPad, Apple Silicon, macOS, Vision Pro, App Store regulation, and Apple's strategic direction. Tracked in `fetch_transcripts.py` under file prefix `MBW`,[^show-map] **MacBreak Weekly** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **259** official HTML transcripts spanning episodes **384–1065 (plus 1 unnumbered file)** across **2014–2026**.[^mbw-html]
+MacBreak Weekly is TWiT's flagship weekly Apple roundtable examining iPhone, Mac, iPad, Apple Silicon, macOS, Vision Pro, App Store regulation, and Apple's strategic direction. Launching **August 12, 2006** with its official show page at `https://twit.tv/shows/macbreak-weekly`,[^twit-show-page] **MacBreak Weekly** is tracked in `fetch_transcripts.py` under file prefix `MBW`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **259** official HTML transcripts spanning episodes **384–1065 (plus 1 unnumbered file)** across **2014–2026**.[^mbw-html]
 
-Those official transcripts are compiled into **37** NotebookLM-ready Markdown chunks totaling **7,452,305 words** (averaging **28,773 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^mbw-md] The show's complete official episode-level index is available across [MacBreak Weekly Episodes (2014–2023)](../episodes/mbw-2015-2023.md), [MacBreak Weekly Episodes (2024–2026)](../episodes/mbw-2024-2026.md).[^mbw-md]
+Those official transcripts are compiled into **37** NotebookLM-ready Markdown chunks totaling **7,452,305 words** (averaging **28,773 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^mbw-md] **Publication status:** Active on TWiT (hosted by Leo Laporte with rotating Apple panelists).[^twit-show-page]
+
+Complete official episode-level index: [MacBreak Weekly Episodes (2014–2023)](../episodes/mbw-2015-2023.md), [MacBreak Weekly Episodes (2024–2026)](../episodes/mbw-2024-2026.md).[^mbw-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | MacBreak Weekly |
+| Official Page | https://twit.tv/shows/macbreak-weekly |
 | File Prefix | `MBW` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | August 12, 2006 |
+| Publication Status | Active on TWiT (hosted by Leo Laporte with rotating Apple panelists) |
 | Official HTML Transcripts | 259 |
 | Processed Markdown Chunks | 37 |
 | Total Official Words | 7,452,305 (avg 28,773 / ep) |
@@ -57,11 +64,11 @@ Within the local archive, MacBreak Weekly spans **2014–2026** (8 dated calenda
 | 2025 | 52 | 1,582,826 | 954–1005 |
 | 2026 | 21 | 644,478 | 1006–1065 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/MBW_Transcripts_*.md`.[^mbw-md]
+Year-by-year counts derived from `data/MBW_Transcripts_*.md` episode `**Date:**` headers.[^mbw-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `MBW_Transcripts_*.md` shows **Leo Laporte** as the most frequent attributed voice (**237** episodes, **34,325** turns, active **2014–2026**), followed by **Andy Ihnatko** (**227** episodes, **14,227** turns, **2014–2026**). Other recurring voices in the archive include Alex Lindsay, Jason Snell, Rene Ritchie, Andy. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^mbw-md]
+Transcript speaker-turn analysis across `MBW_Transcripts_*.md` shows **Leo Laporte** as the most frequent attributed voice (**237** episodes, **34,325** turns, active **2014–2026**), followed by **Andy Ihnatko** (**227** episodes, **14,227** turns, **2014–2026**). Other recurring voices in the archive include Alex Lindsay, Jason Snell, Rene Ritchie, Andy. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^mbw-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -135,6 +142,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **399** numb
 - [Apple Ecosystem & Antitrust Viewpoints](../viewpoints/apple-ecosystem-and-antitrust.md) - Cross-host viewpoint synthesis on this show's core domain.
 - [Apple](../entities/apple.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/macbreak-weekly` and TWiT program archive.
 [^mbw-md]: Processed Markdown chunks matching `data/MBW_Transcripts_*.md` (37 files, 7,452,305 words).
 [^mbw-html]: Raw HTML transcript files matching `data/MBW_*.html` (259 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"macbreak weekly"` to `MBW`.

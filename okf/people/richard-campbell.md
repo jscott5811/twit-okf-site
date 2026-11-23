@@ -3,7 +3,7 @@ type: person
 title: "Richard Campbell"
 description: "Software Architect & Co-Host of Windows Weekly; appears as a speaker in 140 official episodes across 3 shows (2015–2026)."
 tags: [person, host, windows, microsoft, cloud]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://www.runasradio.com/
+    title: "RunAs Radio official site"
 ---
 
 Richard Campbell is a software architect, co-host of *.NET Rocks!* and *RunAs Radio*, and co-host of [Windows Weekly](../shows/ww.md) alongside [Paul Thurrott](paul-thurrott.md) and [Leo Laporte](leo-laporte.md). In the TWiT archive, Campbell brings enterprise IT, cloud infrastructure, energy/nuclear engineering, and developer-ecosystem depth to weekly Microsoft and industry discussions.[^archive-data][^dataset-doc]
 
 His 2023–2026 appearances frequently bridge Microsoft Azure and developer tooling with macro-scale discussions of AI data-center power demands and semiconductor supply chains.[^archive-data]
+
+Host of [RunAs Radio](https://www.runasradio.com/) and *.NET Rocks!*, Campbell joined Leo Laporte and Paul Thurrott as a permanent co-host on *Windows Weekly*.[^official-site]
 
 # Quick Facts
 
@@ -115,3 +120,4 @@ On **AI and LLMs**, Richard Campbell's attributed on-air remarks reflect recurri
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: RunAs Radio official site

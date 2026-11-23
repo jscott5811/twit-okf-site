@@ -5,8 +5,11 @@ description: "Hands-On Apple (HOA) transcript archive covering 39 official episo
 tags: [twit, show, hoa, apple-ecosystem, cybersecurity-and-privacy, windows-and-microsoft]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/hands-on-apple"
+    title: "Official TWiT.tv show page for Hands-On Apple"
   - id: "hoa-md"
     resource: "local archive data/HOA_Transcripts_*.md"
     title: "Hands-On Apple processed Markdown transcript chunks (2 files)"
@@ -18,17 +21,21 @@ sources:
     title: "TWiT Transcript Archiver SHOW_MAP configuration"
 ---
 
-Hands-On Apple is a concise, tutorial-focused TWiT show delivering step-by-step walkthroughs, tips, and settings guides for iPhone, iPad, Mac, Apple Watch, and Apple services. Tracked in `fetch_transcripts.py` under file prefix `HOA`,[^show-map] **Hands-On Apple** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **39** official HTML transcripts spanning episodes **186–250** across **2025–2026**.[^hoa-html]
+Hands-On Apple is a concise, tutorial-focused TWiT show delivering step-by-step walkthroughs, tips, and settings guides for iPhone, iPad, Mac, Apple Watch, and Apple services. Launching **March 20, 2020 (originally launched as Hands-On Mac)** with its official show page at `https://twit.tv/shows/hands-on-apple`,[^twit-show-page] **Hands-On Apple** is tracked in `fetch_transcripts.py` under file prefix `HOA`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **39** official HTML transcripts spanning episodes **186–250** across **2025–2026**.[^hoa-html]
 
-Those official transcripts are compiled into **2** NotebookLM-ready Markdown chunks totaling **96,823 words** (averaging **2,482 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^hoa-md] The show's complete official episode-level index is available across [Hands-On Apple Episodes](../episodes/hoa.md).[^hoa-md]
+Those official transcripts are compiled into **2** NotebookLM-ready Markdown chunks totaling **96,823 words** (averaging **2,482 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^hoa-md] **Publication status:** Concluded run (wrapped up at episode #250 in October 2026).[^twit-show-page]
+
+Complete official episode-level index: [Hands-On Apple Episodes](../episodes/hoa.md).[^hoa-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | Hands-On Apple |
+| Official Page | https://twit.tv/shows/hands-on-apple |
 | File Prefix | `HOA` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | March 20, 2020 (originally launched as Hands-On Mac) |
+| Publication Status | Concluded run (wrapped up at episode #250 in October 2026) |
 | Official HTML Transcripts | 39 |
 | Processed Markdown Chunks | 2 |
 | Total Official Words | 96,823 (avg 2,482 / ep) |
@@ -48,11 +55,11 @@ Within the local archive, Hands-On Apple spans **2025–2026** (2 dated calendar
 | 2025 | 25 | 57,672 | 186–212 |
 | 2026 | 14 | 39,151 | 213–250 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/HOA_Transcripts_*.md`.[^hoa-md]
+Year-by-year counts derived from `data/HOA_Transcripts_*.md` episode `**Date:**` headers.[^hoa-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `HOA_Transcripts_*.md` shows **Mikah Sargent** as the most frequent attributed voice (**37** episodes, **535** turns, active **2025–2026**), followed by **Leo Laporte** (**7** episodes, **13** turns, **2025**). Other recurring voices in the archive include Leo, Paul Thurrott. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^hoa-md]
+Transcript speaker-turn analysis across `HOA_Transcripts_*.md` shows **Mikah Sargent** as the most frequent attributed voice (**37** episodes, **535** turns, active **2025–2026**), followed by **Leo Laporte** (**7** episodes, **13** turns, **2025**). Other recurring voices in the archive include Leo, Paul Thurrott. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^hoa-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -110,6 +117,7 @@ Across the exhausted 241-page `twit.tv` transcript index, Hands-On Apple has **1
 - [Apple Ecosystem & Antitrust Viewpoints](../viewpoints/apple-ecosystem-and-antitrust.md) - Cross-host viewpoint synthesis on this show's core domain.
 - [Apple](../entities/apple.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/hands-on-apple` and TWiT program archive.
 [^hoa-md]: Processed Markdown chunks matching `data/HOA_Transcripts_*.md` (2 files, 96,823 words).
 [^hoa-html]: Raw HTML transcript files matching `data/HOA_*.html` (39 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"hands-on apple"` to `HOA`.

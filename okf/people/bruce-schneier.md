@@ -3,7 +3,7 @@ type: person
 title: "Bruce Schneier"
 description: "Cited Cryptographer, Security Technologist & Author; referenced 259 times in spoken transcript text across 4 shows (2005–2026)."
 tags: [person, researcher, cybersecurity, cryptography]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://www.schneier.com/
+    title: "Schneier on Security official blog"
 ---
 
 Bruce Schneier is an internationally renowned cryptographer, security technologist, and author of *Schneier on Security*. Across the TWiT archive—especially on [Security Now](../shows/sn.md) and [This Week in Tech](../shows/twit.md)—Schneier is one of the most cited external authorities on cryptography, surveillance, and public-interest security policy.[^archive-data][^dataset-doc]
 
 His essays and books are regularly invoked by [Steve Gibson](steve-gibson.md) and [Leo Laporte](leo-laporte.md) to frame debates over encryption backdoors, government surveillance, and systemic security incentives.[^archive-data]
+
+Schneier publishes essays, books, and his monthly Crypto-Gram newsletter at [Schneier on Security](https://www.schneier.com/).[^official-site]
 
 # Quick Facts
 
@@ -52,7 +57,7 @@ Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](.
 | 2024 | 2 |
 | 2025 | 4 |
 | 2026 | 2 |
-| Undated (year 0) | 129 |
+| Legacy GRC SN chunks (dated in episodes/sn-*.md) | 129 |
 
 # Editorial Perspective & Signature Themes
 
@@ -71,9 +76,9 @@ In **Windows and Microsoft Copilot** discussions, Bruce Schneier's reporting and
 
 > "But when we recall Bruce Schneier's reminder - "Attacks never get weaker, they only ever get stronger" - you know, it seems like what might be a curiosity today could have the tendency to mature over time. So how to fix this?" — Cited by Steve, [Security Now](../shows/sn.md) #1051, 2026-11-17[^archive-data]
 
-> "Well, I've got a news flash for you. I also thought of Bruce Schneier recently in another context because I love to quote one of his pithy observations, which is "Attacks always get better; they never get worse." While that's kind of obvious, reminding ourselves of its truth serves as a nice reality check." — Cited by Steve, [Security Now](../shows/sn.md) #934, Undated[^archive-data]
+> "Well, I've got a news flash for you. I also thought of Bruce Schneier recently in another context because I love to quote one of his pithy observations, which is "Attacks always get better; they never get worse." While that's kind of obvious, reminding ourselves of its truth serves as a nice reality check." — Cited by Steve, [Security Now](../shows/sn.md) #934, 2023-08-08[^archive-data]
 
-> "Cryptography and security expert Bruce Schneier said he's heard of these same types of tactics from others the government has approached seeking technological backdoors. "Bruce told Mashable: 'It's never an explicit ask." — Cited by Steve, [Security Now](../shows/sn.md) #1062, Undated[^archive-data]
+> "Cryptography and security expert Bruce Schneier said he's heard of these same types of tactics from others the government has approached seeking technological backdoors. "Bruce told Mashable: 'It's never an explicit ask." — Cited by Steve, [Security Now](../shows/sn.md) #1062, 2026-01-27[^archive-data]
 
 ### [Cybersecurity and Privacy](../viewpoints/cybersecurity-and-privacy.md)
 
@@ -81,7 +86,7 @@ In **Cybersecurity and Privacy** discussions, Bruce Schneier's reporting and arg
 
 > "But when we recall Bruce Schneier's reminder - "Attacks never get weaker, they only ever get stronger" - you know, it seems like what might be a curiosity today could have the tendency to mature over time. So how to fix this?" — Cited by Steve, [Security Now](../shows/sn.md) #1051, 2026-11-17[^archive-data]
 
-> "And as we're going to find out, that determination and Bruce Schneier's brilliantly labeled "Genie effect," it's what's going on with our AI. And I think if I had a single reason to be concerned, and everyone's been listening to me about AI since the beginning, I've never really been concerned." — Cited by Steve, [Security Now](../shows/sn.md) #1091, Undated[^archive-data]
+> "And as we're going to find out, that determination and Bruce Schneier's brilliantly labeled "Genie effect," it's what's going on with our AI. And I think if I had a single reason to be concerned, and everyone's been listening to me about AI since the beginning, I've never really been concerned." — Cited by Steve, [Security Now](../shows/sn.md) #1091, 2026-08-11[^archive-data]
 
 > "So anyway, we do have, again, another instance of our famously often-quoted, and I think it was Bruce Schneier who said, "Attacks never get worse; they only get better." And so here's Rowhammer, which continues to cause us trouble. And hopefully downstream we will see some improvements at the hardware level." — Cited by Steve, [Security Now](../shows/sn.md) #662, 2018-05-12[^archive-data]
 
@@ -101,7 +106,7 @@ In **Tech Policy and Social Media** discussions, Bruce Schneier's reporting and 
 
 > "I think it's worth reinforcing first the critical security principle Bruce Schneier captured when he wrote that: "Attacks always get better. They never get worse." Okay." — Cited by Steve, [Security Now](../shows/sn.md) #828, 2021-07-13[^archive-data]
 
-> "And we talked about Bruce Schneier's famous guess about, like, what year it would be. And he was right about the shape of the curve." — Cited by Steve, [Security Now](../shows/sn.md) #538, Undated[^archive-data]
+> "And we talked about Bruce Schneier's famous guess about, like, what year it would be. And he was right about the shape of the curve." — Cited by Steve, [Security Now](../shows/sn.md) #538, 2015-12-15[^archive-data]
 
 > "Okay. So last week our often-quoted guru and security expert and crypto person whose books I have behind me on my shelf, Bruce Schneier, was asked to testify before the House Energy and Commerce Committee on his feelings about the Equifax hack." — Cited by Steve, [Security Now](../shows/sn.md) #637, 2017-03-06[^archive-data]
 
@@ -119,3 +124,4 @@ In **Tech Policy and Social Media** discussions, Bruce Schneier's reporting and 
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: Schneier on Security official blog

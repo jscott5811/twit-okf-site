@@ -3,7 +3,7 @@ type: person
 title: "Mikah Sargent"
 description: "TWiT Host (iOS Today, Hands-On Tech, Hands-On Apple, Tech News Weekly); appears as a speaker in 564 official episodes across 14 shows (2016–2026)."
 tags: [person, host, apple, ios, tech-news]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: twit-network
+    resource: https://twit.tv/
+    title: "TWiT.tv official network site"
 ---
 
 Mikah Sargent is one of the TWiT network's most versatile hosts, anchoring consumer Apple programming ([iOS Today](../shows/ios.md) and [Hands-On Apple](../shows/hoa.md)), practical troubleshooting ([Hands-On Tech](../shows/hot.md)), and rapid-turnaround news interviews ([Tech News Weekly](../shows/tnw.md)). Across the archive, Sargent bridges accessibility-focused how-to guidance with broader industry commentary across 14 distinct shows.[^archive-data][^dataset-doc]
 
 Notably, two of Sargent's signature programs—[iOS Today](../shows/ios.md) and [Hands-On Tech](../shows/hot.md)—have concluded their runs, leaving a substantial multi-year record of practical Apple, smart-home, and consumer troubleshooting advice in the archive.[^archive-data]
+
+Sargent serves as a core TWiT host across *Tech News Weekly* and *Hands-On Apple*, and previously anchored the concluded runs of *iOS Today* and *Hands-On Tech* as well as guest-hosting *Security Now*.[^twit-network]
 
 # Quick Facts
 
@@ -62,7 +67,7 @@ Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](.
 | 2024 | 117 |
 | 2025 | 183 |
 | 2026 | 84 |
-| Undated (year 0) | 5 |
+| Legacy GRC SN chunks (dated in episodes/sn-*.md) | 5 |
 
 # Editorial Perspective & Signature Themes
 
@@ -129,3 +134,4 @@ On **AI and LLMs**, Mikah Sargent's attributed on-air remarks reflect recurring 
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^twit-network]: TWiT.tv official network site

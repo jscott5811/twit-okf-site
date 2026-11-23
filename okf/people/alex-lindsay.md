@@ -3,7 +3,7 @@ type: person
 title: "Alex Lindsay"
 description: "Media Production Technologist & Macbreak Weekly Panelist; appears as a speaker in 210 official episodes across 3 shows (2007–2026)."
 tags: [person, panelist, apple, video-production]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: twit-network
+    resource: https://twit.tv/
+    title: "TWiT.tv official network site"
 ---
 
 Alex Lindsay is a live-event and digital media production technologist, founder of Office Hours, and a longtime regular panelist on [Macbreak Weekly](../shows/mbw.md). Across the archive, Lindsay brings a studio-engineering and spatial-computing perspective to Apple hardware and media workflows.[^archive-data][^dataset-doc]
 
 His commentary is especially prominent whenever Apple introduces pro video/audio hardware, Apple Silicon workstations, or spatial computing platforms such as Apple Vision Pro.[^archive-data]
+
+Founder of Pixel Corps and Office Hours, Lindsay served as a longtime staple panelist on *MacBreak Weekly* before stepping down from the permanent panel at the end of 2025.[^twit-network]
 
 # Quick Facts
 
@@ -116,3 +121,4 @@ On **Windows and Microsoft Copilot**, Alex Lindsay's attributed on-air remarks r
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^twit-network]: TWiT.tv official network site

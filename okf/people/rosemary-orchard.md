@@ -3,7 +3,7 @@ type: person
 title: "Rosemary Orchard"
 description: "Automation Author & Co-Host of iOS Today; appears as a speaker in 150 official episodes across 2 shows (2021–2026)."
 tags: [person, host, ios, apple, automation]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://rosemaryorchard.com/
+    title: "Rosemary Orchard official site"
 ---
 
 Rosemary Orchard is an automation author, podcast host, and co-host of [iOS Today](../shows/ios.md) alongside [Mikah Sargent](mikah-sargent.md). Within the archive, Orchard is a primary voice on Apple mobile productivity, Shortcuts automation, and cross-device Apple workflows.[^archive-data][^dataset-doc]
 
 Her episodes on [iOS Today](../shows/ios.md) (now a concluded run) provide a detailed multi-year record of iOS, iPadOS, and watchOS evolution for power users and everyday listeners alike.[^archive-data]
+
+An automation specialist, web developer, and podcaster ([rosemaryorchard.com](https://rosemaryorchard.com/)), Orchard co-hosted *iOS Today* alongside Mikah Sargent through its concluded run.[^official-site]
 
 # Quick Facts
 
@@ -115,3 +120,4 @@ On **Tech Policy and Social Media**, Rosemary Orchard's attributed on-air remark
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: Rosemary Orchard official site

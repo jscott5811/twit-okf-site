@@ -3,7 +3,7 @@ type: viewpoint
 title: "Linux and Open Source"
 description: "Cross-host viewpoints and verbatim quotes on desktop Linux, Ubuntu, Fedora, Wayland, open-source licensing, self-hosting, and developer ecosystems."
 tags: [viewpoint, linux, open-source, foss, wayland, quotes]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -53,9 +53,9 @@ Every blockquote below is extracted verbatim from speaker-attributed turns in th
 
 **Steve Gibson** (Security Researcher & Co-Host of Security Now) brings a distinct recurring lens to Linux and Open Source discussions across the archive:[^archive-data]
 
-> "He describes himself as - I think this was in his little short bio on GitHub: "Random infosec guy. Rainbow teamer." — [Security Now](../shows/sn.md) #830, Undated[^archive-data]
+> "He describes himself as - I think this was in his little short bio on GitHub: "Random infosec guy. Rainbow teamer." — [Security Now](../shows/sn.md) #830, 2021-08-03[^archive-data]
 
-> "So the news that I'm excited about - and Leo, I know you are excited about it - it was by far the most tweeted bit of news I was receiving last week is the news that Threema has decided to go open source, and also to welcome a new partner. They announced it, I think it was last Thursday." — [Security Now](../shows/sn.md) #783, Undated[^archive-data]
+> "So the news that I'm excited about - and Leo, I know you are excited about it - it was by far the most tweeted bit of news I was receiving last week is the news that Threema has decided to go open source, and also to welcome a new partner. They announced it, I think it was last Thursday." — [Security Now](../shows/sn.md) #783, 2020-09-08[^archive-data]
 
 ## [Jonathan Bennett](../people/jonathan-bennett.md)
 
@@ -95,7 +95,7 @@ Every blockquote below is extracted verbatim from speaker-attributed turns in th
 
 > "Such a great feature to happen, I think, in code for a lot of reasons, and as we've gotten better support for that stuff within GitHub, I think that's been a really cool thing to see the data sets and that stuff that people have used." — [This Week in Tech](../shows/twit.md) #912, 2023-01-30[^archive-data]
 
-> "I think they realized people don't like that kind of stuff, not in an open source operating system. But I decided to go back to the distro that Ubuntu is based on, which is Debian." — [Security Now](../shows/sn.md) #562, Undated[^archive-data]
+> "I think they realized people don't like that kind of stuff, not in an open source operating system. But I decided to go back to the distro that Ubuntu is based on, which is Debian." — [Security Now](../shows/sn.md) #562, 2016-05-31[^archive-data]
 
 ## [Jason Snell](../people/jason-snell.md)
 
@@ -121,7 +121,7 @@ TWiT hosts frequently cite external beat journalists, cryptographers, and indust
 
 > "Another significant exploitation of speculative execution has arisen. And need we echo once again Bruce Schneier's famous observation about attacks never getting worse and only ever getting better?" — Cited by Steve, [Security Now](../shows/sn.md) #970, 2024-03-26[^archive-data]
 
-> "As Bruce Schneier reminds us, attacks never get worse, they only ever get stronger. They've been optimized." — Cited by Steve, [Security Now](../shows/sn.md) #1017, Undated[^archive-data]
+> "As Bruce Schneier reminds us, attacks never get worse, they only ever get stronger. They've been optimized." — Cited by Steve, [Security Now](../shows/sn.md) #1017, 2025-03-18[^archive-data]
 
 ### [Brian Krebs](../people/brian-krebs.md)
 

@@ -1,16 +1,15 @@
 # Episode Catalogs
 
-Complete episode-level catalogs with era overviews and highlights covering all **3,350** official archived episodes across 17 active TWiT shows plus **28** unattributed YouTube caption backfill episodes in `data_youtube/`.
+Complete episode-level catalogs with era overviews and highlights covering all **3,350** official archived episodes (0 undated) across 17 active TWiT shows plus **28** unattributed YouTube caption backfill episodes in `data_youtube/`.
 
 ## Multi-Era Official Show Catalogs
 
 * [MacBreak Weekly Episodes (2014–2023)](mbw-2015-2023.md) - Complete episode-level index of 135 MacBreak Weekly (MBW) episodes (2014–2023 episodes, ep 384–900, 3,692,698 words).
 * [MacBreak Weekly Episodes (2024–2026)](mbw-2024-2026.md) - Complete episode-level index of 124 MacBreak Weekly (MBW) episodes (2024–2026 episodes, ep 902–1065, 3,759,607 words).
-* [Security Now Episodes (2005–2010)](sn-2005-2010.md) - Complete episode-level index of 261 Security Now (SN) episodes (2005–2010 dated episodes, ep 1–981, 3,028,733 words).
-* [Security Now Episodes (2011–2015)](sn-2011-2015.md) - Complete episode-level index of 102 Security Now (SN) episodes (2011–2015 dated episodes, ep 273–980, 1,512,832 words).
-* [Security Now Episodes (2016–2020)](sn-2016-2020.md) - Complete episode-level index of 75 Security Now (SN) episodes (2016–2020 dated episodes, ep 543–836, 1,164,584 words).
-* [Security Now Episodes (2021–2026)](sn-2021-2026.md) - Complete episode-level index of 84 Security Now (SN) episodes (2021–2026 dated episodes, ep 792–1105, 1,498,952 words).
-* [Security Now Episodes (Undated Legacy)](sn-undated.md) - Complete episode-level index of 572 Security Now (SN) episodes (legacy GRC.com episodes without a parseable header date, ep 13–1095, 9,013,524 words).
+* [Security Now Episodes (2005–2010)](sn-2005-2010.md) - Complete episode-level index of 281 Security Now (SN) episodes (2005–2010 episodes, ep 1–281, 3,193,301 words).
+* [Security Now Episodes (2011–2015)](sn-2011-2015.md) - Complete episode-level index of 256 Security Now (SN) episodes (2011–2015 episodes, ep 282–539, 3,921,674 words).
+* [Security Now Episodes (2016–2020)](sn-2016-2020.md) - Complete episode-level index of 254 Security Now (SN) episodes (2016–2020 episodes, ep 541–799, 3,944,729 words).
+* [Security Now Episodes (2021–2026)](sn-2021-2026.md) - Complete episode-level index of 303 Security Now (SN) episodes (2021–2026 episodes, ep 800–1105, 5,158,921 words).
 * [This Week in Tech Episodes (2005–2022)](twit-2015-2022.md) - Complete episode-level index of 245 This Week in Tech (TWIT) episodes (2005–2022 episodes, ep 1–906, 6,771,412 words).
 * [This Week in Tech Episodes (2023–2026)](twit-2023-2026.md) - Complete episode-level index of 168 This Week in Tech (TWIT) episodes (2023–2026 episodes, ep 817–1111, 5,823,589 words).
 * [Windows Weekly Episodes (2014–2023)](ww-2015-2023.md) - Complete episode-level index of 165 Windows Weekly (WW) episodes (2014–2023 episodes, ep 345–860, 4,601,073 words).

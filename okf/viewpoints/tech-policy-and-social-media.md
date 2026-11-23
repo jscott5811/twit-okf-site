@@ -3,7 +3,7 @@ type: viewpoint
 title: "Tech Policy and Social Media"
 description: "Cross-host viewpoints and verbatim quotes on antitrust enforcement, AI copyright, TikTok bans, Bluesky and the Fediverse, Meta, tariffs, and platform regulation."
 tags: [viewpoint, policy, antitrust, social-media, copyright, quotes]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -71,7 +71,7 @@ Every blockquote below is extracted verbatim from speaker-attributed turns in th
 
 > "Kevin followed his first Mastodon posting with a thread of posts which I've collapsed to read, he wrote: "I think my prior toot on Nightmare-Eclipse auto deleted. So to make a perm one," he said, "I suspect it's somebody who used to work at Microsoft, who departed after my era." — [Security Now](../shows/sn.md) #1079, 2026-05-22[^archive-data]
 
-> "But Facebook's top execs, including Zuck, refused to allow that to happen, so he said, I think this is not where I want to be. He's now very busy being an adjunct professor at Stanford's Freeman Spogli Institute, and a visiting scholar at the Hoover Institution." — [Security Now](../shows/sn.md) #762, Undated[^archive-data]
+> "But Facebook's top execs, including Zuck, refused to allow that to happen, so he said, I think this is not where I want to be. He's now very busy being an adjunct professor at Stanford's Freeman Spogli Institute, and a visiting scholar at the Hoover Institution." — [Security Now](../shows/sn.md) #762, 2020-04-14[^archive-data]
 
 ## [Leo Laporte](../people/leo-laporte.md)
 
@@ -123,7 +123,7 @@ TWiT hosts frequently cite external beat journalists, cryptographers, and indust
 
 > "I think it's worth reinforcing first the critical security principle Bruce Schneier captured when he wrote that: "Attacks always get better. They never get worse." Okay." — Cited by Steve, [Security Now](../shows/sn.md) #828, 2021-07-13[^archive-data]
 
-> "And we talked about Bruce Schneier's famous guess about, like, what year it would be. And he was right about the shape of the curve." — Cited by Steve, [Security Now](../shows/sn.md) #538, Undated[^archive-data]
+> "And we talked about Bruce Schneier's famous guess about, like, what year it would be. And he was right about the shape of the curve." — Cited by Steve, [Security Now](../shows/sn.md) #538, 2015-12-15[^archive-data]
 
 ### [Mark Gurman](../people/mark-gurman.md)
 
@@ -137,9 +137,9 @@ TWiT hosts frequently cite external beat journalists, cryptographers, and indust
 
 **Brian Krebs** (Cited Investigative Cybersecurity Journalist (Krebs on Security)) is regularly invoked by TWiT panelists to ground Tech Policy and Social Media reporting and analysis:[^archive-data]
 
-> "And in fact Brian Krebs's posting calls it "Bugs Money." But get this. The way Facebook is paying is unique." — Cited by Steve, [Security Now](../shows/sn.md) #331, Undated[^archive-data]
+> "And in fact Brian Krebs's posting calls it "Bugs Money." But get this. The way Facebook is paying is unique." — Cited by Steve, [Security Now](../shows/sn.md) #331, 2011-12-14[^archive-data]
 
-> ""Brian Krebs reports that hundreds of millions of Facebook users had their credentials logged in plaintext by various applications written by Facebook employees. Those credentials were searched" - and here's the point that - the numbers are just staggering." — Cited by Steve, [Security Now](../shows/sn.md) #995, Undated[^archive-data]
+> ""Brian Krebs reports that hundreds of millions of Facebook users had their credentials logged in plaintext by various applications written by Facebook employees. Those credentials were searched" - and here's the point that - the numbers are just staggering." — Cited by Steve, [Security Now](../shows/sn.md) #995, 2024-10-08[^archive-data]
 
 ## See Also
 

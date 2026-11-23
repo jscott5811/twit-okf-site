@@ -3,7 +3,7 @@ type: person
 title: "Ben Thompson"
 description: "Cited Tech Industry Analyst (Stratechery); referenced 212 times in spoken transcript text across 6 shows (2014–2026)."
 tags: [person, analyst, strategy, big-tech]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://stratechery.com/
+    title: "Stratechery official site"
 ---
 
 Ben Thompson is the founder and author of the technology strategy newsletter *Stratechery* (`stratechery.com`). Across [This Week in Tech](../shows/twit.md), [Macbreak Weekly](../shows/mbw.md), [Windows Weekly](../shows/ww.md), and [This Week in Google](../shows/twig.md), Thompson is one of the most frequently cited business-strategy analysts in the archive.[^archive-data][^dataset-doc]
 
 His frameworks—such as Aggregation Theory and platform-versus-aggregator dynamics—are regularly debated by TWiT panelists when evaluating Apple, Microsoft, Google, Meta, and AI incumbents.[^archive-data]
+
+Thompson writes technology business-strategy analysis at [Stratechery](https://stratechery.com/), frequently cited across TWiT panels on Big Tech aggregation and platform economics.[^official-site]
 
 # Quick Facts
 
@@ -54,7 +59,7 @@ Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](.
 | 2024 | 10 |
 | 2025 | 15 |
 | 2026 | 13 |
-| Undated (year 0) | 2 |
+| Legacy GRC SN chunks (dated in episodes/sn-*.md) | 2 |
 
 # Editorial Perspective & Signature Themes
 
@@ -121,3 +126,4 @@ In **AI and LLMs** discussions, Ben Thompson's reporting and arguments are cited
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: Stratechery official site

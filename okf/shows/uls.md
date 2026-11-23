@@ -5,8 +5,11 @@ description: "Untitled Linux Show (ULS) transcript archive covering 104 official
 tags: [twit, show, uls, linux-and-open-source, windows-and-microsoft, hardware-and-chips]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/untitled-linux-show"
+    title: "Official TWiT.tv show page for Untitled Linux Show"
   - id: "uls-md"
     resource: "local archive data/ULS_Transcripts_*.md"
     title: "Untitled Linux Show processed Markdown transcript chunks (8 files)"
@@ -21,17 +24,21 @@ sources:
     title: "Discovered TWiT YouTube channel video catalog"
 ---
 
-Untitled Linux Show is TWiT's weekly Linux and open-source roundtable examining Linux distributions, desktop environments (KDE, GNOME, Wayland), kernel releases, self-hosting, and hardware compatibility. Tracked in `fetch_transcripts.py` under file prefix `ULS`,[^show-map] **Untitled Linux Show** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **104** official HTML transcripts spanning episodes **153–280** across **2024–2026**.[^uls-html]
+Untitled Linux Show is TWiT's weekly Linux and open-source roundtable examining Linux distributions, desktop environments (KDE, GNOME, Wayland), kernel releases, self-hosting, and hardware compatibility. Launching **April 3, 2023 (originally Club TWiT before expanding publicly)** with its official show page at `https://twit.tv/shows/untitled-linux-show`,[^twit-show-page] **Untitled Linux Show** is tracked in `fetch_transcripts.py` under file prefix `ULS`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **104** official HTML transcripts spanning episodes **153–280** across **2024–2026**.[^uls-html]
 
-Those official transcripts are compiled into **8** NotebookLM-ready Markdown chunks totaling **1,668,729 words** (averaging **16,045 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^uls-md] The show's complete official episode-level index is available across [Untitled Linux Show Episodes](../episodes/uls.md).[^uls-md]
+Those official transcripts are compiled into **8** NotebookLM-ready Markdown chunks totaling **1,668,729 words** (averaging **16,045 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^uls-md] **Publication status:** Active on TWiT (hosted by Jonathan Bennett and rotating co-hosts).[^twit-show-page]
+
+Complete official episode-level index: [Untitled Linux Show Episodes](../episodes/uls.md).[^uls-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | Untitled Linux Show |
+| Official Page | https://twit.tv/shows/untitled-linux-show |
 | File Prefix | `ULS` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | April 3, 2023 (originally Club TWiT before expanding publicly) |
+| Publication Status | Active on TWiT (hosted by Jonathan Bennett and rotating co-hosts) |
 | Official HTML Transcripts | 104 |
 | Processed Markdown Chunks | 8 |
 | Total Official Words | 1,668,729 (avg 16,045 / ep) |
@@ -52,11 +59,11 @@ Within the local archive, Untitled Linux Show spans **2024–2026** (3 dated cal
 | 2025 | 52 | 821,301 | 184–235 |
 | 2026 | 22 | 383,262 | 236–280 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/ULS_Transcripts_*.md`.[^uls-md]
+Year-by-year counts derived from `data/ULS_Transcripts_*.md` episode `**Date:**` headers.[^uls-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `ULS_Transcripts_*.md` shows **Jonathan Bennett** as the most frequent attributed voice (**41** episodes, **5,698** turns, active **2024–2026**), followed by **Jeff Massie** (**35** episodes, **3,000** turns, **2024–2026**). Other recurring voices in the archive include Rob Campbell, Ken McDonald, Leo Laporte, David Ruggles. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^uls-md]
+Transcript speaker-turn analysis across `ULS_Transcripts_*.md` shows **Jonathan Bennett** as the most frequent attributed voice (**41** episodes, **5,698** turns, active **2024–2026**), followed by **Jeff Massie** (**35** episodes, **3,000** turns, **2024–2026**). Other recurring voices in the archive include Rob Campbell, Ken McDonald, Leo Laporte, David Ruggles. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^uls-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -119,6 +126,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **262** numb
 - [Linux & Open Source Viewpoints](../viewpoints/linux-and-open-source.md) - Cross-host viewpoint synthesis on this show's core domain.
 - [Linux & FOSS Ecosystem](../entities/linux-and-foss.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/untitled-linux-show` and TWiT program archive.
 [^uls-md]: Processed Markdown chunks matching `data/ULS_Transcripts_*.md` (8 files, 1,668,729 words).
 [^uls-html]: Raw HTML transcript files matching `data/ULS_*.html` (104 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"untitled linux show"` to `ULS`.

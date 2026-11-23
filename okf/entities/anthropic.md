@@ -3,7 +3,7 @@ type: entity
 title: "Anthropic"
 description: "AI safety and frontier model company behind Claude, Claude Code, and the Model Context Protocol (MCP), surging sharply in 2025–2026."
 tags: [entity, anthropic, claude, ai, mcp]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -14,6 +14,9 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: grc-sn
+    resource: https://www.grc.com/securitynow.htm
+    title: "GRC.com Security Now transcript archive"
 ---
 
 **Anthropic** is one of the fastest-rising entities in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), accumulating **4,875 combined mentions** (**4,865** across 14 of 17 active shows in official attributed transcripts plus **10** in unattributed YouTube caption backfills).[^archive-data][^yt-data][^dataset-doc] While legacy platform vendors such as [Apple](apple.md), [Google](google.md), and [Microsoft](microsoft.md) built their archive footprints over two decades of weekly broadcasting, Anthropic's corpus presence is almost entirely a post-2022 phenomenon—and overwhelmingly a 2025–2026 surge. Nearly four-fifths of all official Anthropic mentions (**3,838**, or **78.9%**) occur in 2025 and 2026 alone, making the company a defining bellwether of TWiT's transition into the agentic AI era.[^archive-data]
@@ -99,7 +102,7 @@ Keyword co-occurrence counts show that TWiT hosts discuss Anthropic's product br
 
 # Landmark & Highest-Density Episodes
 
-The eight highest-density Anthropic episodes in the archive all date from early 2026 (or undated 2026-era `SN` transcripts), underscoring how intensely the company dominated TWiT's editorial agenda during that stretch.[^archive-data] Six of the top eight are episodes of [Intelligent Machines](../shows/im.md), joined by two deep-dive installments of [Security Now](../shows/sn.md) (#1074 and #1093).
+The eight highest-density Anthropic episodes in the archive all aired in 2026, underscoring how intensely the company dominated TWiT's editorial agenda during that stretch.[^archive-data][^grc-sn] Six of the top eight are episodes of [Intelligent Machines](../shows/im.md), joined by two deep-dive installments of [Security Now](../shows/sn.md) (#1074 on 2026-04-14 and #1093 on 2026-08-25).
 
 - **`IM` #859 (Feb 25, 2026 — 104 mentions):** Featuring guest Jeff Atwood (co-creator of Stack Exchange and Discourse) alongside [Leo Laporte](../people/leo-laporte.md), [Paris Martineau](../people/paris-martineau.md), and [Jeff Jarvis](../people/jeff-jarvis.md), this episode represents the single highest concentration of Anthropic discussion in the archive, spanning the Pentagon standoff and Claude's cultural footprint. Martineau highlighted reporting on the defense talks:
   > "A defense official told Axios ahead of this meeting between the Pentagon and Anthropic officials, they said, quote, the only reason we're still talking to these people is we need them and we need them now. Speaking of Anthropic and Claude, the problem for these guys is that they are that good." — Paris Martineau `[IM #859, Feb 25th 2026, TS:00:55:32]`[^archive-data]
@@ -118,14 +121,14 @@ The eight highest-density Anthropic episodes in the archive all date from early 
 | Intelligent Machines | #860 | Mar 4th 2026 | Intelligent Machines 860 transcript | 83 |
 | Intelligent Machines | #853 | Jan 14th 2026 | Intelligent Machines 853 transcript | 78 |
 | Intelligent Machines | #865 | Apr 8th 2026 | Intelligent Machines 865 transcript | 77 |
-| Security Now | #1074 | Apr 14th 2026 | Security Now 1074 transcript | 72 |
-| Security Now | #1093 | Unknown Date | Security Now 1093 Transcript | 69 |
+| Security Now | #1074 | 2026-04-14 | Security Now 1074: What Mythos Means | 72 |
+| Security Now | #1093 | 2026-08-25 | Security Now 1093: Tokens in the Stream | 69 |
 
 # Archive Methodology & Caveats
 
 All figures in this entry derive from the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), which separates **577** official speaker-attributed Markdown transcript chunks (**3,350** episodes) from **28** unattributed YouTube caption backfill files (`data_youtube/`).[^archive-data][^yt-data][^dataset-doc] Because YouTube captions lack reliable speaker attribution and represent only **10** Anthropic mentions, per-show and product co-occurrence tables reflect official transcripts exclusively.
 
-Two caveats apply to Anthropic's temporal and keyword counts. First, **710** official mentions (**14.6%**) appear in episodes indexed as undated (`year == 0`), primarily recent [Security Now](../shows/sn.md) transcripts (such as #1093) whose source headers did not yield a standardized publication date; in practice, nearly all of those undated Anthropic mentions belong to 2024–2026 broadcasts rather than earlier eras.[^archive-data][^dataset-doc] Second, keyword matching aggregates exact-term occurrences of "Anthropic," "Claude," and related product phrases; the **4** pre-2020 official mentions reflect lexical collisions (such as the adjective "anthropic" or unrelated references to the name Claude) prior to the company's founding, and AI-generated 2026 transcripts occasionally introduce minor transcription spellings (e.g., "Claude, coworker" or phonetic guest names).[^archive-data]
+Two caveats apply to Anthropic's temporal and keyword counts. First, while episode-level dates and titles for [Security Now](../shows/sn.md) (such as #1093 on 2026-08-25) have been verified against GRC.com's annual archives, **710** official mentions (**14.6%**) in the year-by-year table above remain bucketed under `Undated (year 0)` because their underlying `data/SN_Transcripts_*.md` chunks carry `year == 0` filenames on disk; in practice, nearly all of those mentions belong to 2024–2026 broadcasts.[^archive-data][^grc-sn][^dataset-doc] Second, keyword matching aggregates exact-term occurrences of "Anthropic," "Claude," and related product phrases; the **4** pre-2020 official mentions reflect lexical collisions (such as the adjective "anthropic" or unrelated references to the name Claude) prior to the company's founding, and AI-generated 2026 transcripts occasionally introduce minor transcription spellings (e.g., "Claude, coworker" or phonetic guest names).[^archive-data]
 
 # See Also
 
@@ -139,3 +142,4 @@ Two caveats apply to Anthropic's temporal and keyword counts. First, **710** off
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^yt-data]: YouTube caption backfill transcripts (28 files, unattributed)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^grc-sn]: GRC.com Security Now transcript archive

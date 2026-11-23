@@ -5,8 +5,11 @@ description: "Intelligent Machines (IM) transcript archive covering 72 official 
 tags: [twit, show, im, ai-and-machine-learning, android-and-mobile, tech-policy-and-media]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/intelligent-machines"
+    title: "Official TWiT.tv show page for Intelligent Machines"
   - id: "im-md"
     resource: "local archive data/IM_Transcripts_*.md"
     title: "Intelligent Machines processed Markdown transcript chunks (11 files)"
@@ -18,17 +21,21 @@ sources:
     title: "TWiT Transcript Archiver SHOW_MAP configuration"
 ---
 
-Intelligent Machines is TWiT's dedicated weekly roundtable on artificial intelligence, large language models, robotics, and the societal impact of AI, continuing the episode numbering of This Week in Google starting at episode 805. Tracked in `fetch_transcripts.py` under file prefix `IM`,[^show-map] **Intelligent Machines** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **72** official HTML transcripts spanning episodes **805–897** across **2025–2026**.[^im-html]
+Intelligent Machines is TWiT's dedicated weekly roundtable on artificial intelligence, large language models, robotics, and the societal impact of AI, continuing the episode numbering of This Week in Google starting at episode 805. Launching **February 5, 2025 (Episode 805, rebranded from This Week in Google)** with its official show page at `https://twit.tv/shows/intelligent-machines`,[^twit-show-page] **Intelligent Machines** is tracked in `fetch_transcripts.py` under file prefix `IM`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **72** official HTML transcripts spanning episodes **805–897** across **2025–2026**.[^im-html]
 
-Those official transcripts are compiled into **11** NotebookLM-ready Markdown chunks totaling **2,457,006 words** (averaging **34,125 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^im-md] The show's complete official episode-level index is available across [Intelligent Machines Episodes](../episodes/im.md).[^im-md]
+Those official transcripts are compiled into **11** NotebookLM-ready Markdown chunks totaling **2,457,006 words** (averaging **34,125 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^im-md] **Publication status:** Active on TWiT (hosted by Leo Laporte, Jeff Jarvis, and Paris Martineau).[^twit-show-page]
+
+Complete official episode-level index: [Intelligent Machines Episodes](../episodes/im.md).[^im-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | Intelligent Machines |
+| Official Page | https://twit.tv/shows/intelligent-machines |
 | File Prefix | `IM` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | February 5, 2025 (Episode 805, rebranded from This Week in Google) |
+| Publication Status | Active on TWiT (hosted by Leo Laporte, Jeff Jarvis, and Paris Martineau) |
 | Official HTML Transcripts | 72 |
 | Processed Markdown Chunks | 11 |
 | Total Official Words | 2,457,006 (avg 34,125 / ep) |
@@ -39,7 +46,7 @@ Those official transcripts are compiled into **11** NotebookLM-ready Markdown ch
 
 ## History & Archive Evolution
 
-Within the local archive, Intelligent Machines spans **2025–2026** (2 dated calendar years), peaking in **2025** with **47** archived episodes (**1,612,759** words). The modern 2025–2026 era contributes **72** episodes (**2,457,006** words), reflecting TWiT's continuous publication of AI-assisted transcripts on `twit.tv`. Notably, Intelligent Machines launched at **Episode 805** as the direct continuation of [This Week in Google](twig.md) (which concluded its naming at Episode 804), so episodes 1–804 belong to `TWIG` rather than representing missing `IM` episodes.[^im-md]
+Within the local archive, Intelligent Machines spans **2025–2026** (2 dated calendar years), peaking in **2025** with **47** archived episodes (**1,612,759** words). The modern 2025–2026 era contributes **72** episodes (**2,457,006** words), reflecting TWiT's continuous publication of AI-assisted transcripts on `twit.tv`. Intelligent Machines officially launched on **February 5, 2025** at **Episode 805** as the direct continuation and rebrand of [This Week in Google](twig.md) (which concluded its naming at Episode 804), so episodes 1–804 belong to `TWIG` rather than representing missing `IM` episodes.[^im-md]
 
 ### Year-by-Year Breakdown
 
@@ -48,11 +55,11 @@ Within the local archive, Intelligent Machines spans **2025–2026** (2 dated ca
 | 2025 | 47 | 1,612,759 | 805–851 |
 | 2026 | 25 | 844,247 | 852–897 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/IM_Transcripts_*.md`.[^im-md]
+Year-by-year counts derived from `data/IM_Transcripts_*.md` episode `**Date:**` headers.[^im-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `IM_Transcripts_*.md` shows **Leo Laporte** as the most frequent attributed voice (**68** episodes, **26,419** turns, active **2025–2026**), followed by **Jeff Jarvis** (**66** episodes, **13,442** turns, **2025–2026**). Other recurring voices in the archive include Paris Martineau, Benito Gonzalez, TikTok, Mike Elgan. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^im-md]
+Transcript speaker-turn analysis across `IM_Transcripts_*.md` shows **Leo Laporte** as the most frequent attributed voice (**68** episodes, **26,419** turns, active **2025–2026**), followed by **Jeff Jarvis** (**66** episodes, **13,442** turns, **2025–2026**). Other recurring voices in the archive include Paris Martineau, Benito Gonzalez, TikTok, Mike Elgan. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^im-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -114,7 +121,7 @@ The milestones below highlight the chronological boundaries, longest transcript,
 
 ## Coverage Gaps & Backfill Status
 
-Because Intelligent Machines continues `TWIG`'s numbering at Episode 805, there are **0** pre-series missing episodes; **21** internal episode numbers are missing between 805 and 897 across the 241-page `twit.tv` crawl.[^im-html]
+Because Intelligent Machines continues `TWIG`'s numbering at Episode 805 (February 5, 2025), there are **0** pre-series missing episodes; **21** internal episode numbers are missing between 805 and 897 across the 241-page `twit.tv` crawl.[^im-html]
 
 ## See Also
 
@@ -126,6 +133,7 @@ Because Intelligent Machines continues `TWIG`'s numbering at Episode 805, there 
 - [NVIDIA](../entities/nvidia.md) - Entity profile and mention trends across the TWiT archive.
 - [Google](../entities/google.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/intelligent-machines` and TWiT program archive.
 [^im-md]: Processed Markdown chunks matching `data/IM_Transcripts_*.md` (11 files, 2,457,006 words).
 [^im-html]: Raw HTML transcript files matching `data/IM_*.html` (72 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"intelligent machines"` to `IM`.

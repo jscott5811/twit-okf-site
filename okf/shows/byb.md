@@ -5,8 +5,11 @@ description: "Before You Buy (BYB) transcript archive covering 62 official episo
 tags: [twit, show, byb, android-and-mobile, apple-ecosystem, windows-and-microsoft]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/before-you-buy"
+    title: "Official TWiT.tv show page for Before You Buy"
   - id: "byb-md"
     resource: "local archive data/BYB_Transcripts_*.md"
     title: "Before You Buy processed Markdown transcript chunks (3 files)"
@@ -18,17 +21,21 @@ sources:
     title: "TWiT Transcript Archiver SHOW_MAP configuration"
 ---
 
-Before You Buy is a TWiT network consumer hardware review show offering hands-on testing, product evaluations, and buying recommendations across smartphones, laptops, cameras, audio gear, and peripherals. Tracked in `fetch_transcripts.py` under file prefix `BYB`,[^show-map] **Before You Buy** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **62** official HTML transcripts spanning episodes **105–178** across **2014–2015**.[^byb-html]
+Before You Buy was a TWiT network consumer hardware review show offering hands-on testing, product evaluations, and buying recommendations across smartphones, laptops, cameras, audio gear, and peripherals. Launching **2011** with its official show page at `https://twit.tv/shows/before-you-buy`,[^twit-show-page] **Before You Buy** is tracked in `fetch_transcripts.py` under file prefix `BYB`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **62** official HTML transcripts spanning episodes **105–178** across **2014–2015**.[^byb-html]
 
-Those official transcripts are compiled into **3** NotebookLM-ready Markdown chunks totaling **501,469 words** (averaging **8,088 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^byb-md] The show's complete official episode-level index is available across [Before You Buy Episodes](../episodes/byb.md).[^byb-md]
+Those official transcripts are compiled into **3** NotebookLM-ready Markdown chunks totaling **501,469 words** (averaging **8,088 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^byb-md] **Publication status:** Retired on TWiT (final episode #204 aired December 18, 2015).[^twit-show-page]
+
+Complete official episode-level index: [Before You Buy Episodes](../episodes/byb.md).[^byb-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | Before You Buy |
+| Official Page | https://twit.tv/shows/before-you-buy |
 | File Prefix | `BYB` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | 2011 |
+| Publication Status | Retired on TWiT (final episode #204 aired December 18, 2015) |
 | Official HTML Transcripts | 62 |
 | Processed Markdown Chunks | 3 |
 | Total Official Words | 501,469 (avg 8,088 / ep) |
@@ -48,11 +55,11 @@ Within the local archive, Before You Buy spans **2014–2015** (2 dated calendar
 | 2014 | 40 | 319,735 | 105–151 |
 | 2015 | 22 | 181,734 | 152–178 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/BYB_Transcripts_*.md`.[^byb-md]
+Year-by-year counts derived from `data/BYB_Transcripts_*.md` episode `**Date:**` headers.[^byb-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `BYB_Transcripts_*.md` shows **Leo** as the most frequent attributed voice (**47** episodes, **3,743** turns, active **2014–2015**), followed by **Leo Laporte** (**47** episodes, **47** turns, **2014–2015**). Other recurring voices in the archive include Chad Johnson, Show Tease, Chad, Fr. Robert. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^byb-md]
+Transcript speaker-turn analysis across `BYB_Transcripts_*.md` shows **Leo** as the most frequent attributed voice (**47** episodes, **3,743** turns, active **2014–2015**), followed by **Leo Laporte** (**47** episodes, **47** turns, **2014–2015**). Other recurring voices in the archive include Chad Johnson, Show Tease, Chad, Fr. Robert. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^byb-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -124,6 +131,7 @@ Across the exhausted 241-page `twit.tv` transcript index, Before You Buy has **1
 - [Apple](../entities/apple.md) - Entity profile and mention trends across the TWiT archive.
 - [Google](../entities/google.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/before-you-buy` and TWiT program archive.
 [^byb-md]: Processed Markdown chunks matching `data/BYB_Transcripts_*.md` (3 files, 501,469 words).
 [^byb-html]: Raw HTML transcript files matching `data/BYB_*.html` (62 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"before you buy"` to `BYB`.

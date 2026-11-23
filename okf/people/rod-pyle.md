@@ -3,7 +3,7 @@ type: person
 title: "Rod Pyle"
 description: "Space Historian, Author & Co-Host of This Week in Space; appears as a speaker in 173 official episodes across 9 shows (2022–2026)."
 tags: [person, host, space, nasa]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: twit-network
+    resource: https://twit.tv/shows/this-week-in-space
+    title: "TWiT.tv This Week in Space official page"
 ---
 
 Rod Pyle is a space historian, author, editor-in-chief of *Ad Astra* magazine for the National Space Society, and co-host of [This Week in Space](../shows/twis.md) with [Tariq Malik](tariq-malik.md). Within the archive, Pyle anchors the [Space and Science](../topics/space-and-science.md) cluster, bridging Apollo-era spaceflight history with modern commercial launch developments.[^archive-data][^dataset-doc]
 
 In addition to hosting [This Week in Space](../shows/twis.md), Pyle appears across multiple TWiT programs to contextualize major NASA, SpaceX, and astronomy milestones.[^archive-data]
+
+Author, television producer, and Editor-in-Chief of *Ad Astra* magazine for the National Space Society, Pyle co-hosted *This Week in Space* (launched March 4, 2022) alongside Tariq Malik.[^twit-network]
 
 # Quick Facts
 
@@ -121,3 +126,4 @@ On **Cybersecurity and Privacy**, Rod Pyle's attributed on-air remarks reflect r
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^twit-network]: TWiT.tv This Week in Space official page

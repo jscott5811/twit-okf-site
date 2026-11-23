@@ -3,7 +3,7 @@ type: entity
 title: "Mozilla and the Open Web"
 description: "Mozilla Foundation, Firefox browser, W3C/IETF web standards, and open-web advocacy across browser privacy and ad-blocking debates."
 tags: [entity, mozilla, firefox, browsers, open-web]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -14,6 +14,9 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: grc-sn
+    resource: https://www.grc.com/securitynow.htm
+    title: "GRC.com Security Now transcript archive"
 ---
 
 **Mozilla and the Open Web** accumulates **9,315 combined mentions** in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md)—comprising **9,303 official transcript mentions** across 16 of 17 active shows and **12 unattributed YouTube caption backfill mentions**.[^archive-data][^yt-data][^dataset-doc] Within the corpus, the entity encompasses the Mozilla Foundation and Corporation, the Firefox browser and Gecko engine, the Thunderbird email client, ad-blocking extensions such as uBlock Origin, and open web standards bodies including the W3C and IETF.
@@ -97,10 +100,10 @@ The co-occurring sub-topic breakdown confirms that **Firefox** (**6,773 official
 
 Six of the eight highest-density episodes come from `Security Now`, joined by landmark 2025–2026 broadcasts of `Untitled Linux Show` and `Intelligent Machines`.[^archive-data]
 
-- **DNS-over-HTTPS & Torification (`SN #723`, `SN #724`, `SN #732`):** Spanning 53–62 mentions apiece, these episodes chronicle Mozilla's late-2010s protocol shifts. `SN #724` (with [Jason Howell](../people/jason-howell.md) guest-hosting) examined the *"Torification of Firefox,"* while `SN #723` and `SN #732` tracked listener feedback and OpenBSD's resistance to Mozilla's default DoH provider:
-  > "OpenBSD developer Peter Hessler tweeted that OpenBSD has disabled DoH in their Firefox package in the current and future releases as, and this is what he said: 'Sending all DNS traffic to Cloudflare by default is not a good idea.' So people are objecting to Mozilla's sort of default focus on a single DoH provider." — Steve Gibson `[Security Now #732, Undated]`
-- **Privacy Policy Meltdown & Manifest V2 (`SN #1015`, `ULS #191`):** On `ULS #191` (Feb 24th 2025; **64 mentions**), Jonathan Bennett, Rob Campbell, and Jeff Massie debated Mozilla's strategic priorities. On `SN #1015` (**83 mentions**), Steve Gibson juxtaposed the privacy-policy uproar with Mozilla's defense of ad-blocking extensions:
-  > "Mozilla has reasserted their commitment to Manifest V2, which allows all of us who are still using Mozilla's Firefox to stay with the full-strength uBlock Origin." — Steve Gibson `[Security Now #1015, Undated]`
+- **DNS-over-HTTPS & Torification (`SN #723`, `SN #724`, `SN #732`):** Spanning 53–62 mentions apiece across July–September 2019, these episodes chronicle Mozilla's late-2010s protocol shifts. `SN #724` (2019-07-23, *Hide Your RDP Now!*, with [Jason Howell](../people/jason-howell.md) guest-hosting) examined the *"Torification of Firefox,"* while `SN #723` (2019-07-16, *Encrypting DNS*) and `SN #732` (2019-09-17, *SIMjacking*) tracked listener feedback and OpenBSD's resistance to Mozilla's default DoH provider:[^archive-data][^grc-sn]
+  > "OpenBSD developer Peter Hessler tweeted that OpenBSD has disabled DoH in their Firefox package in the current and future releases as, and this is what he said: 'Sending all DNS traffic to Cloudflare by default is not a good idea.' So people are objecting to Mozilla's sort of default focus on a single DoH provider." — Steve Gibson `[Security Now #732, 2019-09-17]`
+- **Privacy Policy Meltdown & Manifest V2 (`SN #1015`, `ULS #191`):** On `ULS #191` (Feb 24th 2025; **64 mentions**), Jonathan Bennett, Rob Campbell, and Jeff Massie debated Mozilla's strategic priorities. On `SN #1015` (2025-03-04, *Spatial-Domain Wireless Jamming*; **83 mentions**), Steve Gibson juxtaposed the privacy-policy uproar with Mozilla's defense of ad-blocking extensions:[^archive-data][^grc-sn]
+  > "Mozilla has reasserted their commitment to Manifest V2, which allows all of us who are still using Mozilla's Firefox to stay with the full-strength uBlock Origin." — Steve Gibson `[Security Now #1015, 2025-03-04]`
 - **Mozilla's AI Manifesto (`IM #855`):** The densest Mozilla episode in the archive is `Intelligent Machines #855` (Jan 28th 2026; **114 mentions**), featuring Leo Laporte, [Jeff Jarvis](../people/jeff-jarvis.md), and Paris Martineau interviewing Mozilla.org president Mark Surman:
   > "How have you handled the backlash from users about kind of rolling out more AI centric tools, rolling out more advertising, even when it is couched in this well intentioned attempt to make up more private advertising experience? ... Firefox users are nerds by and large." — Paris Martineau `[Intelligent Machines #855, Jan 28th 2026, TS:01:28:27]`
   > "One of the reasons I use Firefox is really clear that with Chrome and the Chromium engine, it's developed by one of the largest ad companies in the world. And so their incentives, you know, Moving to manifest V3, for instance, really are in making sure that the ecosystem is good for their business. And that's not Firefox's incentive." — Leo Laporte `[Intelligent Machines #855, Jan 28th 2026, TS:01:42:29]`
@@ -108,17 +111,17 @@ Six of the eight highest-density episodes come from `Security Now`, joined by la
 | Show | Episode | Date | Title | Mentions |
 |---|---|---|---|---|
 | [Intelligent Machines](../shows/im.md) | #855 | Jan 28th 2026 | Intelligent Machines 855 transcript | 114 |
-| [Security Now](../shows/sn.md) | #1015 | Unknown Date | Security Now 1015 Transcript | 83 |
+| [Security Now](../shows/sn.md) | #1015 | 2025-03-04 | Security Now 1015: Spatial-Domain Wireless Jamming | 83 |
 | [Untitled Linux Show](../shows/uls.md) | #191 | Feb 24th 2025 | Untitled Linux Show 191 Transcript | 64 |
-| [Security Now](../shows/sn.md) | #724 | January 1, 2016 | Security Now 724 Transcript | 62 |
-| [Security Now](../shows/sn.md) | #723 | Unknown Date | Security Now 723 Transcript | 53 |
-| [Security Now](../shows/sn.md) | #732 | Unknown Date | Security Now 732 Transcript | 53 |
-| [Security Now](../shows/sn.md) | #986 | January 1, 1970 | Security Now 986 Transcript | 50 |
-| [Security Now](../shows/sn.md) | #1021 | Unknown Date | Security Now 1021 Transcript | 49 |
+| [Security Now](../shows/sn.md) | #724 | 2019-07-23 | Security Now 724: Hide Your RDP Now! | 62 |
+| [Security Now](../shows/sn.md) | #723 | 2019-07-16 | Security Now 723: Encrypting DNS | 53 |
+| [Security Now](../shows/sn.md) | #732 | 2019-09-17 | Security Now 732: SIMjacking | 53 |
+| [Security Now](../shows/sn.md) | #986 | 2024-08-06 | Security Now 986: How Revoking! | 50 |
+| [Security Now](../shows/sn.md) | #1021 | 2025-04-15 | Security Now 1021: Device Bound Session Credentials | 49 |
 
 # Archive Methodology & Caveats
 
-Counts draw from **577 official processed transcript chunks** (3,350 episodes) and **28 unattributed YouTube caption backfill files** documented in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) specification.[^archive-data][^yt-data][^dataset-doc] YouTube captions contribute only **12 mentions**, leaving **99.9%** in attributed official transcripts. Two metadata artifacts stem from legacy GRC `Security Now` transcripts: **3,903 mentions** fall into `Undated (year 0)` (including `#723`, `#732`, `#1015`, and `#1021`), and a few older `SN` transcripts carry placeholder dates (`January 1, 1970` on `#986`; `January 1, 2016` on `#724`), preserved verbatim from the archive index.
+Counts draw from **577 official processed transcript chunks** (3,350 episodes) and **28 unattributed YouTube caption backfill files** documented in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) specification.[^archive-data][^yt-data][^dataset-doc] YouTube captions contribute only **12 mentions**, leaving **99.9%** in attributed official transcripts. While every `Security Now` episode's date and title in the table above (including `#723`, `#724`, `#732`, `#986`, `#1015`, and `#1021`) has now been verified against GRC.com's annual indexes, **3,903 mentions** in the year-by-year table remain grouped under `Undated (year 0)` because their underlying `data/SN_Transcripts_*.md` chunks carry `year == 0` filenames on disk.[^archive-data][^grc-sn]
 
 # See Also
 
@@ -131,3 +134,4 @@ Counts draw from **577 official processed transcript chunks** (3,350 episodes) a
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^yt-data]: YouTube caption backfill transcripts (28 files, unattributed)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^grc-sn]: GRC.com Security Now transcript archive

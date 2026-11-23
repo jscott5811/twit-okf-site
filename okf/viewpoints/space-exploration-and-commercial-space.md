@@ -3,7 +3,7 @@ type: viewpoint
 title: "Space Exploration and Commercial Space"
 description: "Cross-host viewpoints and verbatim quotes on NASA, SpaceX Starship, Artemis lunar missions, Mars exploration, Boeing Starliner, and commercial spaceflight."
 tags: [viewpoint, space, nasa, spacex, artemis, quotes]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"

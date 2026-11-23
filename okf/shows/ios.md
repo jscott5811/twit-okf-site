@@ -5,8 +5,11 @@ description: "iOS Today (IOS) transcript archive covering 164 official episodes 
 tags: [twit, show, ios, concluded-run, apple-ecosystem, android-and-mobile, tech-policy-and-media]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/ios-today"
+    title: "Official TWiT.tv show page for iOS Today"
   - id: "ios-md"
     resource: "local archive data/IOS_Transcripts_*.md"
     title: "iOS Today processed Markdown transcript chunks (11 files)"
@@ -24,19 +27,21 @@ sources:
     title: "User editorial note confirming concluded TWiT show runs"
 ---
 
-iOS Today is a weekly TWiT show devoted to iPhone, iPad, iOS, iPadOS, watchOS, and Apple's app ecosystem, pairing platform news with curated app recommendations and automation workflows. Tracked in `fetch_transcripts.py` under file prefix `IOS`,[^show-map] **iOS Today** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **164** official HTML transcripts spanning episodes **580–828** across **2021–2026**.[^ios-html]
+iOS Today is a weekly TWiT show hosted by Mikah Sargent and Rosemary Orchard devoted to iPhone, iPad, iOS, iPadOS, watchOS, and Apple's app ecosystem, pairing platform news with curated app recommendations and automation workflows. Launching **2010 (originally launched as iPad Today)** with its official show page at `https://twit.tv/shows/ios-today`,[^twit-show-page] **iOS Today** is tracked in `fetch_transcripts.py` under file prefix `IOS`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **164** official HTML transcripts spanning episodes **580–828** across **2021–2026**.[^ios-html]
 
 Those official transcripts are compiled into **11** NotebookLM-ready Markdown chunks totaling **1,892,062 words** (averaging **11,536 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^ios-md] **Publication status:** iOS Today has completed its run and is no longer publishing new episodes.[^user-note]
 
-Complete episode-level index: [iOS Today Episodes](../episodes/ios.md).[^ios-md]
+Complete official episode-level index: [iOS Today Episodes](../episodes/ios.md).[^ios-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | iOS Today |
+| Official Page | https://twit.tv/shows/ios-today |
 | File Prefix | `IOS` |
-| Publication Status | Concluded run (no longer publishing) |
+| Original Launch | 2010 (originally launched as iPad Today) |
+| Publication Status | Concluded run (no longer publishing new episodes) |
 | Official HTML Transcripts | 164 |
 | Processed Markdown Chunks | 11 |
 | Total Official Words | 1,892,062 (avg 11,536 / ep) |
@@ -60,11 +65,11 @@ Within the local archive, iOS Today spans **2021–2026** (6 dated calendar year
 | 2025 | 49 | 385,315 | 734–783 |
 | 2026 | 20 | 175,847 | 784–828 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/IOS_Transcripts_*.md`.[^ios-md]
+Year-by-year counts derived from `data/IOS_Transcripts_*.md` episode `**Date:**` headers.[^ios-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `IOS_Transcripts_*.md` shows **Mikah Sargent** as the most frequent attributed voice (**96** episodes, **4,909** turns, active **2021–2026**), followed by **Rosemary Orchard** (**87** episodes, **3,768** turns, **2021–2026**). Other recurring voices in the archive include Jason Howell, Ant Pruitt, Dan Moren, Rod Pyle. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^ios-md]
+Transcript speaker-turn analysis across `IOS_Transcripts_*.md` shows **Mikah Sargent** as the most frequent attributed voice (**96** episodes, **4,909** turns, active **2021–2026**), followed by **Rosemary Orchard** (**87** episodes, **3,768** turns, **2021–2026**). Other recurring voices in the archive include Jason Howell, Ant Pruitt, Dan Moren, Rod Pyle. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^ios-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -137,6 +142,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **413** numb
 - [Apple Ecosystem & Antitrust Viewpoints](../viewpoints/apple-ecosystem-and-antitrust.md) - Cross-host viewpoint synthesis on this show's core domain.
 - [Apple](../entities/apple.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/ios-today` and TWiT program archive.
 [^ios-md]: Processed Markdown chunks matching `data/IOS_Transcripts_*.md` (11 files, 1,892,062 words).
 [^ios-html]: Raw HTML transcript files matching `data/IOS_*.html` (164 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"ios today"` to `IOS`.

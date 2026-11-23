@@ -3,7 +3,7 @@ type: person
 title: "Jonathan Bennett"
 description: "Open-Source Journalist & Host of Untitled Linux Show / FLOSS Weekly; appears as a speaker in 157 official episodes across 8 shows (2008–2026)."
 tags: [person, host, linux, open-source]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: twit-network
+    resource: https://twit.tv/shows/untitled-linux-show
+    title: "TWiT.tv Untitled Linux Show official page"
 ---
 
 Jonathan Bennett is an open-source journalist, Hackaday contributor, and host of both [Untitled Linux Show](../shows/uls.md) and [FLOSS Weekly](../shows/floss.md). He is the archive's central figure for [Linux and Open Source](../topics/linux-and-open-source.md), guiding weekly roundtables on kernel releases, desktop distributions, and open-source developer interviews.[^archive-data][^dataset-doc]
 
 Across his shows, Bennett documents the 2024–2026 surge in desktop Linux maturity, Wayland adoption, SteamOS/Linux gaming, and open-source licensing controversies.[^archive-data]
+
+A Hackaday writer and open-source advocate, Bennett hosts *Untitled Linux Show* (launched April 3, 2023 for Club TWiT) and continued *FLOSS Weekly* at Hackaday after its TWiT run concluded on December 13, 2023.[^twit-network]
 
 # Quick Facts
 
@@ -120,3 +125,4 @@ On **Cybersecurity and Privacy**, Jonathan Bennett's attributed on-air remarks r
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^twit-network]: TWiT.tv Untitled Linux Show official page

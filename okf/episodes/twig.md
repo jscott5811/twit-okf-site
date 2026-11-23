@@ -5,7 +5,7 @@ description: "Complete episode-level index of 194 This Week in Google (TWIG) epi
 tags: [twit, episodes, twig]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
   - id: "twig-md"
     resource: "local archive data/TWIG_Transcripts_*.md"

@@ -3,7 +3,7 @@ type: person
 title: "Tariq Malik"
 description: "Editor-in-Chief of Space.com & Co-Host of This Week in Space; appears as a speaker in 113 official episodes across 1 shows (2022–2026)."
 tags: [person, host, space, journalist]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://www.space.com/
+    title: "Space.com official site"
 ---
 
 Tariq Malik is the Editor-in-Chief of `space.com` and co-host of [This Week in Space](../shows/twis.md) alongside [Rod Pyle](rod-pyle.md). Within the archive, Malik drives weekly breaking spaceflight news coverage—making `space.com` one of the fastest-rising external domains in 2025–2026.[^archive-data][^dataset-doc]
 
 His reporting spans human spaceflight, commercial launch cadence, planetary science, and astronomy across the 2022–2026 archive.[^archive-data]
+
+Editor-in-Chief of [Space.com](https://www.space.com/), Malik co-hosted *This Week in Space* alongside Rod Pyle covering human spaceflight, commercial launches, and astronomy.[^official-site]
 
 # Quick Facts
 
@@ -112,3 +117,4 @@ On **Tech Policy and Social Media**, Tariq Malik's attributed on-air remarks ref
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: Space.com official site

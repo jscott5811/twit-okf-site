@@ -5,8 +5,11 @@ description: "FLOSS Weekly (FLOSS) transcript archive covering 73 official episo
 tags: [twit, show, floss, linux-and-open-source, cybersecurity-and-privacy, android-and-mobile]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/floss-weekly"
+    title: "Official TWiT.tv show page for FLOSS Weekly"
   - id: "floss-md"
     resource: "local archive data/FLOSS_Transcripts_*.md"
     title: "FLOSS Weekly processed Markdown transcript chunks (5 files)"
@@ -21,17 +24,21 @@ sources:
     title: "Discovered TWiT YouTube channel video catalog"
 ---
 
-FLOSS Weekly is a long-running TWiT interview show spotlighting free, libre, and open-source software projects, maintainers, foundations, and community-driven developer tools. Tracked in `fetch_transcripts.py` under file prefix `FLOSS`,[^show-map] **FLOSS Weekly** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **73** official HTML transcripts spanning episodes **688–761** across **2022–2023**.[^floss-html]
+FLOSS Weekly is a long-running interview show spotlighting free, libre, and open-source software projects, maintainers, foundations, and community-driven developer tools. Launching **2006** with its official show page at `https://twit.tv/shows/floss-weekly`,[^twit-show-page] **FLOSS Weekly** is tracked in `fetch_transcripts.py` under file prefix `FLOSS`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **73** official HTML transcripts spanning episodes **688–761** across **2022–2023**.[^floss-html]
 
-Those official transcripts are compiled into **5** NotebookLM-ready Markdown chunks totaling **907,812 words** (averaging **12,435 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^floss-md] The show's complete official episode-level index is available across [FLOSS Weekly Episodes](../episodes/floss.md).[^floss-md]
+Those official transcripts are compiled into **5** NotebookLM-ready Markdown chunks totaling **907,812 words** (averaging **12,435 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^floss-md] **Publication status:** Concluded TWiT run (final TWiT episode #761 aired December 13, 2023; later continued independently at Hackaday).[^twit-show-page]
+
+Complete official episode-level index: [FLOSS Weekly Episodes](../episodes/floss.md).[^floss-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | FLOSS Weekly |
+| Official Page | https://twit.tv/shows/floss-weekly |
 | File Prefix | `FLOSS` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | 2006 |
+| Publication Status | Concluded TWiT run (final TWiT episode #761 aired December 13, 2023; later continued independently at Hackaday) |
 | Official HTML Transcripts | 73 |
 | Processed Markdown Chunks | 5 |
 | Total Official Words | 907,812 (avg 12,435 / ep) |
@@ -51,11 +58,11 @@ Within the local archive, FLOSS Weekly spans **2022–2023** (2 dated calendar y
 | 2022 | 25 | 314,736 | 688–712 |
 | 2023 | 48 | 593,076 | 713–761 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/FLOSS_Transcripts_*.md`.[^floss-md]
+Year-by-year counts derived from `data/FLOSS_Transcripts_*.md` episode `**Date:**` headers.[^floss-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `FLOSS_Transcripts_*.md` shows **Doc Searls** as the most frequent attributed voice (**72** episodes, **2,860** turns, active **2022–2023**), followed by **Jonathan Bennett** (**37** episodes, **891** turns, **2022–2023**). Other recurring voices in the archive include Leo Laporte, Shawn Powers, Simon Phipps, Katherine Druckman. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^floss-md]
+Transcript speaker-turn analysis across `FLOSS_Transcripts_*.md` shows **Doc Searls** as the most frequent attributed voice (**72** episodes, **2,860** turns, active **2022–2023**), followed by **Jonathan Bennett** (**37** episodes, **891** turns, **2022–2023**). Other recurring voices in the archive include Leo Laporte, Shawn Powers, Simon Phipps, Katherine Druckman. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^floss-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -129,6 +136,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **122** numb
 - [Linux & FOSS Ecosystem](../entities/linux-and-foss.md) - Entity profile and mention trends across the TWiT archive.
 - [Mozilla & Open Web](../entities/mozilla-and-open-web.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/floss-weekly` and TWiT program archive.
 [^floss-md]: Processed Markdown chunks matching `data/FLOSS_Transcripts_*.md` (5 files, 907,812 words).
 [^floss-html]: Raw HTML transcript files matching `data/FLOSS_*.html` (73 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"floss weekly"` to `FLOSS`.

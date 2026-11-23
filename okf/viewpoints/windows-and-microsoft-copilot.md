@@ -3,7 +3,7 @@ type: viewpoint
 title: "Windows and Microsoft Copilot"
 description: "Cross-host viewpoints and verbatim quotes on Windows 11, Microsoft Copilot, Recall, Surface/ARM PCs, Xbox, and Microsoft's AI strategy."
 tags: [viewpoint, windows, microsoft, copilot, quotes]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -123,13 +123,13 @@ TWiT hosts frequently cite external beat journalists, cryptographers, and indust
 
 > "But when we recall Bruce Schneier's reminder - "Attacks never get weaker, they only ever get stronger" - you know, it seems like what might be a curiosity today could have the tendency to mature over time. So how to fix this?" — Cited by Steve, [Security Now](../shows/sn.md) #1051, 2026-11-17[^archive-data]
 
-> "Well, I've got a news flash for you. I also thought of Bruce Schneier recently in another context because I love to quote one of his pithy observations, which is "Attacks always get better; they never get worse." While that's kind of obvious, reminding ourselves of its truth serves as a nice reality check." — Cited by Steve, [Security Now](../shows/sn.md) #934, Undated[^archive-data]
+> "Well, I've got a news flash for you. I also thought of Bruce Schneier recently in another context because I love to quote one of his pithy observations, which is "Attacks always get better; they never get worse." While that's kind of obvious, reminding ourselves of its truth serves as a nice reality check." — Cited by Steve, [Security Now](../shows/sn.md) #934, 2023-08-08[^archive-data]
 
 ### [Brian Krebs](../people/brian-krebs.md)
 
 **Brian Krebs** (Cited Investigative Cybersecurity Journalist (Krebs on Security)) is regularly invoked by TWiT panelists to ground Windows and Microsoft Copilot reporting and analysis:[^archive-data]
 
-> "And I love Brian Krebs. The title of his blog post about this was "Java Update: Patch It or Pitch It." And so he said: "Oracle today released a security update for its Java platform that addresses at least 20 vulnerabilities in the software." — Cited by Steve, [Security Now](../shows/sn.md) #465, Undated[^archive-data]
+> "And I love Brian Krebs. The title of his blog post about this was "Java Update: Patch It or Pitch It." And so he said: "Oracle today released a security update for its Java platform that addresses at least 20 vulnerabilities in the software." — Cited by Steve, [Security Now](../shows/sn.md) #465, 2014-07-22[^archive-data]
 
 > "So I also, just as we were going to start recording the podcast, I saw a note from Brian Krebs talking about this is the second Tuesday of May. The podcast last week was May 1st, Mayday, the first Tuesday of the month." — Cited by Steve, [Security Now](../shows/sn.md) #662, 2018-05-12[^archive-data]
 

@@ -3,7 +3,7 @@ type: person
 title: "Cory Doctorow"
 description: "Author, EFF Special Advisor & Frequent TWiT Guest; referenced 160 times in spoken transcript text across 7 shows (2007–2026)."
 tags: [person, author, policy, digital-rights]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://pluralistic.net/
+    title: "Cory Doctorow Pluralistic blog"
 ---
 
 Cory Doctorow is a science-fiction author, journalist, Special Advisor to the Electronic Frontier Foundation (`eff.org`), and a recurring guest and widely cited thinker across the TWiT network. Both his on-air guest appearances and frequent host citations anchor the archive's debates on digital rights, platform decay, and antitrust.[^archive-data][^dataset-doc]
 
 In 2024–2026 transcripts, Doctorow's framework of "enshittification" has become a recurring shorthand across [This Week in Tech](../shows/twit.md), [Intelligent Machines](../shows/im.md), and [This Week in Google](../shows/twig.md).[^archive-data]
+
+Doctorow publishes daily commentary at [Pluralistic](https://pluralistic.net/) and serves as Special Advisor to the Electronic Frontier Foundation ([eff.org](https://www.eff.org/)).[^official-site]
 
 # Quick Facts
 
@@ -54,7 +59,7 @@ Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](.
 | 2024 | 17 |
 | 2025 | 33 |
 | 2026 | 34 |
-| Undated (year 0) | 30 |
+| Legacy GRC SN chunks (dated in episodes/sn-*.md) | 30 |
 
 # Editorial Perspective & Signature Themes
 
@@ -117,3 +122,4 @@ In **Windows and Microsoft Copilot** discussions, Cory Doctorow's reporting and 
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: Cory Doctorow Pluralistic blog

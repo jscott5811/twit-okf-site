@@ -3,7 +3,7 @@ type: person
 title: "Steve Gibson"
 description: "Security Researcher & Co-Host of Security Now; appears as a speaker in 1,150 official episodes across 5 shows (2005–2026)."
 tags: [person, host, security, grc]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: grc-archive
+    resource: https://www.grc.com/securitynow.htm
+    title: "GRC.com Security Now official transcript archive"
 ---
 
 Steve Gibson is a veteran computer security researcher, assembly-language programmer, founder of Gibson Research Corporation (`grc.com`), and co-host of [Security Now](../shows/sn.md) alongside [Leo Laporte](leo-laporte.md). Backed by GRC.com's complete historical transcript archive, Gibson's catalog is the longest-running continuous single-show record in the dataset, spanning from 2005 through 2026.[^archive-data][^dataset-doc]
 
 Gibson's weekly deep dives form the technical backbone of the archive's [Cybersecurity and Privacy](../topics/cybersecurity-and-privacy.md) coverage, translating low-level networking protocols, cryptographic primitives, browser internals, and zero-day CVEs into structured weekly briefings for IT professionals and security-minded listeners.[^archive-data]
+
+Gibson founded Gibson Research Corporation (`grc.com`), created SpinRite and ShieldsUP, and has co-hosted *Security Now* since its August 19, 2005 launch—with all 1,094 archived episodes now carrying verified GRC.com air dates.[^grc-archive]
 
 # Quick Facts
 
@@ -30,7 +35,7 @@ Gibson's weekly deep dives form the technical backbone of the archive's [Cyberse
 
 # Presence & Trajectory Across the TWiT Archive
 
-Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), Steve Gibson logs **1,150 speaker episodes** across 5 shows (133,126 attributed turns totaling 11,636,675 spoken words) and **6,732 spoken body mentions** across 17 shows.[^archive-data] Activity spans **2005–2026**, with 492 speaker episodes in 2005–2020, 45 in 2021–2024, and 41 in 2025–2026 (plus 572 in undated legacy transcripts). Note that unattributed YouTube caption backfills in `data_youtube/` are deliberately excluded from speaker-attributed counts.[^archive-data]
+Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), Steve Gibson logs **1,150 speaker episodes** across 5 shows (133,126 attributed turns totaling 11,636,675 spoken words) and **6,732 spoken body mentions** across 17 shows.[^archive-data] Activity spans **2005–2026**, with 492 speaker episodes in 2005–2020, 45 in 2021–2024, and 41 in 2025–2026 (with all 1,094 archived Security Now episodes now carrying verified GRC.com air dates). Note that unattributed YouTube caption backfills in `data_youtube/` are deliberately excluded from speaker-attributed counts.[^archive-data]
 
 ## Breakdown by Show
 
@@ -44,16 +49,15 @@ Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](.
 
 ## Activity by Era
 
-| Period | Speaker Episodes |
+| Period | Speaker Episodes (SN Verified via GRC.com) |
 |---|---|
-| 2005–2020 | 492 |
-| 2021 | 17 |
-| 2022 | 11 |
-| 2023 | 8 |
-| 2024 | 9 |
-| 2025 | 13 |
-| 2026 | 28 |
-| Undated (year 0) | 572 |
+| 2005–2020 | 791 |
+| 2021 | 52 |
+| 2022 | 51 |
+| 2023 | 50 |
+| 2024 | 52 |
+| 2025 | 52 |
+| 2026 | 46 |
 
 # Editorial Perspective & Signature Themes
 
@@ -70,11 +74,11 @@ All quotes below are extracted verbatim from speaker-attributed turns in the 3,3
 
 On **AI and LLMs**, Steve Gibson's attributed on-air remarks reflect recurring analytical priorities across multiple episodes:[^archive-data]
 
-> "I should note that I already have everything I need, thanks to today's ChatGPT 4.0. And it has changed my life for the better." — [Security Now](../shows/sn.md) #1001, Undated[^archive-data]
+> "I should note that I already have everything I need, thanks to today's ChatGPT 4.0. And it has changed my life for the better." — [Security Now](../shows/sn.md) #1001, 2024-11-19[^archive-data]
 
-> "I think that the most accurate and succinct way of describing what we're witnessing is that it is astonishing to see the degree to which a neural network using large language modeling, as exemplified by ChatGPT, is able to simulate intelligence. And I think that is the key concept to hold onto." — [Security Now](../shows/sn.md) #911, Undated[^archive-data]
+> "I think that the most accurate and succinct way of describing what we're witnessing is that it is astonishing to see the degree to which a neural network using large language modeling, as exemplified by ChatGPT, is able to simulate intelligence. And I think that is the key concept to hold onto." — [Security Now](../shows/sn.md) #911, 2023-02-21[^archive-data]
 
-> "So I think it's a combination of the effects of this LLM model temperature, different model training in detail, and difference in the specific prompting that the differing models are given. In other words, the use of LLMs for software vulnerability discovery is still very new, and there are still a great many variables that can affect its results." — [Security Now](../shows/sn.md) #1084, Undated[^archive-data]
+> "So I think it's a combination of the effects of this LLM model temperature, different model training in detail, and difference in the specific prompting that the differing models are given. In other words, the use of LLMs for software vulnerability discovery is still very new, and there are still a great many variables that can affect its results." — [Security Now](../shows/sn.md) #1084, 2026-06-23[^archive-data]
 
 ### [Windows and Microsoft Copilot](../viewpoints/windows-and-microsoft-copilot.md)
 
@@ -92,7 +96,7 @@ On **Cybersecurity and Privacy**, Steve Gibson's attributed on-air remarks refle
 
 > "The researcher said: 'I think it will take a while even for MSRC [Microsoft Security Research] to find the real root cause of the issue." I don't think so, but that's what he said." — [Security Now](../shows/sn.md) #1079, 2026-05-22[^archive-data]
 
-> "Something called Tailscale, T-A-I-L-S-C-A-L-E. As we know, WireGuard is widely, and I think appropriately and accurately, regarded as the logical and overdue successor to the venerable OpenVPN, and even to some degree IPSec, inasmuch as it can replace them both." — [Security Now](../shows/sn.md) #830, Undated[^archive-data]
+> "Something called Tailscale, T-A-I-L-S-C-A-L-E. As we know, WireGuard is widely, and I think appropriately and accurately, regarded as the logical and overdue successor to the venerable OpenVPN, and even to some degree IPSec, inasmuch as it can replace them both." — [Security Now](../shows/sn.md) #830, 2021-08-03[^archive-data]
 
 > "I think that a better way would be to notify the public on day zero that there are vulnerabilities and what is the impact, to notify the public and the vendor together, and not to disclose the actual technical details ever unless it's already fixed; to put the full public pressure on the vendor from the get-go, but to never put customers at risk." — [Security Now](../shows/sn.md) #655, 2018-03-20[^archive-data]
 
@@ -100,11 +104,11 @@ On **Cybersecurity and Privacy**, Steve Gibson's attributed on-air remarks refle
 
 On **Linux and Open Source**, Steve Gibson's attributed on-air remarks reflect recurring analytical priorities across multiple episodes:[^archive-data]
 
-> "He describes himself as - I think this was in his little short bio on GitHub: "Random infosec guy. Rainbow teamer." — [Security Now](../shows/sn.md) #830, Undated[^archive-data]
+> "He describes himself as - I think this was in his little short bio on GitHub: "Random infosec guy. Rainbow teamer." — [Security Now](../shows/sn.md) #830, 2021-08-03[^archive-data]
 
-> "So the news that I'm excited about - and Leo, I know you are excited about it - it was by far the most tweeted bit of news I was receiving last week is the news that Threema has decided to go open source, and also to welcome a new partner. They announced it, I think it was last Thursday." — [Security Now](../shows/sn.md) #783, Undated[^archive-data]
+> "So the news that I'm excited about - and Leo, I know you are excited about it - it was by far the most tweeted bit of news I was receiving last week is the news that Threema has decided to go open source, and also to welcome a new partner. They announced it, I think it was last Thursday." — [Security Now](../shows/sn.md) #783, 2020-09-08[^archive-data]
 
-> "And then he tweeted to me the link to "The Horror of LessPass" on the TWiT netcast network. And he sent me a link to the GitHub thread where he's completely explained his position." — [Security Now](../shows/sn.md) #587, Undated[^archive-data]
+> "And then he tweeted to me the link to "The Horror of LessPass" on the TWiT netcast network. And he sent me a link to the GitHub thread where he's completely explained his position." — [Security Now](../shows/sn.md) #587, 2016-11-22[^archive-data]
 
 # Frequently Cited Publications, Domains & Collaborators
 
@@ -120,3 +124,4 @@ On **Linux and Open Source**, Steve Gibson's attributed on-air remarks reflect r
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^grc-archive]: GRC.com Security Now official transcript archive

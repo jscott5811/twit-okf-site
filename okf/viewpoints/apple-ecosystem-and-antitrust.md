@@ -3,7 +3,7 @@ type: viewpoint
 title: "Apple Ecosystem and Antitrust"
 description: "Cross-host viewpoints and verbatim quotes on Apple hardware, iPhone, Mac, Apple Vision Pro, Apple Intelligence, App Store rules, and antitrust scrutiny."
 tags: [viewpoint, apple, ios, macos, antitrust, quotes]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -85,9 +85,9 @@ Every blockquote below is extracted verbatim from speaker-attributed turns in th
 
 **Steve Gibson** (Security Researcher & Co-Host of Security Now) brings a distinct recurring lens to Apple Ecosystem and Antitrust discussions across the archive:[^archive-data]
 
-> ""Since my iPhone locks out the fingerprint detector after a few failed attempts, I even used my passcode to allow people several additional attempts at gaining access. From my findings, I think I am happy that the fingerprint system is secure enough for me." — [Security Now](../shows/sn.md) #609, Undated[^archive-data]
+> ""Since my iPhone locks out the fingerprint detector after a few failed attempts, I even used my passcode to allow people several additional attempts at gaining access. From my findings, I think I am happy that the fingerprint system is secure enough for me." — [Security Now](../shows/sn.md) #609, 2017-04-25[^archive-data]
 
-> "We discussed previously Apple's official launch, well, actually announcement because it's going to be happening in iOS 16, their announcement of this very interesting new "Lockdown Mode" feature. And that was announced during this year's World Wide Developer Conference." — [Security Now](../shows/sn.md) #880, Undated[^archive-data]
+> "We discussed previously Apple's official launch, well, actually announcement because it's going to be happening in iOS 16, their announcement of this very interesting new "Lockdown Mode" feature. And that was announced during this year's World Wide Developer Conference." — [Security Now](../shows/sn.md) #880, 2022-07-19[^archive-data]
 
 ## [Paul Thurrott](../people/paul-thurrott.md)
 

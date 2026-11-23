@@ -5,7 +5,7 @@ description: "Complete episode-level index of 62 Before You Buy (BYB) episodes (
 tags: [twit, episodes, byb]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
   - id: "byb-md"
     resource: "local archive data/BYB_Transcripts_*.md"

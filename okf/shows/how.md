@@ -5,8 +5,11 @@ description: "Hands-On Windows (HOW) transcript archive covering 93 official epi
 tags: [twit, show, how, windows-and-microsoft, ai-and-machine-learning, android-and-mobile]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/hands-on-windows"
+    title: "Official TWiT.tv show page for Hands-On Windows"
   - id: "how-md"
     resource: "local archive data/HOW_Transcripts_*.md"
     title: "Hands-On Windows processed Markdown transcript chunks (3 files)"
@@ -21,17 +24,21 @@ sources:
     title: "Discovered TWiT YouTube channel video catalog"
 ---
 
-Hands-On Windows is a focused tutorial show hosted by Paul Thurrott covering Windows 11 configuration, Microsoft 365 productivity workflows, security settings, and system utilities. Tracked in `fetch_transcripts.py` under file prefix `HOW`,[^show-map] **Hands-On Windows** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **93** official HTML transcripts spanning episodes **92–216** across **2024–2026**.[^how-html]
+Hands-On Windows is a focused tutorial show hosted by Paul Thurrott covering Windows 11 configuration, Microsoft 365 productivity workflows, security settings, and system utilities. Launching **July 28, 2022 (Episode 1: The Zen of Windows 11)** with its official show page at `https://twit.tv/shows/hands-on-windows`,[^twit-show-page] **Hands-On Windows** is tracked in `fetch_transcripts.py` under file prefix `HOW`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **93** official HTML transcripts spanning episodes **92–216** across **2024–2026**.[^how-html]
 
-Those official transcripts are compiled into **3** NotebookLM-ready Markdown chunks totaling **294,110 words** (averaging **3,162 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^how-md] The show's complete official episode-level index is available across [Hands-On Windows Episodes](../episodes/how.md).[^how-md]
+Those official transcripts are compiled into **3** NotebookLM-ready Markdown chunks totaling **294,110 words** (averaging **3,162 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^how-md] **Publication status:** Active on TWiT (hosted by Paul Thurrott).[^twit-show-page]
+
+Complete official episode-level index: [Hands-On Windows Episodes](../episodes/how.md).[^how-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | Hands-On Windows |
+| Official Page | https://twit.tv/shows/hands-on-windows |
 | File Prefix | `HOW` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | July 28, 2022 (Episode 1: The Zen of Windows 11) |
+| Publication Status | Active on TWiT (hosted by Paul Thurrott) |
 | Official HTML Transcripts | 93 |
 | Processed Markdown Chunks | 3 |
 | Total Official Words | 294,110 (avg 3,162 / ep) |
@@ -52,11 +59,11 @@ Within the local archive, Hands-On Windows spans **2024–2026** (3 dated calend
 | 2025 | 47 | 142,906 | 121–170 |
 | 2026 | 21 | 75,606 | 171–216 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/HOW_Transcripts_*.md`.[^how-md]
+Year-by-year counts derived from `data/HOW_Transcripts_*.md` episode `**Date:**` headers.[^how-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `HOW_Transcripts_*.md` shows **Paul Thurrott** as the most frequent attributed voice (**89** episodes, **1,171** turns, active **2024–2026**), followed by **Leo Laporte** (**17** episodes, **79** turns, **2025–2026**). Other recurring voices in the archive include Micah Sargent, Mikah Sargent. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^how-md]
+Transcript speaker-turn analysis across `HOW_Transcripts_*.md` shows **Paul Thurrott** as the most frequent attributed voice (**89** episodes, **1,171** turns, active **2024–2026**), followed by **Leo Laporte** (**17** episodes, **79** turns, **2025–2026**). Other recurring voices in the archive include Micah Sargent, Mikah Sargent. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^how-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -117,6 +124,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **18** numbe
 - [Windows & Microsoft Copilot Viewpoints](../viewpoints/windows-and-microsoft-copilot.md) - Cross-host viewpoint synthesis on this show's core domain.
 - [Microsoft](../entities/microsoft.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/hands-on-windows` and TWiT program archive.
 [^how-md]: Processed Markdown chunks matching `data/HOW_Transcripts_*.md` (3 files, 294,110 words).
 [^how-html]: Raw HTML transcript files matching `data/HOW_*.html` (93 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"hands-on windows"` to `HOW`.

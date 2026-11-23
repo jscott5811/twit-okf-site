@@ -3,7 +3,7 @@ type: person
 title: "Jason Howell"
 description: "Former TWiT Host (All About Android, Tech News Weekly); appears as a speaker in 304 official episodes across 11 shows (2005–2026)."
 tags: [person, host, android, tech-news]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: twit-network
+    resource: https://twit.tv/
+    title: "TWiT.tv official network site"
 ---
 
 Jason Howell is a veteran tech podcaster and former TWiT host who anchored [All About Android](../shows/aaa.md) and co-hosted [Tech News Weekly](../shows/tnw.md) for years. Within the archive, Howell represents one of the primary voices for the Android mobile ecosystem, Google Pixel hardware, and daily tech news coverage across 10 shows.[^archive-data][^dataset-doc]
 
 Although his on-air presence in the TWiT archive tapers off after his departure from the network prior to 2025, his catalog remains a core reference for Android's maturation, foldable smartphones, and mobile app ecosystems.[^archive-data]
+
+Howell spent 13 years at TWiT as producer, technical director, and host of *Tech News Today*, *Tech News Weekly*, and *All About Android* (which concluded June 20, 2023) before departing TWiT staff in late 2023 to continue on *Android Faithful* and *Techsploder*.[^twit-network]
 
 # Quick Facts
 
@@ -58,7 +63,7 @@ Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](.
 | 2023 | 83 |
 | 2024 | 9 |
 | 2025 | 3 |
-| Undated (year 0) | 17 |
+| Legacy GRC SN chunks (dated in episodes/sn-*.md) | 17 |
 
 # Editorial Perspective & Signature Themes
 
@@ -125,3 +130,4 @@ On **Cybersecurity and Privacy**, Jason Howell's attributed on-air remarks refle
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^twit-network]: TWiT.tv official network site

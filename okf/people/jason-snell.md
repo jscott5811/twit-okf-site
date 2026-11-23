@@ -3,7 +3,7 @@ type: person
 title: "Jason Snell"
 description: "Founder of Six Colors & Macbreak Weekly Panelist; appears as a speaker in 176 official episodes across 3 shows (2012–2026)."
 tags: [person, panelist, apple, journalist]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://sixcolors.com/
+    title: "Six Colors official site"
 ---
 
 Jason Snell is the founder and editor of `sixcolors.com`, former editorial director of Macworld, and a core weekly panelist on [Macbreak Weekly](../shows/mbw.md). Across the archive, Snell provides historically grounded, analytical commentary on Apple's hardware transitions, developer relations, and media strategy.[^archive-data][^dataset-doc]
 
 His appearances span from the Intel Mac era through the Apple Silicon transition (M1–M5), Apple Vision Pro's debut, and Apple's 2024–2026 navigation of global antitrust enforcement and Apple Intelligence.[^archive-data]
+
+Formerly Editor-in-Chief of *Macworld*, Snell founded [Six Colors](https://sixcolors.com/) and joined the permanent panel of *MacBreak Weekly* in July 2022.[^official-site]
 
 # Quick Facts
 
@@ -116,3 +121,4 @@ On **AI and LLMs**, Jason Snell's attributed on-air remarks reflect recurring an
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: Six Colors official site

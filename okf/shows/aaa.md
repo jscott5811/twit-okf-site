@@ -5,8 +5,11 @@ description: "All About Android (AAA) transcript archive covering 51 official ep
 tags: [twit, show, aaa, android-and-mobile, apple-ecosystem, tech-policy-and-media]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/all-about-android"
+    title: "Official TWiT.tv show page for All About Android"
   - id: "aaa-md"
     resource: "local archive data/AAA_Transcripts_*.md"
     title: "All About Android processed Markdown transcript chunks (7 files)"
@@ -21,17 +24,21 @@ sources:
     title: "Discovered TWiT YouTube channel video catalog"
 ---
 
-All About Android is a TWiT network program dedicated to the Android mobile operating system, Google Pixel and Samsung Galaxy hardware, mobile applications, and developer news across the Google mobile ecosystem. Tracked in `fetch_transcripts.py` under file prefix `AAA`,[^show-map] **All About Android** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **51** official HTML transcripts spanning episodes **262–635** across **2021–2023**.[^aaa-html]
+All About Android was a TWiT network program dedicated to the Android mobile operating system, Google Pixel and Samsung Galaxy hardware, mobile applications, and developer news across the Google mobile ecosystem. Launching **2011** with its official show page at `https://twit.tv/shows/all-about-android`,[^twit-show-page] **All About Android** is tracked in `fetch_transcripts.py` under file prefix `AAA`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **51** official HTML transcripts spanning episodes **262–635** across **2021–2023**.[^aaa-html]
 
-Those official transcripts are compiled into **7** NotebookLM-ready Markdown chunks totaling **1,039,274 words** (averaging **20,377 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^aaa-md] The show's complete official episode-level index is available across [All About Android Episodes](../episodes/aaa.md).[^aaa-md]
+Those official transcripts are compiled into **7** NotebookLM-ready Markdown chunks totaling **1,039,274 words** (averaging **20,377 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^aaa-md] **Publication status:** Retired on TWiT (final episode #635 aired June 20, 2023).[^twit-show-page]
+
+Complete official episode-level index: [All About Android Episodes](../episodes/aaa.md).[^aaa-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | All About Android |
+| Official Page | https://twit.tv/shows/all-about-android |
 | File Prefix | `AAA` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | 2011 |
+| Publication Status | Retired on TWiT (final episode #635 aired June 20, 2023) |
 | Official HTML Transcripts | 51 |
 | Processed Markdown Chunks | 7 |
 | Total Official Words | 1,039,274 (avg 20,377 / ep) |
@@ -52,11 +59,11 @@ Within the local archive, All About Android spans **2021–2023** (3 dated calen
 | 2022 | 28 | 554,888 | 557–606 |
 | 2023 | 21 | 442,439 | 262–635 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/AAA_Transcripts_*.md`.[^aaa-md]
+Year-by-year counts derived from `data/AAA_Transcripts_*.md` episode `**Date:**` headers.[^aaa-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `AAA_Transcripts_*.md` shows **Jason Howell** as the most frequent attributed voice (**48** episodes, **6,665** turns, active **2021–2023**), followed by **Ron Richards** (**46** episodes, **3,856** turns, **2021–2023**). Other recurring voices in the archive include Huyen Tue Dao, Burke, JR Raphael, Ant Pruitt. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^aaa-md]
+Transcript speaker-turn analysis across `AAA_Transcripts_*.md` shows **Jason Howell** as the most frequent attributed voice (**48** episodes, **6,665** turns, active **2021–2023**), followed by **Ron Richards** (**46** episodes, **3,856** turns, **2021–2023**). Other recurring voices in the archive include Huyen Tue Dao, Burke, JR Raphael, Ant Pruitt. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^aaa-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -129,6 +136,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **396** numb
 - [Tech Policy & Social Media Viewpoints](../viewpoints/tech-policy-and-social-media.md) - Cross-host viewpoint synthesis on this show's core domain.
 - [Google](../entities/google.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/all-about-android` and TWiT program archive.
 [^aaa-md]: Processed Markdown chunks matching `data/AAA_Transcripts_*.md` (7 files, 1,039,274 words).
 [^aaa-html]: Raw HTML transcript files matching `data/AAA_*.html` (51 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"all about android"` to `AAA`.

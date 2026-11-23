@@ -3,7 +3,7 @@ type: dataset
 title: "TWiT Transcript Archive"
 description: "Complete local archive of 3,350 official TWiT.tv/GRC.com transcripts (577 NotebookLM-ready Markdown chunks, 64,082,577 words) plus 28 unattributed YouTube caption backfills."
 tags: [dataset, transcripts, twit, markdown, notebooklm, youtube-captions, archive]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -35,7 +35,7 @@ The **TWiT Transcript Archive** is a locally maintained, research-grade textual 
 
 Designed both for longitudinal media research and for ingestion into retrieval-augmented tools such as Google NotebookLM and the repository's local FastAPI/React chat interface, the dataset separates high-trust attributed transcripts (`data/`) from unattributed automated YouTube captions (`data_youtube/`).[^process-script][^yt-script] Across the 18 show prefixes registered in `SHOW_MAP` inside `fetch_transcripts.py` and `process_transcripts.py`, 17 shows carry official downloaded transcripts in `data/`, while [Ham Nation](../shows/ham.md) (`HAM`) has zero official TWiT.tv transcripts across all 241 index pages but 383 missing numbered episodes cataloged on YouTube (407 total channel videos listed in `data_youtube/_catalog.json`).[^fetch-script][^process-script][^yt-script]
 
-As an analytical foundation for this OKF v0.3 knowledge bundle, the archive captures a clear historical inflection in TWiT's publishing pipeline: early-era coverage (2005–2013) is anchored almost exclusively by GRC.com's verbatim [Security Now](../shows/sn.md) archive, followed by an initial multi-show transcription wave in 2014–2015, a sparser middle period in 2016–2020, and a massive network-wide expansion from 2022 through 2026 that peaks at 532 episodes and 8,651,521 spoken body words in 2025.[^archive-data]
+As an analytical foundation for this OKF v0.3 knowledge bundle, the archive captures a clear historical inflection in TWiT's publishing pipeline: early-era coverage (2005–2013) is anchored almost exclusively by GRC.com's verbatim [Security Now](../shows/sn.md) archive (51–53 episodes every year once verified against GRC's annual indexes), followed by an initial multi-show transcription wave in 2014–2015, a sparser middle period in 2016–2020, and a massive network-wide expansion from 2022 through 2026 that peaks at **572 episodes and 9,411,706 spoken body words across 13 active shows in 2025**.[^archive-data][^grc-sn]
 
 ## Quick Facts
 
@@ -56,45 +56,43 @@ As an analytical foundation for this OKF v0.3 knowledge bundle, the archive capt
 
 The temporal distribution of the TWiT Transcript Archive reflects the evolving transcription practices of both TWiT.tv and GRC.com rather than the raw broadcast output of the network.[^archive-data][^twit-transcripts][^grc-sn] Understanding these distinct coverage eras is essential when interpreting longitudinal mention counts across [Entities](../entities/index.md) and [Topics](../topics/index.md), because sharp year-over-year jumps often combine genuine editorial shifts (such as the post-2022 generative AI boom) with major expansions in transcript availability.[^archive-data]
 
-During the **GRC Foundation Era (2005–2013)**, virtually the entire dated corpus consists of [Security Now](../shows/sn.md) episodes backfilled from `https://www.grc.com/sn/sn-{ep}.htm`, where [Steve Gibson](../people/steve-gibson.md) maintained complete verbatim transcripts from the show's inception.[^fetch-script][^grc-sn][^archive-data] Annual volume during this decade averages 15 to 53 dated episodes per year, supplemented by 560 undated (`year == 0`) episodes and 12 legacy GRC files whose date parser picked up pre-2005 historical dates mentioned in header text.[^archive-data][^process-script]
+During the **GRC Foundation Era (2005–2013)**, virtually the entire corpus consists of [Security Now](../shows/sn.md) episodes backfilled from `https://www.grc.com/sn/sn-{ep}.htm`, where [Steve Gibson](../people/steve-gibson.md) maintained complete verbatim transcripts from Episode 1 (August 19, 2005).[^fetch-script][^grc-sn][^archive-data] Once all 1,094 archived `SN` episodes are verified against GRC.com's annual indexes—resolving 569 previously undated (`year == 0`) and misparsed-year raw chunk entries—every calendar year from 2006 through 2013 exhibits a complete weekly cadence of **51 to 53 episodes per year**.[^grc-sn][^archive-data]
 
-A **First Multi-Show Transcription Wave (2014–2015)** briefly broadened official TWiT.tv coverage to 7 active shows, yielding 273 episodes (4,243,302 spoken words) in 2014 and 176 episodes (3,134,442 spoken words) in 2015 before official site-wide transcription receded during the **Trough Era (2016–2020)**, when annual totals dropped to between 13 and 68 episodes across only 1 to 2 shows.[^archive-data]
+A **First Multi-Show Transcription Wave (2014–2015)** briefly broadened official TWiT.tv coverage to 7 active shows, yielding **306 episodes** (4,703,209 spoken words) in 2014 and **212 episodes** (3,698,235 spoken words) in 2015 before official site-wide transcription receded during the **Trough Era (2016–2020)**, when annual totals dropped to 51–105 episodes across only 1 to 2 shows (with 2018–2020 sustained solely by `SN`'s 51 annual broadcasts).[^archive-data][^grc-sn]
 
-Beginning in **2021** (33 episodes across 7 shows) and accelerating dramatically in **2022–2026**, TWiT.tv restored broad multi-show official transcription across 9 to 13 shows per year.[^archive-data] Annual output surged from 270 episodes (5.76 million spoken words) in 2022 to 341 episodes (7.57 million words) in 2023, 393 episodes (7.30 million words) in 2024, and an all-time archive peak of **532 episodes and 8,651,521 spoken body words across 13 active shows in 2025**, followed by 256 episodes (4,081,233 words) already indexed in 2026.[^archive-data]
+Beginning in **2021** (68 episodes across 7 shows) and accelerating dramatically in **2022–2026**, TWiT.tv restored broad multi-show official transcription across 9 to 13 shows per year.[^archive-data] Annual output surged from 310 episodes (6.27 million spoken words) in 2022 to 384 episodes (7.95 million words) in 2023, 436 episodes (7.95 million words) in 2024, and an all-time archive peak of **572 episodes and 9,411,706 spoken body words across 13 active shows in 2025**, followed by **274 episodes** (4,417,644 words) already indexed in 2026—with **0 undated official episodes** remaining across all 3,350 archived episodes.[^archive-data][^grc-sn]
 
 ## Year-by-Year Archive Volume
 
-Spoken body word counts below exclude `EP:/Date:/TS:/Speaker` line prefixes (total official Markdown file word count including prefixes is 64,082,577 across 577 chunks).[^archive-data]
+Episode counts and spoken body word counts below reflect all **3,350 official episodes** mapped to their verified calendar years (including all 1,094 [Security Now](../shows/sn.md) episodes verified against GRC.com annual indexes, eliminating the legacy `Pre-2005` and `Undated (year 0)` buckets).[^archive-data][^grc-sn] Spoken line counts exclude `EP:/Date:/TS:/Speaker` prefixes (total official Markdown file word count including prefixes and headers is 64,082,577 across 577 chunks).[^archive-data]
 
 | Year | Episodes | Spoken Body Words | Active Shows |
 |---|---|---|---|
-| Pre-2005 (misparsed GRC dates) | 12 | 169,553 | 1 |
-| 2005 | 24 | 171,237 | 2 |
-| 2006 | 43 | 330,379 | 1 |
-| 2007 | 42 | 397,514 | 1 |
-| 2008 | 53 | 641,768 | 1 |
-| 2009 | 52 | 635,116 | 1 |
-| 2010 | 48 | 568,101 | 1 |
-| 2011 | 37 | 477,243 | 1 |
-| 2012 | 17 | 213,378 | 1 |
-| 2013 | 15 | 205,550 | 1 |
-| 2014 | 273 | 4,243,302 | 7 |
-| 2015 | 176 | 3,134,442 | 7 |
-| 2016 | 68 | 1,482,296 | 2 |
-| 2017 | 57 | 1,181,665 | 2 |
-| 2018 | 13 | 178,464 | 1 |
-| 2019 | 16 | 226,854 | 1 |
-| 2020 | 19 | 258,467 | 1 |
-| 2021 | 33 | 625,077 | 7 |
-| 2022 | 270 | 5,756,177 | 9 |
-| 2023 | 341 | 7,573,691 | 10 |
-| 2024 | 393 | 7,297,319 | 11 |
-| 2025 | 532 | 8,651,521 | 13 |
-| 2026 | 256 | 4,081,233 | 12 |
-| Undated (year 0) | 560 | 8,116,253 | 1 |
-| **Official Total (`data/`)** | **3,350** | **56,616,600** | **17** |
+| 2005 | 21 | 116,950 | 2 |
+| 2006 | 52 | 410,720 | 1 |
+| 2007 | 52 | 489,536 | 1 |
+| 2008 | 52 | 619,903 | 1 |
+| 2009 | 53 | 646,014 | 1 |
+| 2010 | 52 | 603,775 | 1 |
+| 2011 | 52 | 669,988 | 1 |
+| 2012 | 51 | 649,818 | 1 |
+| 2013 | 51 | 720,611 | 1 |
+| 2014 | 306 | 4,703,209 | 7 |
+| 2015 | 212 | 3,698,235 | 7 |
+| 2016 | 105 | 2,076,857 | 2 |
+| 2017 | 94 | 1,740,365 | 2 |
+| 2018 | 51 | 710,799 | 1 |
+| 2019 | 51 | 719,882 | 1 |
+| 2020 | 51 | 655,990 | 1 |
+| 2021 | 68 | 1,089,115 | 7 |
+| 2022 | 310 | 6,273,373 | 9 |
+| 2023 | 384 | 7,951,962 | 10 |
+| 2024 | 436 | 7,946,569 | 11 |
+| 2025 | 572 | 9,411,706 | 13 |
+| 2026 | 274 | 4,417,644 | 12 |
+| **Official Total (`data/`)** | **3,350** | **56,323,021** | **17** |
 | **YouTube Caption Backfill (`data_youtube/`)** | **28** | **729,525** | **1** |
-| **Combined Total** | **3,378** | **57,346,125** | **17** |
+| **Combined Total** | **3,378** | **57,052,546** | **17** |
 
 # Schema & Storage Architecture
 
@@ -131,7 +129,7 @@ During initial batch extraction via `youtube-transcript-api`, **28 episodes** of
 Researchers and agents consuming this dataset should account for four documented structural caveats:
 
 - **GRC.com Security Now backfill:** Whenever `SN` is fetched, `fetch_transcripts.py` automatically downloads missing [Security Now](../shows/sn.md) episodes (`1..max_ep`) from `https://www.grc.com/sn/sn-{ep}.htm` (using 3-digit zero-padded IDs below episode 1000) and wraps the GRC table HTML into the standard parser format.[^fetch-script][^grc-sn]
-- **Unparsed dates (`year == 0`) & legacy GRC date artifacts:** Exactly 145 chunks covering 560 episodes fall back to `{PREFIX}_Transcripts_{START}-{END}.md` naming when date extraction returns `0`, and 12 legacy GRC.com [Security Now](../shows/sn.md) files carry pre-2005 years parsed from historical references in the episode header.[^archive-data][^process-script]
+- **Disk-level `year == 0` chunks vs. resolved OKF dates:** On disk, `process_transcripts.py` writes 145 fallback `{PREFIX}_Transcripts_{START}-{END}.md` chunks whenever automated HTML date parsing returns `0` (primarily legacy GRC.com [Security Now](../shows/sn.md) transcripts). In this OKF bundle, all **1,094** archived `SN` episodes (including all 569 previously undated or misparsed-year files) have been verified against GRC.com's annual indexes (`2005–2026`), leaving **0 undated official episodes** across the 3,350-episode catalog.[^archive-data][^process-script][^grc-sn]
 - **Concluded shows (no longer publishing new episodes):** Per editorial confirmation recorded on 2026-11-23, three TWiT shows have completed their runs and are no longer publishing new episodes: [iOS Today](../shows/ios.md) (`IOS`, archived), [Hands-On Tech](../shows/hot.md) (`HOT`, archived), and **Home Theater Geeks** (not in `fetch_transcripts.py`'s `SHOW_MAP`; 0 transcripts in `data/`).[^user-note][^fetch-script]
 - **Stale chunk cleanup before rebuilds:** Because chunk filenames encode start and end episode numbers (`<START>_<END>.md`), older `data/*_Transcripts_*.md` files must be removed before re-running `process_transcripts.py` so overlapping episode ranges do not duplicate word counts or search hits.[^process-script]
 

@@ -5,8 +5,11 @@ description: "Tech News Weekly (TNW) transcript archive covering 182 official ep
 tags: [twit, show, tnw, apple-ecosystem, android-and-mobile, tech-policy-and-media]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/tech-news-weekly"
+    title: "Official TWiT.tv show page for Tech News Weekly"
   - id: "tnw-md"
     resource: "local archive data/TNW_Transcripts_*.md"
     title: "Tech News Weekly processed Markdown transcript chunks (11 files)"
@@ -21,17 +24,21 @@ sources:
     title: "Discovered TWiT YouTube channel video catalog"
 ---
 
-Tech News Weekly is TWiT's weekly technology journalism program featuring interviews with reporters, researchers, and analysts behind the week's biggest stories in AI, big tech, hardware, and digital policy. Tracked in `fetch_transcripts.py` under file prefix `TNW`,[^show-map] **Tech News Weekly** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **182** official HTML transcripts spanning episodes **215–464** across **2022–2026**.[^tnw-html]
+Tech News Weekly is TWiT's weekly technology journalism program featuring interviews with reporters, researchers, and analysts behind the week's biggest stories in AI, big tech, hardware, and digital policy. Launching **October 5, 2017 (Episode 1: Tears of Joy in VR)** with its official show page at `https://twit.tv/shows/tech-news-weekly`,[^twit-show-page] **Tech News Weekly** is tracked in `fetch_transcripts.py` under file prefix `TNW`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **182** official HTML transcripts spanning episodes **215–464** across **2022–2026**.[^tnw-html]
 
-Those official transcripts are compiled into **11** NotebookLM-ready Markdown chunks totaling **2,190,660 words** (averaging **12,036 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^tnw-md] The show's complete official episode-level index is available across [Tech News Weekly Episodes](../episodes/tnw.md).[^tnw-md]
+Those official transcripts are compiled into **11** NotebookLM-ready Markdown chunks totaling **2,190,660 words** (averaging **12,036 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^tnw-md] **Publication status:** Active on TWiT (hosted by Mikah Sargent).[^twit-show-page]
+
+Complete official episode-level index: [Tech News Weekly Episodes](../episodes/tnw.md).[^tnw-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | Tech News Weekly |
+| Official Page | https://twit.tv/shows/tech-news-weekly |
 | File Prefix | `TNW` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | October 5, 2017 (Episode 1: Tears of Joy in VR) |
+| Publication Status | Active on TWiT (hosted by Mikah Sargent) |
 | Official HTML Transcripts | 182 |
 | Processed Markdown Chunks | 11 |
 | Total Official Words | 2,190,660 (avg 12,036 / ep) |
@@ -54,11 +61,11 @@ Within the local archive, Tech News Weekly spans **2022–2026** (5 dated calend
 | 2025 | 51 | 602,577 | 368–418 |
 | 2026 | 22 | 243,130 | 419–464 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/TNW_Transcripts_*.md`.[^tnw-md]
+Year-by-year counts derived from `data/TNW_Transcripts_*.md` episode `**Date:**` headers.[^tnw-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `TNW_Transcripts_*.md` shows **Mikah Sargent** as the most frequent attributed voice (**157** episodes, **6,795** turns, active **2022–2026**), followed by **Jason Howell** (**55** episodes, **2,095** turns, **2022–2025**). Other recurring voices in the archive include Jennifer Pattison Tuohy, Leo Laporte, Dan Moren, Abrar Al-Heeti. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^tnw-md]
+Transcript speaker-turn analysis across `TNW_Transcripts_*.md` shows **Mikah Sargent** as the most frequent attributed voice (**157** episodes, **6,795** turns, active **2022–2026**), followed by **Jason Howell** (**55** episodes, **2,095** turns, **2022–2025**). Other recurring voices in the archive include Jennifer Pattison Tuohy, Leo Laporte, Dan Moren, Abrar Al-Heeti. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^tnw-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -133,6 +140,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **50** numbe
 - [OpenAI](../entities/openai.md) - Entity profile and mention trends across the TWiT archive.
 - [Meta & Social Platforms](../entities/meta-and-social-platforms.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/tech-news-weekly` and TWiT program archive.
 [^tnw-md]: Processed Markdown chunks matching `data/TNW_Transcripts_*.md` (11 files, 2,190,660 words).
 [^tnw-html]: Raw HTML transcript files matching `data/TNW_*.html` (182 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"tech news weekly"` to `TNW`.

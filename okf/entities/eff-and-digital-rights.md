@@ -3,7 +3,7 @@ type: entity
 title: "EFF and Digital Rights"
 description: "Electronic Frontier Foundation, Internet Archive, CISA, and digital civil-liberties advocacy spanning encryption, copyright, and privacy."
 tags: [entity, eff, privacy, digital-rights, cisa]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -14,6 +14,9 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: grc-sn
+    resource: https://www.grc.com/securitynow.htm
+    title: "GRC.com Security Now transcript archive"
 ---
 
 **EFF and Digital Rights** represents the institutional civil-liberties, digital preservation, and public-interest cybersecurity cluster in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), accumulating **2,358 combined mentions** (**2,333** across 14 of 17 active shows in official speaker-attributed transcripts plus **25** in unattributed YouTube caption backfills).[^archive-data][^yt-data][^dataset-doc] Rather than tracking a single commercial vendor, this entity groups the primary advocacy groups, public-interest archives, and standards or defense agencies that TWiT hosts cite when analyzing online privacy, encryption, copyright, and vulnerability disclosure—chiefly the **Electronic Frontier Foundation (EFF)**, the **Cybersecurity and Infrastructure Security Agency (CISA)**, the **Internet Archive**, **NIST**, and the **ACLU**.[^archive-data]
@@ -102,28 +105,28 @@ Seven of the eight highest-density episodes for **EFF and Digital Rights** come 
 - **`SN` #1070 (Mar 17, 2026 — 55 mentions):** The highest-density episode in the archive features [Steve Gibson](../people/steve-gibson.md) and [Leo Laporte](../people/leo-laporte.md) tackling encryption erosion and router-level malware proxies. In the opening tease, Laporte framed the stakes directly:
   > "A social media company, another one, says no to strong encryption. That's not a good sign. There is a problem with proxies serving malware, and it might even be coming from your router." — Leo Laporte `[SN #1070, Mar 17th 2026, TS:00:00:00]`[^archive-data]
 - **`TNW` #352 (Sep 5, 2024 — 38 mentions):** Hosted by [Mikah Sargent](../people/mikah-sargent.md) with guests including [Mark Gurman](../people/mark-gurman.md), Abrar Al-Heeti, and Kate Knibbs, this episode stands as the highest-density non-`SN` broadcast for digital-rights and preservation topics in the archive.[^archive-data]
-- **`SN` #1022 (Unknown Date — 32 mentions) & `SN` #1032 (Jun 4, 2025 — 29 mentions):** Episode #1022 documented the rescue of MITRE's CVE program alongside CISA disclosures regarding Oracle and state-sponsored intrusions, while #1032 examined Let's Encrypt dropping email notifications, Lyon's migration from Windows to Linux, and web fingerprinting resistance.[^archive-data]
-- **`SN` #404 (May 17, 2013 — 26 mentions) & `SN` #461 (Jun 24, 2014 — 26 mentions):** These two landmark early episodes showcase TWiT's enduring affinity for the EFF's public-interest work. On #404, guest host Iyaz Akhtar praised the EFF for exposing Facebook's third-party data-broker links, and Gibson called the organization "our friends who are really doing a great job of watching our back":
-  > "And then that they link to your online life, the fact that EFF is shining a light on it is fantastic, although I'm very curious if we'll ever get something as easy as a one-site opt-out process." — Iyaz Akhtar `[SN #404, May 17, 2013]`[^archive-data]
-  A year later on #461, Laporte contrasted commercial ISP access-point networks with the EFF's Open Wireless campaign:
-  > "If they can blanket, and they have in many towns, blanket that town with Comcast access points, now they can do a phone service. There's all sorts of stuff they can do. And so there's a commercial incentive that the EFF lacks. Their only incentive is altruism." — Leo Laporte `[SN #461, June 24, 2014]`[^archive-data]
+- **`SN` #1022 (2025-04-22 — 32 mentions) & `SN` #1032 (2025-07-01 — 29 mentions):** Episode #1022 (*Windows Sandbox*) documented the rescue of MITRE's CVE program alongside CISA disclosures regarding Oracle and state-sponsored intrusions, while #1032 (*Pervasive Web Fingerprinting*) examined Let's Encrypt dropping email notifications, Lyon's migration from Windows to Linux, and web fingerprinting resistance.[^archive-data][^grc-sn]
+- **`SN` #404 (2013-05-15 — 26 mentions) & `SN` #461 (2014-06-24 — 26 mentions):** These two landmark early episodes showcase TWiT's enduring affinity for the EFF's public-interest work. On #404 (*How Facebook Monetizes*), guest host Iyaz Akhtar praised the EFF for exposing Facebook's third-party data-broker links, and Gibson called the organization "our friends who are really doing a great job of watching our back":
+  > "And then that they link to your online life, the fact that EFF is shining a light on it is fantastic, although I'm very curious if we'll ever get something as easy as a one-site opt-out process." — Iyaz Akhtar `[SN #404, 2013-05-15]`[^archive-data][^grc-sn]
+  A year later on #461 (*Listener Feedback #190*), Laporte contrasted commercial ISP access-point networks with the EFF's Open Wireless campaign:
+  > "If they can blanket, and they have in many towns, blanket that town with Comcast access points, now they can do a phone service. There's all sorts of stuff they can do. And so there's a commercial incentive that the EFF lacks. Their only incentive is altruism." — Leo Laporte `[SN #461, 2014-06-24]`[^archive-data][^grc-sn]
 
 | Show | Episode | Date | Title | Mentions |
 |---|---|---|---|---|
-| Security Now | #1070 | Mar 17th 2026 | Security Now 1070 transcript | 55 |
+| Security Now | #1070 | 2026-03-17 | Security Now 1070: CISA's Free Internet Scanning | 55 |
 | Tech News Weekly | #352 | Sep 5th 2024 | Tech News Weekly 352 Transcript | 38 |
-| Security Now | #1022 | Unknown Date | Security Now 1022 Transcript | 32 |
-| Security Now | #1032 | June 4, 2025 | Security Now 1032 Transcript | 29 |
-| Security Now | #404 | May 17, 2013 | Security Now 404 Transcript | 26 |
-| Security Now | #461 | June 24, 2014 | Security Now 461 Transcript | 26 |
-| Security Now | #1077 | May 11, 2026 | Security Now 1077 Transcript | 26 |
-| Security Now | #1095 | Unknown Date | Security Now 1095 Transcript | 23 |
+| Security Now | #1022 | 2025-04-22 | Security Now 1022: Windows Sandbox | 32 |
+| Security Now | #1032 | 2025-07-01 | Security Now 1032: Pervasive Web Fingerprinting | 29 |
+| Security Now | #404 | 2013-05-15 | Security Now 404: How Facebook Monetizes | 26 |
+| Security Now | #461 | 2014-06-24 | Security Now 461: Listener Feedback #190 | 26 |
+| Security Now | #1077 | 2026-05-11 | Security Now 1077: A Browser AI API? | 26 |
+| Security Now | #1095 | 2026-09-08 | Security Now 1095: AI-Driven Expertise Loss | 23 |
 
 # Archive Methodology & Caveats
 
 All statistics in this entry are computed from the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), spanning **577** official speaker-attributed Markdown transcript chunks (**3,350** episodes) and **28** unattributed YouTube caption backfill files (`data_youtube/`).[^archive-data][^yt-data][^dataset-doc] Per-show counts, co-occurring organization totals, and episode density rankings reflect official transcripts only, while YouTube captions add **25** mentions to the combined total.
 
-Two structural caveats shape the interpretation of this entity's numbers. First, **950** official mentions (**40.7%**) fall into the undated (`year == 0`) category—the second-highest undated proportion among major archive entities—because [Security Now](../shows/sn.md) generates two-thirds of the entity's volume and includes hundreds of GRC-sourced transcripts (including recent installments such as #1022 and #1095) whose source headers lack a parsed publication date.[^archive-data][^dataset-doc] Second, legacy GRC transcripts (such as `SN` #404 and #461) were manually transcribed without per-utterance timestamps, so verbatim quotes from those episodes carry episode and date provenance without `TS:HH:MM:SS` markers. Finally, because this entity aggregates multiple distinct organizations (EFF, CISA, Internet Archive, NIST, ACLU), its trend line reflects both civil-liberties advocacy and federal cybersecurity reporting combined.[^archive-data]
+Two structural caveats shape the interpretation of this entity's numbers. First, while episode-level dates and titles for [Security Now](../shows/sn.md) (including #1022 on 2025-04-22 and #1095 on 2026-09-08) have been verified against GRC.com's annual archives, **950** official mentions (**40.7%**) in the year-by-year table remain grouped under `Undated (year 0)` because their underlying `data/SN_Transcripts_*.md` chunks carry `year == 0` filenames on disk.[^archive-data][^grc-sn][^dataset-doc] Second, legacy GRC transcripts (such as `SN` #404 and #461) were manually transcribed without per-utterance timestamps, so verbatim quotes from those episodes carry episode and date provenance without `TS:HH:MM:SS` markers. Finally, because this entity aggregates multiple distinct organizations (EFF, CISA, Internet Archive, NIST, ACLU), its trend line reflects both civil-liberties advocacy and federal cybersecurity reporting combined.[^archive-data]
 
 # See Also
 
@@ -137,3 +140,4 @@ Two structural caveats shape the interpretation of this entity's numbers. First,
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^yt-data]: YouTube caption backfill transcripts (28 files, unattributed)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^grc-sn]: GRC.com Security Now transcript archive

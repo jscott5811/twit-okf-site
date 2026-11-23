@@ -3,7 +3,7 @@ type: topic
 title: "AI and Machine Learning"
 description: "Fastest-growing topic cluster across the TWiT archive, led by LLMs, OpenAI, Anthropic Claude, Microsoft Copilot, AI agents, and coding assistants."
 tags: [topic, ai, llm, openai, anthropic, copilot, agents]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -14,6 +14,9 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: grc-sn
+    resource: https://www.grc.com/securitynow.htm
+    title: "GRC.com Security Now transcript archive"
 ---
 
 **AI and Machine Learning** is the fastest-growing topic cluster in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), spanning 3,350 official episodes (577 processed Markdown chunks) alongside 28 unattributed YouTube caption backfills.[^archive-data][^yt-data][^dataset-doc] Broad artificial intelligence references reach 55,843 mentions across 16 of 17 official shows all-time, with 30,063 of those mentions concentrated in the 2025–2026 window across all 13 active shows.[^archive-data] What began before 2020 as an occasional background subject in general technology and security discussions transformed after 2022 into an all-encompassing editorial beat spanning large language models (LLMs), autonomous agents, AI-assisted software development, local model inference, enterprise productivity suites, and AI security risks.[^archive-data]
@@ -84,13 +87,13 @@ By contrast, [Security Now](../shows/sn.md) approaches AI from a systems-archite
 
 The highest-signal episodes in the AI and Machine Learning cluster are split exclusively between [Security Now](../shows/sn.md) and [Intelligent Machines](../shows/im.md), illustrating how security threat analysis and dedicated AI news coverage jointly anchor the archive's deepest discussions.[^archive-data]
 
-At the top of the list sits Security Now #1011 (191 keyword hits; metadata dated `Unknown Date`, though Laporte's recorded intro identifies it as Tuesday, February 4th, 2025, titled *"Jailbreaking AI"*). Laporte opens by noting that *"It's almost all AI, all the time"* as Gibson examines AI jailbreaking and local inference.[^archive-data] Highlighting the impact of open-weight models on self-hosting, Gibson observes:
+At the top of the list sits Security Now #1011 (191 keyword hits; 2025-02-04, *"Jailbreaking AI"*). Laporte opens by noting that *"It's almost all AI, all the time"* as Gibson examines AI jailbreaking and local inference.[^archive-data][^grc-sn] Highlighting the impact of open-weight models on self-hosting, Gibson observes:
 
-> "And Leo, I will be talking about this later. But one of the things that DeepSeek has done has given people to run the models locally." — Steve Gibson [Security Now #1011, Unknown Date (recorded Feb 4th 2025), TS:N/A][^archive-data]
+> "And Leo, I will be talking about this later. But one of the things that DeepSeek has done has given people to run the models locally." — Steve Gibson [Security Now #1011, 2025-02-04, TS:N/A][^archive-data][^grc-sn]
 
-Security Now #1093 (157 hits; metadata `Unknown Date`, recorded Tuesday, August 25th, 2026, titled *"Tokens in the Stream"*) extends that technical critique to a paper arguing that the underlying mechanism of an LLM is inherently insecure, while #1100 (135 hits, Oct 13th 2026) examines maliciously trained AI alongside a listener's ESP32-plus-LLM Halloween project. In #1100, Gibson underscores the unresolved safety challenge:
+Security Now #1093 (157 hits; 2026-08-25, *"Tokens in the Stream"*) extends that technical critique to a paper arguing that the underlying mechanism of an LLM is inherently insecure, while #1100 (135 hits; 2026-10-13, *"Booby Trapping LLMs"*) examines maliciously trained AI alongside a listener's ESP32-plus-LLM Halloween project. In #1100, Gibson underscores the unresolved safety challenge:
 
-> "I don't think we have. I just think it's ultimately, we're going to— they're going to be turned— well, what we heard from OpenAI's chief scientist is that we really can't go much further until we get this under control." — Steve Gibson [Security Now #1100, Oct 13th 2026, TS:00:40:04][^archive-data]
+> "I don't think we have. I just think it's ultimately, we're going to— they're going to be turned— well, what we heard from OpenAI's chief scientist is that we really can't go much further until we get this under control." — Steve Gibson [Security Now #1100, 2026-10-13, TS:00:40:04][^archive-data][^grc-sn]
 
 On the product and culture side, a four-week run of Intelligent Machines in February–March 2026 (#857 through #860) captures the rapid maturation of coding agents and vendor competition. In #858 (152 hits, Feb 18th 2026), Laporte, Jarvis, and PC Magazine's Emily Forlini cover OpenClaw creator Peter Steinberger joining OpenAI amid fierce Anthropic competition, with Forlini noting that OpenAI had narrowed from broad image and video spectacle because *"Now this week. They just want to compete with Anthropic."*[^archive-data] One week later, in #859 (174 hits, Feb 25th 2026, featuring Stack Exchange and Discourse creator Jeff Atwood), Laporte demonstrates Claude Code's new remote control feature while Martineau recounts an alarming agentic incident:
 
@@ -100,17 +103,17 @@ In #860 (150 hits, Mar 4th 2026), guest host Jason Hiner joins Jarvis, Martineau
 
 | Show | Episode | Date | Title | Keyword Hits |
 |---|---|---|---|---|
-| [Security Now](../shows/sn.md) | #1011 | Unknown Date | Security Now 1011 Transcript | 191 |
+| [Security Now](../shows/sn.md) | #1011 | 2025-02-04 | Security Now 1011: Jailbreaking AI | 191 |
 | [Intelligent Machines](../shows/im.md) | #859 | Feb 25th 2026 | Intelligent Machines 859 transcript | 174 |
-| [Security Now](../shows/sn.md) | #1093 | Unknown Date | Security Now 1093 Transcript | 157 |
+| [Security Now](../shows/sn.md) | #1093 | 2026-08-25 | Security Now 1093: Tokens in the Stream | 157 |
 | [Intelligent Machines](../shows/im.md) | #858 | Feb 18th 2026 | Intelligent Machines 858 transcript | 152 |
 | [Intelligent Machines](../shows/im.md) | #860 | Mar 4th 2026 | Intelligent Machines 860 transcript | 150 |
-| [Security Now](../shows/sn.md) | #1100 | Oct 13th 2026 | Security Now 1100 transcript | 135 |
+| [Security Now](../shows/sn.md) | #1100 | 2026-10-13 | Security Now 1100: Booby Trapping LLMs | 135 |
 | [Intelligent Machines](../shows/im.md) | #857 | Feb 11th 2026 | Intelligent Machines 857 transcript | 132 |
 
 # Archive Methodology & Caveats
 
-Counts in this article combine automated keyword matching across 3,350 official speaker-attributed transcripts (`data/*_Transcripts_*.md`) and 28 unattributed YouTube caption backfills (`data_youtube/*/*_yt.md`), as documented in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) specification.[^archive-data][^yt-data][^dataset-doc] Several caveats apply when interpreting trends. First, undated GRC legacy transcripts—including high-signal [Security Now](../shows/sn.md) episodes such as #1011 and #1093—parse as `Unknown Date` (`year == 0`) in automated date pipelines even when their spoken intros state a recording date, meaning their hits appear in all-time totals and episode rankings rather than in annual buckets.[^archive-data][^dataset-doc] Second, official transcript coverage is thinner in 2020–2021 than in 2023–2026, amplifying the apparent steepness of post-2022 growth.[^dataset-doc] Third, later 2026 official transcripts carry an AI-generated transcription notice, and broad keyword patterns (such as `AI`) capture both dedicated technical segments and passing references.[^archive-data]
+Counts in this article combine automated keyword matching across 3,350 official speaker-attributed transcripts (`data/*_Transcripts_*.md`) and 28 unattributed YouTube caption backfills (`data_youtube/*/*_yt.md`), as documented in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) specification.[^archive-data][^yt-data][^dataset-doc] Several caveats apply when interpreting trends. First, while episode-level dates and titles for [Security Now](../shows/sn.md) (including #1011 on 2025-02-04 and #1093 on 2026-08-25) have been verified against GRC.com's annual archives, raw `data/SN_Transcripts_*.md` chunks lacking parsed date headers (`year == 0` on disk) are counted in all-time totals and episode rankings rather than in the annual trend table above.[^archive-data][^grc-sn][^dataset-doc] Second, official transcript coverage is thinner in 2020–2021 than in 2023–2026, amplifying the apparent steepness of post-2022 growth.[^dataset-doc] Third, later 2026 official transcripts carry an AI-generated transcription notice, and broad keyword patterns (such as `AI`) capture both dedicated technical segments and passing references.[^archive-data]
 
 # See Also
 
@@ -124,3 +127,4 @@ Counts in this article combine automated keyword matching across 3,350 official 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^yt-data]: YouTube caption backfill transcripts (28 files, unattributed)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^grc-sn]: GRC.com Security Now transcript archive

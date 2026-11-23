@@ -3,7 +3,7 @@ type: person
 title: "Jeff Jarvis"
 description: "Journalism Professor & Co-Host of Intelligent Machines / This Week in Google; appears as a speaker in 251 official episodes across 3 shows (2009–2026)."
 tags: [person, host, media, ai, policy]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://www.jeffjarvis.com/
+    title: "Jeff Jarvis official site"
 ---
 
 Jeff Jarvis is a journalism professor, media critic, author, and longtime co-host of [This Week in Google](../shows/twig.md) and its successor [Intelligent Machines](../shows/im.md) alongside [Leo Laporte](leo-laporte.md) and [Paris Martineau](paris-martineau.md). Spanning from the 2014–2015 Google/web era through 2025–2026 AI debates, Jarvis anchors the archive's coverage of journalism, internet governance, and platform policy.[^archive-data][^dataset-doc]
 
 His participation tracks the evolution of the show itself—from Google's search and cloud dominance to the rise of generative AI, decentralized social networks, and global tech regulation.[^archive-data]
+
+Jarvis is a journalism professor at the City University of New York (CUNY), author of *What Would Google Do?* and *Public Parts*, and co-host of *Intelligent Machines* (rebranded from *This Week in Google* on February 5, 2025) and *AI Inside*.[^official-site]
 
 # Quick Facts
 
@@ -117,3 +122,4 @@ On **Cybersecurity and Privacy**, Jeff Jarvis's attributed on-air remarks reflec
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: Jeff Jarvis official site

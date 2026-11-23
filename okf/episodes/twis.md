@@ -5,7 +5,7 @@ description: "Complete episode-level index of 121 This Week in Space (TWIS) epis
 tags: [twit, episodes, twis]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
   - id: "twis-md"
     resource: "local archive data/TWIS_Transcripts_*.md"

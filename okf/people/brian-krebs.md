@@ -3,7 +3,7 @@ type: person
 title: "Brian Krebs"
 description: "Cited Investigative Cybersecurity Journalist (Krebs on Security); referenced 189 times in spoken transcript text across 6 shows (2005–2026)."
 tags: [person, journalist, cybersecurity]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://krebsonsecurity.com/
+    title: "Krebs on Security official blog"
 ---
 
 Brian Krebs is an investigative cybersecurity journalist and founder of *Krebs on Security* (`krebsonsecurity.com`). Across the archive, Krebs is one of the primary external investigative sources cited on [Security Now](../shows/sn.md), [This Week in Tech](../shows/twit.md), and [Windows Weekly](../shows/ww.md).[^archive-data][^dataset-doc]
 
 His reporting on cybercrime syndicates, ransomware groups, SIM-swapping rings, and major corporate data breaches frequently serves as the starting point for TWiT security segments.[^archive-data]
+
+Krebs publishes independent cybercrime and breach investigations at [Krebs on Security](https://krebsonsecurity.com/).[^official-site]
 
 # Quick Facts
 
@@ -54,7 +59,7 @@ Across the 3,350 official attributed episodes in the [TWiT Transcript Archive](.
 | 2024 | 2 |
 | 2025 | 1 |
 | 2026 | 2 |
-| Undated (year 0) | 90 |
+| Legacy GRC SN chunks (dated in episodes/sn-*.md) | 90 |
 
 # Editorial Perspective & Signature Themes
 
@@ -73,19 +78,19 @@ In **Cybersecurity and Privacy** discussions, Brian Krebs's reporting and argume
 
 > "Brian Krebs, writing about this month's consequences for his Krebs on Security blog, wrote, Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software." — Cited by Steve Gibson, [Security Now](../shows/sn.md) #1096, 2026-09-15, TS:00:10:22[^archive-data]
 
-> "And I love Brian Krebs. The title of his blog post about this was "Java Update: Patch It or Pitch It." And so he said: "Oracle today released a security update for its Java platform that addresses at least 20 vulnerabilities in the software." — Cited by Steve, [Security Now](../shows/sn.md) #465, Undated[^archive-data]
+> "And I love Brian Krebs. The title of his blog post about this was "Java Update: Patch It or Pitch It." And so he said: "Oracle today released a security update for its Java platform that addresses at least 20 vulnerabilities in the software." — Cited by Steve, [Security Now](../shows/sn.md) #465, 2014-07-22[^archive-data]
 
-> "In this case, last week's topic, the "Three Dumb Routers" topic, was of overwhelming interest because I think it's clear to everyone, in fact, Brian Krebs has his most recent posting is about this. And it just happened, and I didn't have a chance to look at it, so I've got it bookmarked for next week." — Cited by Steve, [Security Now](../shows/sn.md) #546, Undated[^archive-data]
+> "In this case, last week's topic, the "Three Dumb Routers" topic, was of overwhelming interest because I think it's clear to everyone, in fact, Brian Krebs has his most recent posting is about this. And it just happened, and I didn't have a chance to look at it, so I've got it bookmarked for next week." — Cited by Steve, [Security Now](../shows/sn.md) #546, 2016-02-09[^archive-data]
 
 ### [Windows and Microsoft Copilot](../viewpoints/windows-and-microsoft-copilot.md)
 
 In **Windows and Microsoft Copilot** discussions, Brian Krebs's reporting and arguments are cited across TWiT panels:[^archive-data]
 
-> "And I love Brian Krebs. The title of his blog post about this was "Java Update: Patch It or Pitch It." And so he said: "Oracle today released a security update for its Java platform that addresses at least 20 vulnerabilities in the software." — Cited by Steve, [Security Now](../shows/sn.md) #465, Undated[^archive-data]
+> "And I love Brian Krebs. The title of his blog post about this was "Java Update: Patch It or Pitch It." And so he said: "Oracle today released a security update for its Java platform that addresses at least 20 vulnerabilities in the software." — Cited by Steve, [Security Now](../shows/sn.md) #465, 2014-07-22[^archive-data]
 
 > "So I also, just as we were going to start recording the podcast, I saw a note from Brian Krebs talking about this is the second Tuesday of May. The podcast last week was May 1st, Mayday, the first Tuesday of the month." — Cited by Steve, [Security Now](../shows/sn.md) #662, 2018-05-12[^archive-data]
 
-> "Several people, including Brian Krebs, noted that this has now been moved into one of the more popular all-in-one hacker kits. So it's now in a toolkit." — Cited by Steve, [Security Now](../shows/sn.md) #274, Undated[^archive-data]
+> "Several people, including Brian Krebs, noted that this has now been moved into one of the more popular all-in-one hacker kits. So it's now in a toolkit." — Cited by Steve, [Security Now](../shows/sn.md) #274, 2010-11-11[^archive-data]
 
 ### [Apple Ecosystem and Antitrust](../viewpoints/apple-ecosystem-and-antitrust.md)
 
@@ -93,19 +98,19 @@ In **Apple Ecosystem and Antitrust** discussions, Brian Krebs's reporting and ar
 
 > "Brian Krebs has found, essentially, a rapid increase in this. So this is the sort of - and the way he does, he's dug back in and has determined that it's organized crime, often located in Russia, that are attempting to phish owners' Apple login credentials in order to first unlock, then examine, and then ultimately wipe and resell these phones." — Cited by Steve, [Security Now](../shows/sn.md) #603, 2017-03-14[^archive-data]
 
-> "And in Oracle's fixes, Brian Krebs noted that Oracle patched 14 security flaws, only 11 of which were patched by Apple. So he didn't know, and I don't know why." — Cited by Steve, [Security Now](../shows/sn.md) #357, Undated[^archive-data]
+> "And in Oracle's fixes, Brian Krebs noted that Oracle patched 14 security flaws, only 11 of which were patched by Apple. So he didn't know, and I don't know why." — Cited by Steve, [Security Now](../shows/sn.md) #357, 2012-06-13[^archive-data]
 
-> "For example, they're not using SMS, that is, simple texting on phones because, as we've discussed with Brian Krebs's SWATing adventure or misadventure last week, cell phone is prone to spoofing, and SMS messages can be spoofed and have been spoofed. And so it's better, if you have an infrastructure you can use, not to fall back on cell phones." — Cited by Steve, [Security Now](../shows/sn.md) #397, Undated[^archive-data]
+> "For example, they're not using SMS, that is, simple texting on phones because, as we've discussed with Brian Krebs's SWATing adventure or misadventure last week, cell phone is prone to spoofing, and SMS messages can be spoofed and have been spoofed. And so it's better, if you have an infrastructure you can use, not to fall back on cell phones." — Cited by Steve, [Security Now](../shows/sn.md) #397, 2013-03-27[^archive-data]
 
 ### [Tech Policy and Social Media](../viewpoints/tech-policy-and-social-media.md)
 
 In **Tech Policy and Social Media** discussions, Brian Krebs's reporting and arguments are cited across TWiT panels:[^archive-data]
 
-> "And in fact Brian Krebs's posting calls it "Bugs Money." But get this. The way Facebook is paying is unique." — Cited by Steve, [Security Now](../shows/sn.md) #331, Undated[^archive-data]
+> "And in fact Brian Krebs's posting calls it "Bugs Money." But get this. The way Facebook is paying is unique." — Cited by Steve, [Security Now](../shows/sn.md) #331, 2011-12-14[^archive-data]
 
-> ""Brian Krebs reports that hundreds of millions of Facebook users had their credentials logged in plaintext by various applications written by Facebook employees. Those credentials were searched" - and here's the point that - the numbers are just staggering." — Cited by Steve, [Security Now](../shows/sn.md) #995, Undated[^archive-data]
+> ""Brian Krebs reports that hundreds of millions of Facebook users had their credentials logged in plaintext by various applications written by Facebook employees. Those credentials were searched" - and here's the point that - the numbers are just staggering." — Cited by Steve, [Security Now](../shows/sn.md) #995, 2024-10-08[^archive-data]
 
-> "For example, they're not using SMS, that is, simple texting on phones because, as we've discussed with Brian Krebs's SWATing adventure or misadventure last week, cell phone is prone to spoofing, and SMS messages can be spoofed and have been spoofed. And so it's better, if you have an infrastructure you can use, not to fall back on cell phones." — Cited by Steve, [Security Now](../shows/sn.md) #397, Undated[^archive-data]
+> "For example, they're not using SMS, that is, simple texting on phones because, as we've discussed with Brian Krebs's SWATing adventure or misadventure last week, cell phone is prone to spoofing, and SMS messages can be spoofed and have been spoofed. And so it's better, if you have an infrastructure you can use, not to fall back on cell phones." — Cited by Steve, [Security Now](../shows/sn.md) #397, 2013-03-27[^archive-data]
 
 # Frequently Cited Publications, Domains & Collaborators
 
@@ -121,3 +126,4 @@ In **Tech Policy and Social Media** discussions, Brian Krebs's reporting and arg
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: Krebs on Security official blog

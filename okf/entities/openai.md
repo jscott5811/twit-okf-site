@@ -3,7 +3,7 @@ type: entity
 title: "OpenAI"
 description: "Leading AI research lab behind ChatGPT, GPT models, and Sora, accounting for a major share of 2025–2026 TWiT discussions."
 tags: [entity, openai, chatgpt, ai, llm]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -14,6 +14,9 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: grc-sn
+    resource: https://www.grc.com/securitynow.htm
+    title: "GRC.com Security Now transcript archive"
 ---
 
 **OpenAI** is the defining newcomer of the modern [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), accumulating **5,942 combined mentions**—consisting of **5,936 official transcript mentions** across 15 of 17 active shows and **6 unattributed YouTube caption backfill mentions**.[^archive-data][^yt-data][^dataset-doc] Barely a footnote prior to 2023, the research lab behind ChatGPT, the GPT and o-series reasoning models, Sora, and autonomous AI agents vaulted within three years into the upper tier of network discourse—ultimately catalyzing the rebranding of `This Week in Google` into [Intelligent Machines](../shows/im.md).
@@ -101,25 +104,25 @@ Four of the eight highest-density OpenAI episodes come from `Security Now`, alon
   > "I don't think Sam Altman or anyone from OpenAI would be like, 'Oh, this is the most innovative thing and no one else has done this.' I think what they would say is, 'This is the first time that the public has actually been able to interact with it in a way that had a really good user interface.'" — Christina Warren `[This Week in Tech #912, Jan 30th 2023]`
 - **The AI Bubble (`TWIT #1051`):** The single densest episode is `This Week in Tech #1051` (Sep 28th 2025; **102 mentions**), with Alex Kantrowitz, Dan Shipper, Ari Paparo, and Brian McCullough examining OpenAI's o3 model, Sam Altman, and AI bubble economics:
   > "Dan, you have one of my favorite reviews of AI that I've read before. It was your review of, I think it was OpenAI's ChatGPT or O3 model. Why don't we put a pin in that and pick it up right after this break?" — Alex Kantrowitz `[This Week in Tech #1051, Sep 28th 2025, TS:00:26:04]`
-- **Chat Retention, Talent & Agentic Breakouts (`SN #1029`, `IM #858`, `SN #1091`):** `SN #1029` (**69 mentions**) covered court orders barring OpenAI from deleting chats. On `IM #858` (Feb 18th 2026; **51 mentions**), Leo Laporte, Jeff Jarvis, and Emily Forlini covered Peter Steinberger joining OpenAI and ChatGPT's model leap:
+- **Chat Retention, Talent & Agentic Breakouts (`SN #1029`, `IM #858`, `SN #1091`):** `SN #1029` (2025-06-10, *The Illusion of Thinking*; **69 mentions**) covered court orders barring OpenAI from deleting chats. On `IM #858` (Feb 18th 2026; **51 mentions**), Leo Laporte, Jeff Jarvis, and Emily Forlini covered Peter Steinberger joining OpenAI and ChatGPT's model leap:[^archive-data][^grc-sn]
   > "I think the chatbot interface isn't a great way to use these. But even then, it was also the models weren't as good. The models got really good recently. And this is true, by the way, of OpenAI's chatGPT." — Leo Laporte `[Intelligent Machines #858, Feb 18th 2026, TS:00:14:22]`
-  On `SN #1091` (**59 mentions**, *The Post-Black Hat State of AI*), Steve Gibson reacted to OpenAI taking "Astra" offline:
-  > "No wonder, no wonder OpenAI has decided to take Astra offline... you would have to start asking yourself, can we control what we have created? And I would have to say, so far not looking good." — Steve Gibson `[Security Now #1091, Undated]`
+  On `SN #1091` (2026-08-11, *The Post BlackHat State of AI*; **59 mentions**), Steve Gibson reacted to OpenAI taking "Astra" offline:[^archive-data][^grc-sn]
+  > "No wonder, no wonder OpenAI has decided to take Astra offline... you would have to start asking yourself, can we control what we have created? And I would have to say, so far not looking good." — Steve Gibson `[Security Now #1091, 2026-08-11]`
 
 | Show | Episode | Date | Title | Mentions |
 |---|---|---|---|---|
 | [This Week in Tech](../shows/twit.md) | #1051 | Sep 28th 2025 | This Week in Tech 1051 Transcript | 102 |
-| [Security Now](../shows/sn.md) | #1029 | Unknown Date | Security Now 1029 Transcript | 69 |
-| [Security Now](../shows/sn.md) | #907 | Unknown Date | Security Now 907 Transcript | 62 |
-| [Security Now](../shows/sn.md) | #1091 | Unknown Date | Security Now 1091 Transcript | 59 |
+| [Security Now](../shows/sn.md) | #1029 | 2025-06-10 | Security Now 1029: The Illusion of Thinking | 69 |
+| [Security Now](../shows/sn.md) | #907 | 2023-01-24 | Security Now 907: Credential Reuse | 62 |
+| [Security Now](../shows/sn.md) | #1091 | 2026-08-11 | Security Now 1091: The Post BlackHat State of AI | 59 |
 | [This Week in Tech](../shows/twit.md) | #912 | Jan 30th 2023 | This Week in Tech Episode 912 Transcript | 54 |
 | [Intelligent Machines](../shows/im.md) | #858 | Feb 18th 2026 | Intelligent Machines 858 transcript | 51 |
 | [This Week in Google](../shows/twig.md) | #707 | Mar 15th 2023 | This Week in Google 707, Transcript | 47 |
-| [Security Now](../shows/sn.md) | #1097 | Sep 22nd 2026 | Security Now 1097 transcript | 46 |
+| [Security Now](../shows/sn.md) | #1097 | 2026-09-22 | Security Now 1097: Mega Patch Tuesday Fallout | 46 |
 
 # Archive Methodology & Caveats
 
-Counts derive from **577 official processed transcript chunks** (3,350 attributed episodes) and **28 unattributed YouTube caption backfill files** documented in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) specification.[^archive-data][^yt-data][^dataset-doc] YouTube captions add only **6 mentions**, leaving **99.9%** in attributed official transcripts. Notably, **916 official mentions** (**15.4%**) fall into `Undated (year 0)` because legacy GRC `Security Now` transcripts—including `#907`, `#1029`, and `#1091`—omit machine-parseable date headers, meaning OpenAI's true 2023–2026 annual totals are even higher than the dated rows show.
+Counts derive from **577 official processed transcript chunks** (3,350 attributed episodes) and **28 unattributed YouTube caption backfill files** documented in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) specification.[^archive-data][^yt-data][^dataset-doc] YouTube captions add only **6 mentions**, leaving **99.9%** in attributed official transcripts. While every `Security Now` episode's date and title in the table above (`#907`, `#1029`, `#1091`, and `#1097`) has been verified against GRC.com's annual indexes, **916 official mentions** (**15.4%**) in the year-by-year table remain grouped under `Undated (year 0)` because their underlying `data/SN_Transcripts_*.md` chunks carry `year == 0` filenames on disk, meaning OpenAI's true 2023–2026 annual totals are even higher than the dated rows show.[^archive-data][^grc-sn]
 
 # See Also
 
@@ -132,3 +135,4 @@ Counts derive from **577 official processed transcript chunks** (3,350 attribute
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^yt-data]: YouTube caption backfill transcripts (28 files, unattributed)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^grc-sn]: GRC.com Security Now transcript archive

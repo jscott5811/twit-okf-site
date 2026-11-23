@@ -5,7 +5,7 @@ description: "Complete episode-level index of 79 Hands-On Tech (HOT) episodes (a
 tags: [twit, episodes, hot, concluded-run]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
   - id: "hot-md"
     resource: "local archive data/HOT_Transcripts_*.md"

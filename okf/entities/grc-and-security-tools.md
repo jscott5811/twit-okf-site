@@ -3,7 +3,7 @@ type: entity
 title: "GRC and Security Tools"
 description: "Gibson Research Corporation (SpinRite, ShieldsUP) and widely recommended security utilities (Bitwarden, Signal, Passkeys, WireGuard) across the archive."
 tags: [entity, grc, security, spinrite, passkeys]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -14,6 +14,9 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: grc-sn
+    resource: https://www.grc.com/securitynow.htm
+    title: "GRC.com Security Now transcript archive"
 ---
 
 **GRC and Security Tools** represents the distinctive intersection of **Gibson Research Corporation (GRC)**—the software company founded by [Security Now](../shows/sn.md) co-host [Steve Gibson](../people/steve-gibson.md)—and the broader canon of defensive security utilities repeatedly evaluated and recommended across the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md).[^archive-data][^dataset-doc] Together, this entity accumulates **28,449 combined mentions** (**28,445** across 15 of 17 active shows in official speaker-attributed transcripts plus **4** in unattributed YouTube caption backfills), making it one of the highest-volume non-Big-Tech clusters in the entire corpus.[^archive-data][^yt-data]
@@ -99,34 +102,34 @@ Co-occurring product counts clearly delineate the two halves of this entity.[^ar
 
 # Landmark & Highest-Density Episodes
 
-All eight highest-density episodes for **GRC and Security Tools** are episodes of [Security Now](../shows/sn.md), spanning more than 15 years of broadcasts from February 2011 through November 2026.[^archive-data]
+All eight highest-density episodes for **GRC and Security Tools** are episodes of [Security Now](../shows/sn.md), spanning more than 13 years of broadcasts from June 2013 through November 2026.[^archive-data][^grc-sn]
 
-- **`SN` #973 (May 7, 2024 — 96 mentions):** The highest-density episode in the archive paired [Leo Laporte](../people/leo-laporte.md) and [Steve Gibson](../people/steve-gibson.md) on GPS fuzzing, debunking an alarming VPN flaw headline, iCloud Keychain data issues, and the newly released SpinRite v6.1:
-  > "We'll tell you. Steve is at GRC and still selling SpinRite, now v6.1, many moons later. And it's even better than ever. In fact, now it speeds up SSDs." — Leo Laporte `[SN #973, May 7, 2024]`[^archive-data]
-  > "Yes. For the rest of our existence we are answering the question, 'Well, I already have Scandisk. What do I need SpinRite for?'" — Steve Gibson `[SN #973, May 7, 2024]`[^archive-data]
-- **`SN` #972 (May 6, 2024 — 80 mentions):** Recorded just before #973, this episode analyzed landmark UK consumer IoT security legislation (referenced via `grc.sc/etsi`) alongside a sharp debate over Passkeys vs. SQRL:
-  > "And we go down, yeah. I like Passkeys. It is a shattered dream. Although one could say you might have a little dog in this hunt because honestly the SQRL protocol that you created is a far better way of doing it." — Leo Laporte `[SN #972, May 06, 2024]`[^archive-data]
-- **`SN` #824 (Unknown Date — 80 mentions) & `SN` #966 (Unknown Date — 94 mentions):** Episode #824 featured a major SpinRite development update alongside Chrome zero-days and ransomware economics, with Gibson reflecting candidly on returning to SpinRite code:
-  > "It's like after SQRL, where I felt like I was stealing time from SpinRite, now I'm finally doing what I'm supposed to be doing." — Steve Gibson `[SN #824, Unknown Date]`[^archive-data]
-  Episode #966 (guest-hosted by [Mikah Sargent](../people/mikah-sargent.md)) combined Voyager spacecraft signals and Tim Berners-Lee's web retrospective with lighthearted SpinRite banter.
-- **`SN` #410 (Feb 6, 2011 — 79 mentions) & `SN` #1052 / #1104:** Episode #410 ("Interesting & Useful Intel History") remains a classic deep dive connecting early Intel processor memory management directly to SpinRite v6.1's low-level architecture, while later installments (#1052 on Apple Digital ID and Android developer registration, and #1104 in November 2026) demonstrate the enduring weekly cadence of GRC and security-tool discourse.[^archive-data]
+- **`SN` #973 (2024-05-07 — 96 mentions):** The highest-density episode in the archive (*Not So Fast*) paired [Leo Laporte](../people/leo-laporte.md) and [Steve Gibson](../people/steve-gibson.md) on GPS fuzzing, debunking an alarming VPN flaw headline, iCloud Keychain data issues, and the newly released SpinRite v6.1:
+  > "We'll tell you. Steve is at GRC and still selling SpinRite, now v6.1, many moons later. And it's even better than ever. In fact, now it speeds up SSDs." — Leo Laporte `[SN #973, 2024-05-07]`[^archive-data][^grc-sn]
+  > "Yes. For the rest of our existence we are answering the question, 'Well, I already have Scandisk. What do I need SpinRite for?'" — Steve Gibson `[SN #973, 2024-05-07]`[^archive-data][^grc-sn]
+- **`SN` #972 (2024-04-30 — 80 mentions):** Recorded the week before #973 (*Passkeys: A Shattered Dream?*), this episode analyzed landmark UK consumer IoT security legislation (referenced via `grc.sc/etsi`) alongside a sharp debate over Passkeys vs. SQRL:
+  > "And we go down, yeah. I like Passkeys. It is a shattered dream. Although one could say you might have a little dog in this hunt because honestly the SQRL protocol that you created is a far better way of doing it." — Leo Laporte `[SN #972, 2024-04-30]`[^archive-data][^grc-sn]
+- **`SN` #824 (2021-06-22 — 80 mentions) & `SN` #966 (2024-03-19 — 94 mentions):** Episode #824 (*Avaddon Ransonomics*) featured a major SpinRite development update alongside Chrome zero-days and ransomware economics, with Gibson reflecting candidly on returning to SpinRite code:
+  > "It's like after SQRL, where I felt like I was stealing time from SpinRite, now I'm finally doing what I'm supposed to be doing." — Steve Gibson `[SN #824, 2021-06-22]`[^archive-data][^grc-sn]
+  Episode #966 (*Morris The Second*, guest-hosted by [Mikah Sargent](../people/mikah-sargent.md)) combined Voyager spacecraft signals and Tim Berners-Lee's web retrospective with lighthearted SpinRite banter.[^archive-data][^grc-sn]
+- **`SN` #410 (2013-06-26 — 79 mentions) & `SN` #1052 / #1104:** Episode #410 (*Interesting & Useful Intel History*) remains a classic deep dive connecting early Intel processor memory management directly to SpinRite v6.1's low-level architecture, while later installments (#1052 on 2025-11-18, *Global Cellphone Tracking*, and #1104 on 2026-11-10, *The Hole in OpenSSH*) demonstrate the enduring weekly cadence of GRC and security-tool discourse.[^archive-data][^grc-sn]
 
 | Show | Episode | Date | Title | Mentions |
 |---|---|---|---|---|
-| Security Now | #973 | May 7, 2024 | Security Now 973 Transcript | 96 |
-| Security Now | #966 | Unknown Date | Security Now 966 Transcript | 94 |
-| Security Now | #972 | May 06, 2024 | Security Now 972 Transcript | 80 |
-| Security Now | #824 | Unknown Date | Security Now 824 Transcript | 80 |
-| Security Now | #410 | February 6, 2011 | Security Now 410 Transcript | 79 |
-| Security Now | #1052 | October 28, 2023 | Security Now 1052 Transcript | 76 |
-| Security Now | #965 | Unknown Date | Security Now 965 Transcript | 75 |
-| Security Now | #1104 | Nov 10th 2026 | Security Now 1104 transcript | 74 |
+| Security Now | #973 | 2024-05-07 | Security Now 973: Not So Fast | 96 |
+| Security Now | #966 | 2024-03-19 | Security Now 966: Morris The Second | 94 |
+| Security Now | #972 | 2024-04-30 | Security Now 972: Passkeys: A Shattered Dream? | 80 |
+| Security Now | #824 | 2021-06-22 | Security Now 824: Avaddon Ransonomics | 80 |
+| Security Now | #410 | 2013-06-26 | Security Now 410: Interesting & Useful Intel History | 79 |
+| Security Now | #1052 | 2025-11-18 | Security Now 1052: Global Cellphone Tracking | 76 |
+| Security Now | #965 | 2024-03-12 | Security Now 965: Passkeys vs 2FA | 75 |
+| Security Now | #1104 | 2026-11-10 | Security Now 1104: The Hole in OpenSSH | 74 |
 
 # Archive Methodology & Caveats
 
 All figures in this article derive from the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), comprising **577** official speaker-attributed Markdown transcript chunks (**3,350** episodes) and **28** unattributed YouTube caption backfill files (`data_youtube/`).[^archive-data][^yt-data][^dataset-doc] Per-show breakdowns, product co-occurrence tables, and episode rankings use official transcripts exclusively, while YouTube captions add **4** unattributed mentions.
 
-Three archive-specific caveats are particularly important when interpreting this entity. First, **13,161** official mentions (**46.3%**) appear in undated (`year == 0`) episodes—mostly legacy GRC-hosted [Security Now](../shows/sn.md) transcripts lacking machine-parsed date headers—and legacy GRC transcripts do not include per-utterance timestamps, so verbatim quotes from those episodes cite episode and date provenance without `TS:HH:MM:SS` markers.[^archive-data][^dataset-doc] Second, occasional source-metadata anomalies exist in legacy headers (for example, `SN` #1052 carries a header date of "October 28, 2023" in the archive index while Leo Laporte's spoken intro notes it was recorded November 18, 2025; the preserved table retains the archive index metadata). Third, high counts for **SpinRite** and **Bitwarden** reflect a mix of substantive editorial coverage and recurring show introductions or sponsor reads across the network.[^archive-data]
+Three archive-specific caveats are particularly important when interpreting this entity. First, while every [Security Now](../shows/sn.md) episode's air date and title in the table above has been verified against GRC.com's annual archives, **13,161** official mentions (**46.3%**) in the year-by-year table remain grouped under `Undated (year 0)` because their underlying `data/SN_Transcripts_*.md` chunks carry `year == 0` filenames on disk; legacy GRC transcripts also omit per-utterance timestamps, so verbatim quotes cite episode and verified date provenance without `TS:HH:MM:SS` markers.[^archive-data][^grc-sn][^dataset-doc] Second, raw `data/` header date anomalies (such as `SN` #1052 previously parsing as October 28, 2023 instead of its true 2025-11-18 broadcast date) have been corrected in the episode table using GRC.com's official index.[^grc-sn] Third, high counts for **SpinRite** and **Bitwarden** reflect a mix of substantive editorial coverage and recurring show introductions or sponsor reads across the network.[^archive-data]
 
 # See Also
 
@@ -140,3 +143,4 @@ Three archive-specific caveats are particularly important when interpreting this
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^yt-data]: YouTube caption backfill transcripts (28 files, unattributed)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^grc-sn]: GRC.com Security Now transcript archive

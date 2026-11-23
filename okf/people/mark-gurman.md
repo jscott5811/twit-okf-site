@@ -3,7 +3,7 @@ type: person
 title: "Mark Gurman"
 description: "Cited Journalist (Bloomberg Apple Reporter); referenced 473 times in spoken transcript text across 8 shows (2014–2026)."
 tags: [person, journalist, apple, bloomberg]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://www.bloomberg.com/
+    title: "Bloomberg official site (Power On newsletter)"
 ---
 
 Mark Gurman is Bloomberg's chief Apple correspondent and author of the *Power On* newsletter. Although not a TWiT host, Gurman is the single most frequently cited external technology journalist in the archive—referenced hundreds of times across [Macbreak Weekly](../shows/mbw.md), [This Week in Tech](../shows/twit.md), [Intelligent Machines](../shows/im.md), and [iOS Today](../shows/ios.md).[^archive-data][^dataset-doc]
 
 More than half of his archive citations occur in 2025–2026, reflecting how heavily TWiT panels rely on his supply-chain and roadmap reporting for Apple Silicon Macs, iPhone redesigns, Vision Pro, and Apple Intelligence/Siri delays.[^archive-data]
+
+Gurman writes Bloomberg's *Power On* newsletter and podcast ([bloomberg.com](https://www.bloomberg.com/)), serving as the most frequently cited external Apple roadmap reporter across TWiT panels.[^official-site]
 
 # Quick Facts
 
@@ -120,3 +125,4 @@ In **Windows and Microsoft Copilot** discussions, Mark Gurman's reporting and ar
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: Bloomberg official site (Power On newsletter)

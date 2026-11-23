@@ -5,8 +5,11 @@ description: "Windows Weekly (WW) transcript archive covering 286 official episo
 tags: [twit, show, ww, windows-and-microsoft, android-and-mobile, apple-ecosystem]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/windows-weekly"
+    title: "Official TWiT.tv show page for Windows Weekly"
   - id: "ww-md"
     resource: "local archive data/WW_Transcripts_*.md"
     title: "Windows Weekly processed Markdown transcript chunks (43 files)"
@@ -21,17 +24,21 @@ sources:
     title: "Discovered TWiT YouTube channel video catalog"
 ---
 
-Windows Weekly is TWiT's flagship Microsoft and Windows roundtable covering Windows 10 and 11, Copilot, Microsoft 365, Azure, Xbox, Surface hardware, and enterprise computing. Tracked in `fetch_transcripts.py` under file prefix `WW`,[^show-map] **Windows Weekly** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **286** official HTML transcripts spanning episodes **345–1010** across **2014–2026**.[^ww-html]
+Windows Weekly is TWiT's flagship Microsoft and Windows roundtable covering Windows 10 and 11, Copilot, Microsoft 365, Azure, Xbox, Surface hardware, and enterprise computing. Launching **September 28, 2006** with its official show page at `https://twit.tv/shows/windows-weekly`,[^twit-show-page] **Windows Weekly** is tracked in `fetch_transcripts.py` under file prefix `WW`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **286** official HTML transcripts spanning episodes **345–1010** across **2014–2026**.[^ww-html]
 
-Those official transcripts are compiled into **43** NotebookLM-ready Markdown chunks totaling **8,642,595 words** (averaging **30,218 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^ww-md] The show's complete official episode-level index is available across [Windows Weekly Episodes (2014–2023)](../episodes/ww-2015-2023.md), [Windows Weekly Episodes (2024–2026)](../episodes/ww-2024-2026.md).[^ww-md]
+Those official transcripts are compiled into **43** NotebookLM-ready Markdown chunks totaling **8,642,595 words** (averaging **30,218 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^ww-md] **Publication status:** Active on TWiT (hosted by Leo Laporte, Paul Thurrott, and Richard Campbell).[^twit-show-page]
+
+Complete official episode-level index: [Windows Weekly Episodes (2014–2023)](../episodes/ww-2015-2023.md), [Windows Weekly Episodes (2024–2026)](../episodes/ww-2024-2026.md).[^ww-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | Windows Weekly |
+| Official Page | https://twit.tv/shows/windows-weekly |
 | File Prefix | `WW` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | September 28, 2006 |
+| Publication Status | Active on TWiT (hosted by Leo Laporte, Paul Thurrott, and Richard Campbell) |
 | Official HTML Transcripts | 286 |
 | Processed Markdown Chunks | 43 |
 | Total Official Words | 8,642,595 (avg 30,218 / ep) |
@@ -57,11 +64,11 @@ Within the local archive, Windows Weekly spans **2014–2026** (8 dated calendar
 | 2025 | 51 | 1,725,109 | 894–964 |
 | 2026 | 22 | 737,232 | 965–1010 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/WW_Transcripts_*.md`.[^ww-md]
+Year-by-year counts derived from `data/WW_Transcripts_*.md` episode `**Date:**` headers.[^ww-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `WW_Transcripts_*.md` shows **Paul Thurrott** as the most frequent attributed voice (**191** episodes, **43,515** turns, active **2014–2026**), followed by **Leo Laporte** (**180** episodes, **34,130** turns, **2014–2026**). Other recurring voices in the archive include Mary Jo Foley, Richard Campbell, Leo, Paul. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^ww-md]
+Transcript speaker-turn analysis across `WW_Transcripts_*.md` shows **Paul Thurrott** as the most frequent attributed voice (**191** episodes, **43,515** turns, active **2014–2026**), followed by **Leo Laporte** (**180** episodes, **34,130** turns, **2014–2026**). Other recurring voices in the archive include Mary Jo Foley, Richard Campbell, Leo, Paul. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^ww-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -135,6 +142,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **394** numb
 - [Microsoft](../entities/microsoft.md) - Entity profile and mention trends across the TWiT archive.
 - [OpenAI](../entities/openai.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/windows-weekly` and TWiT program archive.
 [^ww-md]: Processed Markdown chunks matching `data/WW_Transcripts_*.md` (43 files, 8,642,595 words).
 [^ww-html]: Raw HTML transcript files matching `data/WW_*.html` (286 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"windows weekly"` to `WW`.

@@ -3,7 +3,7 @@ type: viewpoint
 title: "Cybersecurity and Privacy"
 description: "Cross-host viewpoints and verbatim quotes on encryption, passkeys, ransomware, zero-day vulnerabilities, password managers, surveillance, and digital privacy."
 tags: [viewpoint, cybersecurity, privacy, encryption, passkeys, quotes]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -63,7 +63,7 @@ Every blockquote below is extracted verbatim from speaker-attributed turns in th
 
 > "The researcher said: 'I think it will take a while even for MSRC [Microsoft Security Research] to find the real root cause of the issue." I don't think so, but that's what he said." — [Security Now](../shows/sn.md) #1079, 2026-05-22[^archive-data]
 
-> "Something called Tailscale, T-A-I-L-S-C-A-L-E. As we know, WireGuard is widely, and I think appropriately and accurately, regarded as the logical and overdue successor to the venerable OpenVPN, and even to some degree IPSec, inasmuch as it can replace them both." — [Security Now](../shows/sn.md) #830, Undated[^archive-data]
+> "Something called Tailscale, T-A-I-L-S-C-A-L-E. As we know, WireGuard is widely, and I think appropriately and accurately, regarded as the logical and overdue successor to the venerable OpenVPN, and even to some degree IPSec, inasmuch as it can replace them both." — [Security Now](../shows/sn.md) #830, 2021-08-03[^archive-data]
 
 ## [Jason Snell](../people/jason-snell.md)
 
@@ -115,7 +115,7 @@ TWiT hosts frequently cite external beat journalists, cryptographers, and indust
 
 > "But when we recall Bruce Schneier's reminder - "Attacks never get weaker, they only ever get stronger" - you know, it seems like what might be a curiosity today could have the tendency to mature over time. So how to fix this?" — Cited by Steve, [Security Now](../shows/sn.md) #1051, 2026-11-17[^archive-data]
 
-> "And as we're going to find out, that determination and Bruce Schneier's brilliantly labeled "Genie effect," it's what's going on with our AI. And I think if I had a single reason to be concerned, and everyone's been listening to me about AI since the beginning, I've never really been concerned." — Cited by Steve, [Security Now](../shows/sn.md) #1091, Undated[^archive-data]
+> "And as we're going to find out, that determination and Bruce Schneier's brilliantly labeled "Genie effect," it's what's going on with our AI. And I think if I had a single reason to be concerned, and everyone's been listening to me about AI since the beginning, I've never really been concerned." — Cited by Steve, [Security Now](../shows/sn.md) #1091, 2026-08-11[^archive-data]
 
 ### [Brian Krebs](../people/brian-krebs.md)
 
@@ -123,7 +123,7 @@ TWiT hosts frequently cite external beat journalists, cryptographers, and indust
 
 > "Brian Krebs, writing about this month's consequences for his Krebs on Security blog, wrote, Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software." — Cited by Steve Gibson, [Security Now](../shows/sn.md) #1096, 2026-09-15, TS:00:10:22[^archive-data]
 
-> "And I love Brian Krebs. The title of his blog post about this was "Java Update: Patch It or Pitch It." And so he said: "Oracle today released a security update for its Java platform that addresses at least 20 vulnerabilities in the software." — Cited by Steve, [Security Now](../shows/sn.md) #465, Undated[^archive-data]
+> "And I love Brian Krebs. The title of his blog post about this was "Java Update: Patch It or Pitch It." And so he said: "Oracle today released a security update for its Java platform that addresses at least 20 vulnerabilities in the software." — Cited by Steve, [Security Now](../shows/sn.md) #465, 2014-07-22[^archive-data]
 
 ### [Cory Doctorow](../people/cory-doctorow.md)
 

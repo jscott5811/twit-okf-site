@@ -7,9 +7,9 @@ An independent, non-commercial **Open Knowledge Format (OKF v0.3)** encyclopedia
 
 ## What's Inside (`okf/`)
 
-- **97 OKF v0.3 Concepts (108 Markdown files, ~221,000 words):**
-  - `okf/shows/` — 18 Wikipedia-style show profiles covering every `SHOW_MAP` prefix (`AAA` through `WW`).
-  - `okf/episodes/` — 25 episode catalogs indexing 3,350 official episodes + 28 unattributed YouTube caption backfills.
+- **96 OKF v0.3 Concepts (107 Markdown files, ~224,000 words):**
+  - `okf/shows/` — 18 Wikipedia-style show profiles covering every `SHOW_MAP` prefix (`AAA` through `WW`), with official `twit.tv` URLs, launch dates, and publication status.
+  - `okf/episodes/` — 24 episode catalogs indexing 3,350 official episodes (100% dated; 0 undated) + 28 unattributed YouTube caption backfills.
   - `okf/people/` — 20 biographies of recurring TWiT hosts, panelists, journalists, and security researchers with verbatim attributed stances.
   - `okf/viewpoints/` — 7 cross-host topical debate articles contrasting host perspectives side-by-side.
   - `okf/entities/` — 12 organization and ecosystem profiles with 2020–2026 mention trends.

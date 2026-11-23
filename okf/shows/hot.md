@@ -5,8 +5,11 @@ description: "Hands-On Tech (HOT) transcript archive covering 79 official episod
 tags: [twit, show, hot, concluded-run, apple-ecosystem, windows-and-microsoft, android-and-mobile]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/hands-on-tech"
+    title: "Official TWiT.tv show page for Hands-On Tech"
   - id: "hot-md"
     resource: "local archive data/HOT_Transcripts_*.md"
     title: "Hands-On Tech processed Markdown transcript chunks (4 files)"
@@ -24,19 +27,21 @@ sources:
     title: "User editorial note confirming concluded TWiT show runs"
 ---
 
-Hands-On Tech is a listener-driven Q&A and practical technology troubleshooting show answering real-world questions about consumer hardware, networking, smart home gear, software workflows, and privacy. Tracked in `fetch_transcripts.py` under file prefix `HOT`,[^show-map] **Hands-On Tech** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **79** official HTML transcripts spanning episodes **177–293 (plus 1 unnumbered file)** across **2024–2026**.[^hot-html]
+Hands-On Tech is a listener-driven Q&A and practical technology troubleshooting show answering real-world questions about consumer hardware, networking, smart home gear, software workflows, and privacy. Launching **January 2022 (evolved from Ask The Tech Guys)** with its official show page at `https://twit.tv/shows/hands-on-tech`,[^twit-show-page] **Hands-On Tech** is tracked in `fetch_transcripts.py` under file prefix `HOT`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **79** official HTML transcripts spanning episodes **177–293 (plus 1 unnumbered file)** across **2024–2026**.[^hot-html]
 
 Those official transcripts are compiled into **4** NotebookLM-ready Markdown chunks totaling **284,283 words** (averaging **3,598 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^hot-md] **Publication status:** Hands-On Tech has completed its run and is no longer publishing new episodes.[^user-note]
 
-Complete episode-level index: [Hands-On Tech Episodes](../episodes/hot.md).[^hot-md]
+Complete official episode-level index: [Hands-On Tech Episodes](../episodes/hot.md).[^hot-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | Hands-On Tech |
+| Official Page | https://twit.tv/shows/hands-on-tech |
 | File Prefix | `HOT` |
-| Publication Status | Concluded run (no longer publishing) |
+| Original Launch | January 2022 (evolved from Ask The Tech Guys) |
+| Publication Status | Concluded run (no longer publishing new episodes) |
 | Official HTML Transcripts | 79 |
 | Processed Markdown Chunks | 4 |
 | Total Official Words | 284,283 (avg 3,598 / ep) |
@@ -57,11 +62,11 @@ Within the local archive, Hands-On Tech spans **2024–2026** (3 dated calendar 
 | 2025 | 41 | 105,944 | 197–247 |
 | 2026 | 20 | 59,750 | 248–293 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/HOT_Transcripts_*.md`.[^hot-md]
+Year-by-year counts derived from `data/HOT_Transcripts_*.md` episode `**Date:**` headers.[^hot-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `HOT_Transcripts_*.md` shows **Mikah Sargent** as the most frequent attributed voice (**75** episodes, **840** turns, active **2024–2026**), followed by **Leo Laporte** (**18** episodes, **19** turns, **2025**). Other recurring voices in the archive include Kevin, Mikah SArgent. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^hot-md]
+Transcript speaker-turn analysis across `HOT_Transcripts_*.md` shows **Mikah Sargent** as the most frequent attributed voice (**75** episodes, **840** turns, active **2024–2026**), followed by **Leo Laporte** (**18** episodes, **19** turns, **2025**). Other recurring voices in the archive include Kevin, Mikah SArgent. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^hot-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -122,6 +127,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **164** numb
 - [Microsoft](../entities/microsoft.md) - Entity profile and mention trends across the TWiT archive.
 - [Google](../entities/google.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/hands-on-tech` and TWiT program archive.
 [^hot-md]: Processed Markdown chunks matching `data/HOT_Transcripts_*.md` (4 files, 284,283 words).
 [^hot-html]: Raw HTML transcript files matching `data/HOT_*.html` (79 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"hands-on tech"` to `HOT`.

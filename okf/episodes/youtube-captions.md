@@ -5,7 +5,7 @@ description: "Complete episode-level index of all 28 unattributed YouTube captio
 tags: [twit, episodes, youtube-captions, unattributed]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
   - id: "yt-captions"
     resource: "local archive data_youtube/*/*.md"

@@ -5,8 +5,11 @@ description: "This Week in Space (TWIS) transcript archive covering 121 official
 tags: [twit, show, twis, space-and-science, windows-and-microsoft, tech-policy-and-media]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/this-week-in-space"
+    title: "Official TWiT.tv show page for This Week in Space"
   - id: "twis-md"
     resource: "local archive data/TWIS_Transcripts_*.md"
     title: "This Week in Space processed Markdown transcript chunks (9 files)"
@@ -21,17 +24,21 @@ sources:
     title: "Discovered TWiT YouTube channel video catalog"
 ---
 
-This Week in Space is TWiT's weekly spaceflight and astronomy show covering NASA missions, SpaceX Starship and Falcon 9 launches, Artemis lunar exploration, Mars rovers, commercial spaceflight, and space science. Tracked in `fetch_transcripts.py` under file prefix `TWIS`,[^show-map] **This Week in Space** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **121** official HTML transcripts spanning episodes **90–237** across **2023–2026**.[^twis-html]
+This Week in Space is TWiT's weekly spaceflight and astronomy show covering NASA missions, SpaceX Starship and Falcon 9 launches, Artemis lunar exploration, Mars rovers, commercial spaceflight, and space science. Launching **March 4, 2022 (Episode 1: Atomic Rockets!)** with its official show page at `https://twit.tv/shows/this-week-in-space`,[^twit-show-page] **This Week in Space** is tracked in `fetch_transcripts.py` under file prefix `TWIS`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **121** official HTML transcripts spanning episodes **90–237** across **2023–2026**.[^twis-html]
 
-Those official transcripts are compiled into **9** NotebookLM-ready Markdown chunks totaling **1,574,335 words** (averaging **13,011 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^twis-md] The show's complete official episode-level index is available across [This Week in Space Episodes](../episodes/twis.md).[^twis-md]
+Those official transcripts are compiled into **9** NotebookLM-ready Markdown chunks totaling **1,574,335 words** (averaging **13,011 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^twis-md] **Publication status:** Active on TWiT (co-hosted by Rod Pyle and Tariq Malik).[^twit-show-page]
+
+Complete official episode-level index: [This Week in Space Episodes](../episodes/twis.md).[^twis-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | This Week in Space |
+| Official Page | https://twit.tv/shows/this-week-in-space |
 | File Prefix | `TWIS` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | March 4, 2022 (Episode 1: Atomic Rockets!) |
+| Publication Status | Active on TWiT (co-hosted by Rod Pyle and Tariq Malik) |
 | Official HTML Transcripts | 121 |
 | Processed Markdown Chunks | 9 |
 | Total Official Words | 1,574,335 (avg 13,011 / ep) |
@@ -53,11 +60,11 @@ Within the local archive, This Week in Space spans **2023–2026** (4 dated cale
 | 2025 | 50 | 657,418 | 142–191 |
 | 2026 | 21 | 264,255 | 192–237 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/TWIS_Transcripts_*.md`.[^twis-md]
+Year-by-year counts derived from `data/TWIS_Transcripts_*.md` episode `**Date:**` headers.[^twis-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `TWIS_Transcripts_*.md` shows **Rod Pyle** as the most frequent attributed voice (**65** episodes, **4,946** turns, active **2023–2026**), followed by **Tariq Malik** (**64** episodes, **4,965** turns, **2023–2026**). Other recurring voices in the archive include Leo Laporte, John Ashley, Mike Wall, TWiT. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^twis-md]
+Transcript speaker-turn analysis across `TWIS_Transcripts_*.md` shows **Rod Pyle** as the most frequent attributed voice (**65** episodes, **4,946** turns, active **2023–2026**), followed by **Tariq Malik** (**64** episodes, **4,965** turns, **2023–2026**). Other recurring voices in the archive include Leo Laporte, John Ashley, Mike Wall, TWiT. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^twis-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -129,6 +136,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **2** number
 - [Space Exploration & Commercial Space Viewpoints](../viewpoints/space-exploration-and-commercial-space.md) - Cross-host viewpoint synthesis on this show's core domain.
 - [NASA & SpaceX](../entities/nasa-and-spacex.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/this-week-in-space` and TWiT program archive.
 [^twis-md]: Processed Markdown chunks matching `data/TWIS_Transcripts_*.md` (9 files, 1,574,335 words).
 [^twis-html]: Raw HTML transcript files matching `data/TWIS_*.html` (121 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"this week in space"` to `TWIS`.

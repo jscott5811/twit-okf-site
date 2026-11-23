@@ -3,7 +3,7 @@ type: person
 title: "Paris Martineau"
 description: "Investigative Tech Reporter & Co-Host of Intelligent Machines / This Week in Google; appears as a speaker in 121 official episodes across 4 shows (2022–2026)."
 tags: [person, host, journalist, ai, policy]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: twit-network
+    resource: https://twit.tv/shows/intelligent-machines
+    title: "TWiT.tv Intelligent Machines official page"
 ---
 
 Paris Martineau is an investigative technology journalist (formerly of *The Information* and *Consumer Reports*) and co-host of [Intelligent Machines](../shows/im.md) and formerly [This Week in Google](../shows/twig.md). Across the 2022–2026 archive, Martineau is one of the network's sharpest investigative voices on Silicon Valley power structures, AI business models, and consumer protection.[^archive-data][^dataset-doc]
 
 Her weekly reporting and panel analysis sit at the intersection of [AI and Machine Learning](../topics/ai-and-machine-learning.md) and [Tech Policy and Media](../topics/tech-policy-and-media.md).[^archive-data]
+
+An investigative reporter whose work has appeared in *Consumer Reports*, *The Information*, and *Wired*, Martineau co-hosts *Intelligent Machines* (and previously *This Week in Google*) with Leo Laporte and Jeff Jarvis.[^twit-network]
 
 # Quick Facts
 
@@ -116,3 +121,4 @@ On **Cybersecurity and Privacy**, Paris Martineau's attributed on-air remarks re
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^twit-network]: TWiT.tv Intelligent Machines official page

@@ -3,7 +3,7 @@ type: entity
 title: "NVIDIA"
 description: "GPU and AI accelerator leader central to 2025–2026 discussions of AI data centers, semiconductors, PC gaming, and Linux graphics drivers."
 tags: [entity, nvidia, gpu, semiconductors, ai]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -14,6 +14,9 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: grc-sn
+    resource: https://www.grc.com/securitynow.htm
+    title: "GRC.com Security Now transcript archive"
 ---
 
 **NVIDIA** is one of the fastest-rising entities in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md), accumulating **2,757 combined mentions**—comprising **2,725 official transcript mentions** across 16 of 17 active shows and **32 unattributed YouTube caption backfill mentions**.[^archive-data][^yt-data][^dataset-doc] For much of TWiT's early history, NVIDIA appeared mainly as a PC gaming GPU vendor and a recurring source of Linux graphics-driver friction. Between 2023 and 2026, however, the company's CUDA software moat and Blackwell-era data center accelerators transformed NVIDIA into the defining hardware bellwether of the generative AI boom.
@@ -114,11 +117,11 @@ Six of the eight highest-density NVIDIA episodes aired in 2025–2026, led by `I
 | [This Week in Tech](../shows/twit.md) | #1110 | Nov 16th 2026 | This Week in Tech 1110 Transcript | 41 |
 | [Windows Weekly](../shows/ww.md) | #1005 | Oct 14th 2026 | Windows Weekly 1005 Transcript | 30 |
 | [Windows Weekly](../shows/ww.md) | #897 | Sep 4th 2024 | Windows Weekly 897 Transcript | 28 |
-| [Security Now](../shows/sn.md) | #862 | Unknown Date | Security Now 862 Transcript | 27 |
+| [Security Now](../shows/sn.md) | #862 | 2022-03-15 | Security Now 862: QWACs On? or QWACs Off? | 27 |
 
 # Archive Methodology & Caveats
 
-Figures draw from **577 official processed transcript chunks** (3,350 attributed episodes) and **28 unattributed YouTube caption backfill files** documented in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) specification.[^archive-data][^yt-data][^dataset-doc] Official transcripts supply **2,725** of **2,757** combined mentions (98.8%). Another **135 official mentions** belong to `Undated (year 0)` legacy transcripts (including `SN #862`), and late-2026 AI-generated transcripts occasionally exhibit minor phonetic spelling variations (such as *"Jensen Wong"* in `IM #823`) without affecting core NVIDIA entity counts.
+Figures draw from **577 official processed transcript chunks** (3,350 attributed episodes) and **28 unattributed YouTube caption backfill files** documented in the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) specification.[^archive-data][^yt-data][^dataset-doc] Official transcripts supply **2,725** of **2,757** combined mentions (98.8%). While `SN #862`'s air date (2022-03-15) and title have been verified against GRC.com's annual archives, **135 official mentions** in the year-by-year table remain grouped under `Undated (year 0)` because their underlying `data/SN_Transcripts_*.md` chunks carry `year == 0` filenames on disk; late-2026 AI-generated transcripts also occasionally exhibit minor phonetic spelling variations (such as *"Jensen Wong"* in `IM #823`) without affecting core NVIDIA entity counts.[^archive-data][^grc-sn]
 
 # See Also
 
@@ -131,3 +134,4 @@ Figures draw from **577 official processed transcript chunks** (3,350 attributed
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^yt-data]: YouTube caption backfill transcripts (28 files, unattributed)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^grc-sn]: GRC.com Security Now transcript archive

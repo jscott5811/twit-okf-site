@@ -2,11 +2,14 @@
 type: show
 title: "This Week in Tech"
 description: "This Week in Tech (TWIT) transcript archive covering 413 official episodes (1–1111, 2005–2026) across 60 NotebookLM-ready Markdown chunks (12,595,001 words) plus 28 unattributed YouTube caption backfill episodes."
-tags: [twit, show, twit, youtube-captions, apple-ecosystem, tech-policy-and-media, android-and-mobile]
+tags: [twit, show, youtube-captions, apple-ecosystem, tech-policy-and-media, android-and-mobile]
 generated:
   by: "antigravity/gemini-4-neon-medium"
-  at: "2026-11-23T21:34:55Z"
+  at: "2026-11-23T22:50:24Z"
 sources:
+  - id: "twit-show-page"
+    resource: "https://twit.tv/shows/this-week-in-tech"
+    title: "Official TWiT.tv show page for This Week in Tech"
   - id: "twit-md"
     resource: "local archive data/TWIT_Transcripts_*.md"
     title: "This Week in Tech processed Markdown transcript chunks (60 files)"
@@ -24,17 +27,21 @@ sources:
     title: "Discovered TWiT YouTube channel video catalog"
 ---
 
-This Week in Tech is the flagship weekly technology roundtable of the TWiT network, hosted by Leo Laporte with rotating journalists, analysts, and technologists debating the week's defining developments across computing, AI, policy, and consumer tech. Tracked in `fetch_transcripts.py` under file prefix `TWIT`,[^show-map] **This Week in Tech** is part of the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md) and accounts for **413** official HTML transcripts spanning episodes **1–1111** across **2005–2026**.[^twit-html]
+This Week in Tech is the flagship weekly technology roundtable of the TWiT network, hosted by Leo Laporte with rotating journalists, analysts, and technologists debating the week's defining developments across computing, AI, policy, and consumer tech. Launching **April 17, 2005 (Episode 1, founding show of the TWiT network)** with its official show page at `https://twit.tv/shows/this-week-in-tech`,[^twit-show-page] **This Week in Tech** is tracked in `fetch_transcripts.py` under file prefix `TWIT`[^show-map] inside the [TWiT Transcript Archive](../datasets/twit-transcript-archive.md). The local archive holds **413** official HTML transcripts spanning episodes **1–1111** across **2005–2026**.[^twit-html]
 
-Those official transcripts are compiled into **60** NotebookLM-ready Markdown chunks totaling **12,595,001 words** (averaging **30,496 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^twit-md] An additional **28** unattributed YouTube caption backfill episodes are stored separately in `data_youtube/TWIT/`.[^twit-yt] The show's complete official episode-level index is available across [This Week in Tech Episodes (2005–2022)](../episodes/twit-2015-2022.md), [This Week in Tech Episodes (2023–2026)](../episodes/twit-2023-2026.md).[^twit-md]
+Those official transcripts are compiled into **60** NotebookLM-ready Markdown chunks totaling **12,595,001 words** (averaging **30,496 words per episode**), preserving named speaker turns and episode metadata for research and quote extraction.[^twit-md] An additional **28** unattributed YouTube caption backfill episodes are stored separately in `data_youtube/TWIT/`.[^twit-yt] **Publication status:** Active on TWiT (hosted by Leo Laporte).[^twit-show-page]
+
+Complete official episode-level index: [This Week in Tech Episodes (2005–2022)](../episodes/twit-2015-2022.md), [This Week in Tech Episodes (2023–2026)](../episodes/twit-2023-2026.md).[^twit-md]
 
 ## Quick Facts
 
 | Field | Value |
 | :--- | :--- |
 | Show Name | This Week in Tech |
+| Official Page | https://twit.tv/shows/this-week-in-tech |
 | File Prefix | `TWIT` |
-| Publication Status | Tracked in `SHOW_MAP` |
+| Original Launch | April 17, 2005 (Episode 1, founding show of the TWiT network) |
+| Publication Status | Active on TWiT (hosted by Leo Laporte) |
 | Official HTML Transcripts | 413 |
 | Processed Markdown Chunks | 60 |
 | Total Official Words | 12,595,001 (avg 30,496 / ep) |
@@ -63,11 +70,11 @@ Within the local archive, This Week in Tech spans **2005–2026** (11 dated cale
 | 2025 | 51 | 1,814,440 | 1013–1064 |
 | 2026 | 20 | 730,553 | 1065–1111 |
 
-Year-by-year counts derived from episode `**Date:**` headers in `data/TWIT_Transcripts_*.md`.[^twit-md]
+Year-by-year counts derived from `data/TWIT_Transcripts_*.md` episode `**Date:**` headers.[^twit-md]
 
 ## Hosts & Regular Contributors
 
-Transcript speaker-turn analysis across `TWIT_Transcripts_*.md` shows **Leo Laporte** as the most frequent attributed voice (**307** episodes, **46,126** turns, active **2014–2026**), followed by **Leo** (**186** episodes, **61,967** turns, **2014–2017**). Other recurring voices in the archive include Jason, Jason Howell, Megan Morrone, Mike Elgan. (Note that legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^twit-md]
+Transcript speaker-turn analysis across `TWIT_Transcripts_*.md` shows **Leo Laporte** as the most frequent attributed voice (**307** episodes, **46,126** turns, active **2014–2026**), followed by **Leo** (**186** episodes, **61,967** turns, **2014–2017**). Other recurring voices in the archive include Jason, Jason Howell, Megan Morrone, Mike Elgan. (Legacy transcripts occasionally record first-name-only labels such as `Leo` or `Steve` alongside full names.)[^twit-md]
 
 | Speaker | Episodes Appeared | Speaker Turns | Active Date Span |
 | :--- | ---: | ---: | :--- |
@@ -149,6 +156,7 @@ YouTube channel discovery (`data_youtube/_catalog.json`) identified **392** numb
 - [OpenAI](../entities/openai.md) - Entity profile and mention trends across the TWiT archive.
 - [Meta & Social Platforms](../entities/meta-and-social-platforms.md) - Entity profile and mention trends across the TWiT archive.
 
+[^twit-show-page]: Official TWiT.tv show page at `https://twit.tv/shows/this-week-in-tech` and TWiT program archive.
 [^twit-md]: Processed Markdown chunks matching `data/TWIT_Transcripts_*.md` (60 files, 12,595,001 words).
 [^twit-html]: Raw HTML transcript files matching `data/TWIT_*.html` (413 files).
 [^show-map]: `SHOW_MAP` configuration in `fetch_transcripts.py` mapping `"this week in tech"` to `TWIT`.

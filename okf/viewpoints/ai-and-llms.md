@@ -3,7 +3,7 @@ type: viewpoint
 title: "AI and LLMs"
 description: "Cross-host viewpoints and verbatim quotes on artificial intelligence, OpenAI, Anthropic Claude, LLM reliability, coding agents, and societal impact."
 tags: [viewpoint, ai, llm, openai, claude, quotes]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -52,9 +52,9 @@ Every blockquote below is extracted verbatim from speaker-attributed turns in th
 
 **Steve Gibson** (Security Researcher & Co-Host of Security Now) brings a distinct recurring lens to AI and LLMs discussions across the archive:[^archive-data]
 
-> "I should note that I already have everything I need, thanks to today's ChatGPT 4.0. And it has changed my life for the better." — [Security Now](../shows/sn.md) #1001, Undated[^archive-data]
+> "I should note that I already have everything I need, thanks to today's ChatGPT 4.0. And it has changed my life for the better." — [Security Now](../shows/sn.md) #1001, 2024-11-19[^archive-data]
 
-> "I think that the most accurate and succinct way of describing what we're witnessing is that it is astonishing to see the degree to which a neural network using large language modeling, as exemplified by ChatGPT, is able to simulate intelligence. And I think that is the key concept to hold onto." — [Security Now](../shows/sn.md) #911, Undated[^archive-data]
+> "I think that the most accurate and succinct way of describing what we're witnessing is that it is astonishing to see the degree to which a neural network using large language modeling, as exemplified by ChatGPT, is able to simulate intelligence. And I think that is the key concept to hold onto." — [Security Now](../shows/sn.md) #911, 2023-02-21[^archive-data]
 
 ## [Paul Thurrott](../people/paul-thurrott.md)
 
@@ -130,7 +130,7 @@ TWiT hosts frequently cite external beat journalists, cryptographers, and indust
 
 > "But when we recall Bruce Schneier's reminder - "Attacks never get weaker, they only ever get stronger" - you know, it seems like what might be a curiosity today could have the tendency to mature over time. So how to fix this?" — Cited by Steve, [Security Now](../shows/sn.md) #1051, 2026-11-17[^archive-data]
 
-> "And as we're going to find out, that determination and Bruce Schneier's brilliantly labeled "Genie effect," it's what's going on with our AI. And I think if I had a single reason to be concerned, and everyone's been listening to me about AI since the beginning, I've never really been concerned." — Cited by Steve, [Security Now](../shows/sn.md) #1091, Undated[^archive-data]
+> "And as we're going to find out, that determination and Bruce Schneier's brilliantly labeled "Genie effect," it's what's going on with our AI. And I think if I had a single reason to be concerned, and everyone's been listening to me about AI since the beginning, I've never really been concerned." — Cited by Steve, [Security Now](../shows/sn.md) #1091, 2026-08-11[^archive-data]
 
 ### [Ben Thompson](../people/ben-thompson.md)
 

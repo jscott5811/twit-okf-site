@@ -3,7 +3,7 @@ type: person
 title: "Paul Thurrott"
 description: "Tech Journalist & Co-Host of Windows Weekly / Hands-On Windows; appears as a speaker in 386 official episodes across 5 shows (2006–2026)."
 tags: [person, host, windows, microsoft]
-generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T21:40:00Z" }
+generated: { by: "antigravity/gemini-4-neon-medium", at: "2026-11-23T22:55:00Z" }
 sources:
   - id: archive-data
     resource: "local archive data/*_Transcripts_*.md"
@@ -11,11 +11,16 @@ sources:
   - id: dataset-doc
     resource: /datasets/twit-transcript-archive.md
     title: "TWiT Transcript Archive dataset specification"
+  - id: official-site
+    resource: https://www.thurrott.com/
+    title: "Thurrott.com official site"
 ---
 
 Paul Thurrott is a veteran technology journalist, author of the *Windows Field Guide* on Leanpub, proprietor of `thurrott.com`, and long-time co-host of [Windows Weekly](../shows/ww.md) and host of [Hands-On Windows](../shows/how.md). With hundreds of episodes spanning over a decade of archived transcripts, Thurrott is the archive's primary authority on Microsoft's operating systems, consumer hardware, and enterprise strategy.[^archive-data][^dataset-doc]
 
 Alongside [Leo Laporte](leo-laporte.md) and [Richard Campbell](richard-campbell.md), Thurrott tracks every Windows 10/11 release cycle, Surface hardware generation, Xbox strategic pivot, and Microsoft's 2023–2026 push into Copilot and Windows on ARM.[^archive-data]
+
+Thurrott publishes independent Microsoft and consumer-tech journalism at [Thurrott.com](https://www.thurrott.com/), co-hosts *Windows Weekly* (launched September 28, 2006), and hosts *Hands-On Windows* (launched July 28, 2022).[^official-site]
 
 # Quick Facts
 
@@ -119,3 +124,4 @@ On **AI and LLMs**, Paul Thurrott's attributed on-air remarks reflect recurring 
 
 [^archive-data]: Processed official TWiT transcript Markdown chunks (577 files, 3,350 episodes)
 [^dataset-doc]: TWiT Transcript Archive dataset specification
+[^official-site]: Thurrott.com official site
