@@ -1,0 +1,54 @@
+site_name: "TWiT Knowledge Base (OKF v0.3)"
+site_description: "Independent, non-commercial Open Knowledge Format (OKF v0.3) encyclopedia and metadata index of the TWiT.tv podcast network. No raw transcripts published."
+docs_dir: okf
+copyright: >-
+  Independent non-commercial metadata &amp; reference guide (no raw transcripts published).
+  Underlying TWiT shows &copy; <a href="https://twit.tv/" target="_blank" rel="noopener">TWiT LLC</a>
+  (<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>);
+  legacy Security Now transcripts credited to <a href="https://www.grc.com/" target="_blank" rel="noopener">Steve Gibson / GRC</a>.
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - admonition
+  - def_list
+
+nav:
+  - Home: index.md
+  - Shows: shows/index.md
+  - Episodes: episodes/index.md
+  - People: people/index.md
+  - Viewpoints: viewpoints/index.md
+  - Entities: entities/index.md
+  - Topics: topics/index.md
+  - References: references/index.md
+  - Datasets: datasets/index.md
+  - Playbooks: playbooks/index.md
+  - Changelog: log.md

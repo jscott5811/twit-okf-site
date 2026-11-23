@@ -1,0 +1,15 @@
+# Raw transcripts & scraped HTML (NEVER commit or publish)
+data/
+data_youtube/
+*_Transcripts_*.md
+*_yt.md
+*.html
+
+# Build outputs & local environments
+site/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
